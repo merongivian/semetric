@@ -2,35 +2,43 @@ require 'faraday'
 require 'faraday_middleware/parse_oj'
 
 module Semetric
-  class Data
-    URL = 'http://api.semetric.com'
+  URL = 'http://api.semetric.com'
 
-    def initialize(api_key, artist, source)
+  class Data
+    attr_reader :type, :source
+
+    def initialize(api_key:, type: 'entity', source: nil, id:)
       @api_key = api_key
-      @artist  = artist
-      @source  = source
+      raise Semetric::Errors::InvalidApiKey unless valid_key?
+
+      @type   = type
+      @source = source
+      @id     = id
     end
 
-    def fetch_data
-      get_response = connection.get(
-        "/entity/"\
-        "#{@source}"\
-        ":#{@artist}"\
-        "?token=#{@api_key}"
-      )
-
-      successfull = get_response.body.fetch("success")
-
-      raise StandardError, 'The api key is invalid' unless successfull
+    def info(field)
+      request = connection.get("/#{@type}/#{@source}:#{@id}?token=#{@api_key}")
+      request.body['response'].fetch(field) do
+        raise Semetric::Errors::InvalidField
+      end
     end
 
     private
 
+    def valid_key?
+      body["success"] || body["error"]["code"].to_i != 401
+    end
+
+    def body
+      request = connection.get("/entity/?token=#{@api_key}")
+      request.body
+    end
+
     def connection
-      Faraday.new(url: URL) do |connection|
-        connection.request  :url_encoded
-        connection.response :oj
-        connection.adapter  Faraday.default_adapter
+      Faraday.new(url: URL) do |conn|
+        conn.request  :url_encoded
+        conn.response :oj
+        conn.adapter  Faraday.default_adapter
       end
     end
   end

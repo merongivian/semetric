@@ -1,25 +1,44 @@
 require 'spec_helper'
 
 describe Semetric::Data do
-  let(:invalid_api_key) { '1231231233' }
-  let(:valid_api_key)   { '8d9bafc5dbef47e881467320e1a1e8f3' }
+  let(:valid_api_key) { '8d9bafc5dbef47e881467320e1a1e8f3' }
 
+  let(:id)     { 'ladytron' }
   let(:source) { 'lastfm' }
-  let(:artist) { 'ladytron' }
 
-  describe "#fetch_data" do
-    it "gets data succesfully" do
-      valid_client = Semetric::Data.new(valid_api_key, artist, source)
+  describe "#initialize" do
+    context "for default values" do
+      subject do
+        Semetric::Data.new(api_key: valid_api_key, id: id)
+      end
 
-      expect { valid_client.fetch_data }.
-        to_not raise_error
+      it { expect(subject.type).to eq 'entity' }
+      it { expect(subject.source).to be_nil }
     end
 
-    it "raises an error" do
-      invalid_client = Semetric::Data.new(invalid_api_key, artist, source)
+    it "raises an error for an invalid api key" do
+      args = { api_key: '1231231233', id: id }
 
-      expect { invalid_client.fetch_data }.
-        to raise_error StandardError, 'The api key is invalid'
+      expect { Semetric::Data.new(args) }.
+        to raise_error Semetric::Errors::InvalidApiKey
+    end
+  end
+
+  describe "#fetch_info" do
+    let(:data) do
+      Semetric::Data.new(api_key: valid_api_key,
+                         type: 'artist',
+                         id: id,
+                         source: source)
+    end
+
+    it "gets a field from info response" do
+      expect(data.info 'name').to eq "Ladytron"
+    end
+
+    it "raises an error when no data is found" do
+      expect { data.info 'whatever' }.
+        to raise_error Semetric::Errors::InvalidField
     end
   end
 end
