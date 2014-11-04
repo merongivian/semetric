@@ -4,34 +4,30 @@ require 'faraday_middleware/parse_oj'
 module Semetric
   URL = 'http://api.semetric.com'
 
-  class Data
-    attr_reader :type, :source
-
-    def initialize(api_key:, type: 'entity', source: nil, id:)
-      @api_key = api_key
+  class GetRequest
+    def initialize(path_generator)
+      @path_generator = path_generator
       raise Semetric::Errors::InvalidApiKey unless valid_key?
-
-      @type   = type
-      @source = source
-      @id     = id
     end
 
-    def info(field)
-      request = connection.get("/#{@type}/#{@source}:#{@id}?token=#{@api_key}")
-      request.body['response'].fetch(field) do
+    def fetch(field)
+      source_path = @path_generator.for_source and
+        body = request_body(source_path)
+
+      body['response'].fetch(field) do
         raise Semetric::Errors::InvalidField
       end
+    end
+
+    def request_body(path)
+      connection.get(path).body
     end
 
     private
 
     def valid_key?
+      body = request_body(@path_generator.basic)
       body["success"] || body["error"]["code"].to_i != 401
-    end
-
-    def body
-      request = connection.get("/entity/?token=#{@api_key}")
-      request.body
     end
 
     def connection
