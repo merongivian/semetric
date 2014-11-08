@@ -18,6 +18,8 @@
 require 'semetric'
 require 'semetric/errors'
 require 'semetric/url_parser'
+require 'semetric/entity'
+require 'semetric/image'
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
