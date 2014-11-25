@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 describe Semetric::Path do
-  let(:id)      {"beatles"}
+  let(:id)   {"beatles"}
+  let(:type) {"artist"}
 
   describe "#initialize" do
     id_with_spaces = 'id  with   spaces '
@@ -15,8 +16,6 @@ describe Semetric::Path do
   end
 
   describe "#basic" do
-    let(:type) {"artist"}
-
     it "returns a path with a source" do
       source = "facebook"
       path   = Semetric::Path.new(type: type, source: source, id: id)
@@ -29,6 +28,23 @@ describe Semetric::Path do
 
       expect(path.basic).
         to eq "/#{type}/#{id}"
+    end
+  end
+
+  describe "#datatype" do
+    let(:path) { Semetric::Path.new(type: type,id: id) }
+    let(:data_type) { 'comments' }
+
+    it "returns a path with a subsource" do
+      subsource = 'facebook'
+
+      expect(path.datatype subsource, data_type).
+        to eq "/#{type}/#{id}/#{data_type}/#{subsource}"
+    end
+
+    it "returns a path with total instead of a subsource" do
+      expect(path.datatype data_type).
+        to eq "/#{type}/#{id}/#{data_type}/total"
     end
   end
 end

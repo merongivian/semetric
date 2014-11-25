@@ -6,23 +6,26 @@ module Semetric
 
   class GetRequest
     def initialize(path, api_key)
-      @path    = path
-      @api_key = api_key
-      raise Semetric::Errors::InvalidApiKey unless valid_key?
+      @path        = path
+      self.api_key = api_key
     end
 
-    def fetch_data(field)
-      data['response'].fetch(field) do
-        raise Semetric::Errors::InvalidField
-      end
+    def response(field)
+      data['response'].fetch(field.to_s)
+    end
+
+    def invalid_key?
+      !data["success"] &&
+        data["error"]["code"].to_i == 401
     end
 
     private
 
     attr_reader :api_key, :path
 
-    def valid_key?
-      data["success"] || data["error"]["code"].to_i != 401
+    def api_key=(api_key)
+      @api_key = api_key
+      raise Semetric::Errors::InvalidApiKey if invalid_key?
     end
 
     def data

@@ -1,36 +1,45 @@
 module Semetric
   class Entity
+    FIELDS = %i(modified_by name modification_date creation_date
+                genre record_id).freeze
+    SUMMARY_FIELDS = %i(description overview available_until
+                        rank previous_rank has_data).freeze
+
     def initialize(id, entity_request)
       @id = id
       @entity_request = entity_request
     end
 
-    def modified_by;       get('modified_by');end
-    def name;              get('name');end
-    def modification_date; get('modification_date');end
-    def creation_date;     get('creation_date');end
-    def genre;             get('genre');end
-    def record_id;         get('record_id');end
-    def summary;           get('summary');end
-    def data_class;        get('class');end
-
-    def images
-      Semetric::Image.build_from_array get('images')
+    def data_class
+      get(:class)
     end
 
-    def description;     get('summary')[:description]; end
-    def overview;        get('summary')[:overview]; end
-    def available_until; get('summary')[:available_until]; end
-    def rank;            get('summary')[:rank]; end
-    def previous_rank;   get('summary')[:previous_rank]; end
-    def has_data;        get('summary')[:has_data]; end
+    def images
+      Image.build_from_array get(:images)
+    end
+
+    FIELDS.each do |field_name|
+      define_method field_name do
+        get(field_name)
+      end
+    end
+
+    SUMMARY_FIELDS.each do |field_name|
+      define_method field_name do
+        summary.fetch(field_name)
+      end
+    end
 
     private
 
-    attr_reader :id, :entity_request
+    attr_reader :entity_request
+
+    def summary
+      get(:summary)
+    end
 
     def get(field)
-      entity_request.fetch_data field
+      entity_request.response field
     end
   end
 end

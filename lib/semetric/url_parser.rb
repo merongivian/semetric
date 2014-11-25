@@ -9,8 +9,18 @@ module Semetric
     end
 
     def basic
-      complete_id = source ? "#{@source}:#{@id}" : "#{@id}"
+      complete_id = if source.nil?
+        "%s" % [@id]
+      else
+        "%s:%s" % [@source, @id]
+      end
+
       "/#{@type}/#{complete_id}"
+    end
+
+    def datatype(subsource = nil, data_type)
+      subsource ||= 'total'
+      basic + "/#{data_type}/#{subsource}"
     end
   end
 end

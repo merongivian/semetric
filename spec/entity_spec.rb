@@ -5,8 +5,7 @@ describe Semetric::Entity do
   let(:entity) { Semetric::Entity.new('some id', entity_request) }
 
   let(:images_data) do
-    [{ url: "", class: "", size: "" },
-     { url: "", class: "", size: "" }]
+    [{ url: "", class: "", size: "" }] * 2
   end
   let(:summary_data) do
     {
@@ -19,7 +18,7 @@ describe Semetric::Entity do
     }
   end
 
-  let(:response_data) do
+  let(:fields) do
     {
       modified_by: "Peter Parker",
       name: "Freddy Mercury",
@@ -35,28 +34,29 @@ describe Semetric::Entity do
   end
 
   before do
-    response_data.each do |field_name, field_data|
-      allow(entity_request).to receive(:fetch_data).
-        with(field_name.to_s).and_return field_data
+    fields.each do |field, data|
+      allow(entity_request).to receive(:response).
+        with(field).and_return data
     end
   end
 
   context "when it retrieves data from a simple field" do
-    specify { expect(entity.modified_by).      to eq response_data[:modified_by] }
-    specify { expect(entity.name).             to eq response_data[:name] }
-    specify { expect(entity.modification_date).to eq response_data[:modification_date] }
-    specify { expect(entity.creation_date).    to eq response_data[:creation_date] }
-    specify { expect(entity.genre).            to eq response_data[:genre] }
-    specify { expect(entity.record_id).        to eq response_data[:record_id] }
-    specify { expect(entity.data_class).       to eq response_data[:class] }
-    specify { expect(entity.modified_by).      to eq response_data[:modified_by] }
+    specify { expect(entity.modified_by).      to eq fields[:modified_by] }
+    specify { expect(entity.name).             to eq fields[:name] }
+    specify { expect(entity.modification_date).to eq fields[:modification_date] }
+    specify { expect(entity.creation_date).    to eq fields[:creation_date] }
+    specify { expect(entity.genre).            to eq fields[:genre] }
+    specify { expect(entity.record_id).        to eq fields[:record_id] }
+    specify { expect(entity.data_class).       to eq fields[:class] }
+    specify { expect(entity.modified_by).      to eq fields[:modified_by] }
   end
 
   context "when it retrieves data from a nested field" do
     describe "#images" do
       it "creates images array from data" do
-        expect(Semetric::Image).to receive(:build_from_array).with(images_data)
-        entity.images
+        imgs = [Semetric::Image.new("", "", "")] * 2
+
+        expect(entity.images).to match_array imgs
       end
     end
 
