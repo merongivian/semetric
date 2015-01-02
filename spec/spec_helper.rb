@@ -17,7 +17,7 @@
 
 require 'semetric'
 require 'semetric/errors'
-require 'semetric/url_parser'
+require 'semetric/path'
 require 'semetric/entity'
 require 'semetric/image'
 
