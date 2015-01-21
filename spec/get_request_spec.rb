@@ -4,7 +4,7 @@ describe Semetric::GetRequest do
   let(:path) do
     Semetric::Path.new(
       id: 'fe66302b0aee49cfbd7d248403036def'
-    ).with_datatype('plays')
+    ).data_type('plays')
   end
 
   describe "#initialize" do

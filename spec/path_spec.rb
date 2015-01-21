@@ -38,13 +38,23 @@ describe Semetric::Path do
     it "returns a path with a subsource" do
       subsource = 'facebook'
 
-      expect(path.with_datatype subsource, data_type).
+      expect(path.data_type subsource, data_type).
         to eq "/#{type}/#{id}/#{data_type}/#{subsource}"
     end
 
     it "returns a path with total instead of a subsource" do
-      expect(path.with_datatype data_type).
+      expect(path.data_type data_type).
         to eq "/#{type}/#{id}/#{data_type}/total"
+    end
+  end
+
+  describe "#event" do
+    let(:path)  { Semetric::Path.new(type: type,id: id) }
+    let(:event_type) { 'tv' }
+
+    it "returns a path for events" do
+      expect(path.event event_type).
+        to eq "/#{type}/#{id}/#{event_type}/"
     end
   end
 end
