@@ -20,6 +20,7 @@ require 'semetric/errors'
 require 'semetric/path'
 require 'semetric/entity'
 require 'semetric/image'
+require 'semetric/get_request'
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

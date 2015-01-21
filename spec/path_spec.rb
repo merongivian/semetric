@@ -31,19 +31,19 @@ describe Semetric::Path do
     end
   end
 
-  describe "#datatype" do
+  describe "#with_datatype" do
     let(:path) { Semetric::Path.new(type: type,id: id) }
     let(:data_type) { 'comments' }
 
     it "returns a path with a subsource" do
       subsource = 'facebook'
 
-      expect(path.datatype subsource, data_type).
+      expect(path.with_datatype subsource, data_type).
         to eq "/#{type}/#{id}/#{data_type}/#{subsource}"
     end
 
     it "returns a path with total instead of a subsource" do
-      expect(path.datatype data_type).
+      expect(path.with_datatype data_type).
         to eq "/#{type}/#{id}/#{data_type}/total"
     end
   end

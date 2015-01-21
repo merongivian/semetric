@@ -9,12 +9,11 @@ module Semetric
     def initialize(path, api_key)
       @path        = path
       self.api_key = api_key
-      #@args = { token: api_key }
     end
 
     def response(field, **options)
-      @args.merge options unless options
-      data(options)['response'].fetch(field.to_s)
+      result = data(options)['response']
+      result.fetch(field.to_s)
     end
 
     def invalid_key?
@@ -24,7 +23,7 @@ module Semetric
 
     private
 
-    attr_reader :api_key, :path, :args
+    attr_reader :api_key, :path
 
     def api_key=(api_key)
       @api_key = api_key
