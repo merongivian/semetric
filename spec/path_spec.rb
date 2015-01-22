@@ -57,4 +57,60 @@ describe Semetric::Path do
         to eq "/#{type}/#{id}/#{event_type}/"
     end
   end
+
+  context "for demographics" do
+    let(:path)                   { Semetric::Path.new(type: type,id: id) }
+    let(:subsource)              { 'twitter' }
+    let(:demographic_path) do
+      "/#{type}/#{id}/demographics/#{subsource}/#{sub_path}"
+    end
+
+    describe "#location_demographics" do
+      let(:sub_path)         { "location/#{demographic_type}" }
+      let(:demographic_type) { "city" }
+
+      it "returns a path for a location option" do
+        expect(path.location_demographics subsource, demographic_type).
+          to eq demographic_path
+      end
+
+      it "accepts only valid options" do
+        demographic_type = "country"
+
+        expect{ path.location_demographics subsource, demographic_type }.
+          to_not raise_error
+      end
+
+      it "raises an error for invalid options" do
+        demographic_type = "wrong option"
+
+        expect{ path.location_demographics subsource, demographic_type }.
+          to raise_error Semetric::Errors::Demographics::InvalidOption
+      end
+    end
+
+    describe "#age_gender_demographics" do
+      let(:sub_path)         { "#{demographic_type}" }
+      let(:demographic_type) { "gender" }
+
+      it "returns a path for age or gender" do
+        expect(path.age_gender_demographics subsource, demographic_type).
+          to eq demographic_path
+      end
+
+      it "accepts only valid options" do
+        demographic_type = "age"
+
+        expect{ path.age_gender_demographics subsource, demographic_type }.
+          to_not raise_error
+      end
+
+      it "raises an error for invalid options" do
+        demographic_type = "wrong option"
+
+        expect{ path.age_gender_demographics subsource, demographic_type }.
+          to raise_error Semetric::Errors::Demographics::InvalidOption
+      end
+    end
+  end
 end

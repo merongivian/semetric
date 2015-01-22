@@ -26,5 +26,27 @@ module Semetric
     def event(event_type)
       basic + "/#{event_type}/"
     end
+
+    def location_demographics(subsource, demographic_type)
+      check_demographic_options(%w[city country], demographic_type )
+      demographics(subsource) + "location/#{demographic_type}"
+    end
+
+    def age_gender_demographics(subsource, demographic_type)
+      check_demographic_options(%w[age gender], demographic_type)
+      demographics(subsource) + demographic_type
+    end
+
+    private
+
+    def demographics(subsource)
+      basic + "/demographics/#{subsource}/"
+    end
+
+    def check_demographic_options(options, demographic_type)
+      unless options.include?(demographic_type)
+        raise Semetric::Errors::Demographics::InvalidOption
+      end
+    end
   end
 end
