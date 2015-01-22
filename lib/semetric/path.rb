@@ -8,6 +8,29 @@ module Semetric
       @id      = id.strip.gsub(/\s+/, "+")
     end
 
+    def self.chart(chart_type)
+      # TODO add uuids frim the page and extract to other clas
+      types = %w(
+          fans_added_during_last_day
+          fans_added_during_last_week
+          fans_daily_high_flyers
+          fans_total
+          views_during_last_day
+          views during last week
+          views_high_flyers
+          views_total
+          new_comments_last_day
+          new_comments_last_week
+          comments_total
+          plays_last_day
+          plays_last_week
+          plays_high_flyers
+          plays_total
+        )
+      raise Semetric::Errors::InvalidChart unless types.include?(chart_type)
+      "/chart/#{chart_type}"
+    end
+
     def basic
       complete_id = if source.nil?
         "#{@id}"
@@ -27,6 +50,8 @@ module Semetric
       basic + "/#{event_type}/"
     end
 
+    # TODO eztract demographics logic
+    #
     def location_demographics(subsource, demographic_type)
       check_demographic_options(%w[city country], demographic_type )
       demographics(subsource) + "location/#{demographic_type}"
