@@ -1,11 +1,11 @@
 require 'spec_helper'
 
-describe Semetric::Path do
+describe Semetric::Path::Generator do
   let(:id)   {"beatles"}
   let(:type) {"artist"}
 
   describe ".chart" do
-    let(:chart_type) { "fans added during last day" }
+    let(:chart_type) { "fans_added_during_last_day" }
 
     it "returns a path for a chart" do
       expect(described_class.chart chart_type).
@@ -20,7 +20,7 @@ describe Semetric::Path do
 
   describe "#initialize" do
     id_with_spaces = 'id  with   spaces '
-    subject { Semetric::Path.new(id: id_with_spaces) }
+    subject { described_class.new(id: id_with_spaces) }
 
     it { is_expected.to have_attributes(type: 'entity', source: nil) }
 
@@ -32,13 +32,13 @@ describe Semetric::Path do
   describe "#basic" do
     it "returns a path with a source" do
       source = "facebook"
-      path   = Semetric::Path.new(type: type, source: source, id: id)
+      path   = described_class.new(type: type, source: source, id: id)
 
       expect(path.basic).to eq "/#{type}/#{source}:#{id}"
     end
 
     it "returns a path with semetric as default source" do
-      path   = Semetric::Path.new(type: type,id: id)
+      path   = described_class.new(type: type,id: id)
 
       expect(path.basic).
         to eq "/#{type}/#{id}"
@@ -46,7 +46,7 @@ describe Semetric::Path do
   end
 
   describe "#with_datatype" do
-    let(:path) { Semetric::Path.new(type: type,id: id) }
+    let(:path) { described_class.new(type: type,id: id) }
     let(:data_type) { 'comments' }
 
     it "returns a path with a subsource" do
@@ -63,7 +63,7 @@ describe Semetric::Path do
   end
 
   describe "#event" do
-    let(:path)  { Semetric::Path.new(type: type,id: id) }
+    let(:path)  { described_class.new(type: type,id: id) }
     let(:event_type) { 'tv' }
 
     it "returns a path for events" do
@@ -73,7 +73,7 @@ describe Semetric::Path do
   end
 
   context "for demographics" do
-    let(:path)                   { Semetric::Path.new(type: type,id: id) }
+    let(:path)                   { described_class.new(type: type,id: id) }
     let(:subsource)              { 'twitter' }
     let(:demographic_path) do
       "/#{type}/#{id}/demographics/#{subsource}/#{sub_path}"
