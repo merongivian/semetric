@@ -72,58 +72,32 @@ describe Semetric::Path::Generator do
     end
   end
 
-  context "for demographics" do
+  context "for #demographics" do
     let(:path)                   { described_class.new(type: type,id: id) }
     let(:subsource)              { 'twitter' }
     let(:demographic_path) do
       "/#{type}/#{id}/demographics/#{subsource}/#{sub_path}"
     end
 
-    describe "#location_demographics" do
+    describe "location" do
       let(:sub_path)         { "location/#{demographic_type}" }
       let(:demographic_type) { "city" }
 
       it "returns a path for a location option" do
-        expect(path.location_demographics subsource, demographic_type).
+        tipi = :location
+        expect(path.demographics subsource, demographic_type, tipi).
           to eq demographic_path
-      end
-
-      it "accepts only valid options" do
-        demographic_type = "country"
-
-        expect{ path.location_demographics subsource, demographic_type }.
-          to_not raise_error
-      end
-
-      it "raises an error for invalid options" do
-        demographic_type = "wrong option"
-
-        expect{ path.location_demographics subsource, demographic_type }.
-          to raise_error Semetric::Errors::Demographics::InvalidOption
       end
     end
 
-    describe "#age_gender_demographics" do
+    describe "age_gender" do
       let(:sub_path)         { "#{demographic_type}" }
-      let(:demographic_type) { "gender" }
+      let(:demographic_type) { "age" }
 
-      it "returns a path for age or gender" do
-        expect(path.age_gender_demographics subsource, demographic_type).
+      it "returns a path for a location option" do
+        tipi = :age_gender
+        expect(path.demographics subsource, demographic_type, tipi).
           to eq demographic_path
-      end
-
-      it "accepts only valid options" do
-        demographic_type = "age"
-
-        expect{ path.age_gender_demographics subsource, demographic_type }.
-          to_not raise_error
-      end
-
-      it "raises an error for invalid options" do
-        demographic_type = "wrong option"
-
-        expect{ path.age_gender_demographics subsource, demographic_type }.
-          to raise_error Semetric::Errors::Demographics::InvalidOption
       end
     end
   end
