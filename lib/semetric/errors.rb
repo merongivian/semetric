@@ -5,6 +5,10 @@ module Semetric
 
     class InvalidChart < StandardError; end
 
+    module Path
+      class InvalidType < StandardError; end
+    end
+
     module Demographics
       class InvalidOption < StandardError; end
     end

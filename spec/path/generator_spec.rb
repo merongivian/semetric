@@ -27,6 +27,11 @@ describe Semetric::Path::Generator do
     it "handles id with spaces" do
       expect(subject.id).to eq 'id+with+spaces'
     end
+
+    it "raises an error for invalid types" do
+      expect{ described_class.new(id: id, type: "wrong type") }.
+        to raise_error Semetric::Errors::Path::InvalidType
+    end
   end
 
   describe "#basic" do
