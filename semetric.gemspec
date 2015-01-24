@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version      = '0.0.0'
   s.date         = '2014-11-02'
   s.summary      = 'Semetric gem'
-  s.descriptions = 'Ruby wrapper for the musicmetric API'
+  s.description  = 'Ruby wrapper for the musicmetric API'
   s.authors      = 'Jose Anasco (merongivian)'
   s.email        = 'jose_anasco@hotmail.com'
   s.files        = ["lib/semetric.rb"]
