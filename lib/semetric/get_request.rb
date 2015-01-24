@@ -1,4 +1,3 @@
-
 require 'faraday'
 require 'faraday_middleware/parse_oj'
 

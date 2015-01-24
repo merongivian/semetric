@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Semetric::GetRequest do
   let(:path) do
-    Semetric::Path.new(
+    Semetric::Path::Generator.new(
       id: 'fe66302b0aee49cfbd7d248403036def'
     ).data_type('plays')
   end
