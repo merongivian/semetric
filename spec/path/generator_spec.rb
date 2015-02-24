@@ -18,6 +18,13 @@ describe Semetric::Path::Generator do
     end
   end
 
+  describe ".sentiment" do
+    it "returns a path for a sentiment" do
+      expect(described_class.sentiment).
+        to eq "/sentiment"
+    end
+  end
+
   describe "#initialize" do
     id_with_spaces = 'id  with   spaces '
     subject { described_class.new(id: id_with_spaces) }
