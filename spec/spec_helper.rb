@@ -23,6 +23,7 @@ require 'semetric/path/generator'
 require 'semetric/entity'
 require 'semetric/image'
 require 'semetric/get_request'
+require 'semetric/artist'
 
 Coveralls.wear!
 
