@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Semetric::Artist do
+describe Semetric::Artist, vcr: false do
   let(:artist) { Semetric::Artist.new('ladytron') }
 
   describe "#initialize" do

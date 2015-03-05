@@ -16,6 +16,8 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
 require 'coveralls'
+require 'vcr'
+require 'webmock/rspec'
 
 require 'semetric'
 require 'semetric/errors'
@@ -26,6 +28,14 @@ require 'semetric/get_request'
 require 'semetric/artist'
 
 Coveralls.wear!
+
+VCR.configure do |c|
+  c.hook_into :webmock
+  c.cassette_library_dir = 'spec/support/cassettes'
+  c.configure_rspec_metadata!
+  c.default_cassette_options = { record: :new_episodes }
+  c.allow_http_connections_when_no_cassette = true
+end
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
