@@ -1,8 +1,8 @@
 module Semetric
   class Entity
-    FIELDS = %i(modified_by name modification_date creation_date
+    FIELDS = %w(modified_by name modification_date creation_date
                 genre record_id).freeze
-    SUMMARY_FIELDS = %i(description overview available_until
+    SUMMARY_FIELDS = %w(description overview available_until
                         rank previous_rank has_data).freeze
 
     def initialize(id, entity_request)
@@ -11,11 +11,11 @@ module Semetric
     end
 
     def data_class
-      get(:class)
+      get("class")
     end
 
     def images
-      Image.build_from_array get(:images)
+      Image.build_from_array get("images")
     end
 
     FIELDS.each do |field_name|
@@ -35,7 +35,7 @@ module Semetric
     attr_reader :entity_request
 
     def summary
-      get(:summary)
+      get("summary")
     end
 
     def get(field)
