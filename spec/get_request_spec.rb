@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Semetric::GetRequest do
+describe Semetric::GetRequest, vcr: true do
   let(:path) do
     Semetric::Path::Generator.new(
       id: 'fe66302b0aee49cfbd7d248403036def'
