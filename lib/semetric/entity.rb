@@ -5,8 +5,7 @@ module Semetric
     SUMMARY_FIELDS = %w(description overview available_until
                         rank previous_rank has_data).freeze
 
-    def initialize(id, entity_request)
-      @id = id
+    def initialize(entity_request)
       @entity_request = entity_request
     end
 
