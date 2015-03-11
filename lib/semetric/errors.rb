@@ -2,6 +2,7 @@ module Semetric
   module Errors
     class InvalidApiKey < StandardError; end
     class InvalidField < StandardError; end
+    class DataNotFound < StandardError; end
 
     class InvalidChart < StandardError; end
 
