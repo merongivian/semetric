@@ -126,4 +126,67 @@ http_interactions:
         "success": true}'
     http_version: 
   recorded_at: Thu, 05 Mar 2015 20:23:03 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/artist/lastfm:radiohead?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Mar 2015 23:27:49 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '986'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server00; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"modified_by": null, "name": "Radiohead", "modification_date":
+        null, "images": [{"url": "//d2ols6i12gwtgn.cloudfront.net/64/2b8242893eb1569d91ed4a5a784a2fd8.jpg",
+        "class": "image", "size": "64"}, {"url": "//d2ols6i12gwtgn.cloudfront.net/126/2b8242893eb1569d91ed4a5a784a2fd8.jpg",
+        "class": "image", "size": "126"}, {"url": "//d2ols6i12gwtgn.cloudfront.net/256/2b8242893eb1569d91ed4a5a784a2fd8.jpg",
+        "class": "image", "size": "256"}, {"url": "//d2ols6i12gwtgn.cloudfront.net/full_size/2b8242893eb1569d91ed4a5a784a2fd8.jpg",
+        "class": "image", "size": "0"}], "creation_date": null, "genre": null, "record_id":
+        "111595", "summary": {"description": null, "overview": "Radiohead are an English
+        <a href=\"http://www.last.fm/tag/alternative%20rock\" class=\"bbcode_tag\"
+        rel=\"tag\">alternative rock</a> band from Abingdon, Oxfordshire, UK which
+        formed in 1985. The band is composed of <a href=\"http://www.last.fm/music/Thom+Yorke\"
+        class=\"bbcode_artist\">Thom Yorke</a> (lead vocals, rhythm guitar, piano,
+        beats), <a href=\"http://www.last.fm/music/Jonny+Greenwood\" class=\"bbcode_artist\">Jonny
+        Greenwood</a> (lead guitar, keyboard, other instruments), <a href=\"http://www.last.fm/music/Ed+O%27Brien\"
+        class=\"bbcode_artist\">Ed O''Brien</a> (guitar, backing vocals), <a href=\"http://www.last.fm/music/Colin+Greenwood\"
+        class=\"bbcode_artist\">Colin Greenwood</a> (bass guitar) and <a href=\"http://www.last.fm/music/+noredirect/Phil+Selway\"
+        class=\"bbcode_artist\">Phil Selway</a> (drums, percussion).  The early years
+        (1992 \u2013 1995)\n Radiohead released their first single, \"<a title=\"Radiohead
+        \u2013 Creep\" href=\"http://www.last.fm/music/Radiohead/_/Creep\" class=\"bbcode_track\">Creep</a>\"
+        in 1992. The song was initially unsuccessful, but it became a worldwide hit
+        several months after the release of their debut album, <a title=\"Radiohead
+        - Pablo Honey\" href=\"http://www.last.fm/music/Radiohead/Pablo+Honey\" class=\"bbcode_album\">Pablo
+        Honey</a> (1993).\n\n        <a href=\"http://www.last.fm/music/Radiohead\">Read
+        more about Radiohead on Last.fm</a>.\n    \n    \nUser-contributed text is
+        available under the Creative Commons By-SA License and may also be available
+        under the GNU FDL.", "available_until": null, "rank": 3365, "previous_rank":
+        3821, "has_data": true}, "class": "artist", "id": "77692c6aae234cdbb78a58b6e87b64a0"},
+        "success": true}'
+    http_version: 
+  recorded_at: Wed, 11 Mar 2015 23:27:50 GMT
 recorded_with: VCR 2.9.3

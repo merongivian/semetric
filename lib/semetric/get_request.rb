@@ -11,6 +11,7 @@ module Semetric
     end
 
     def response(field, **options)
+      raise Semetric::Errors::DataNotFound if no_data_found?
       result = data(options)['response']
       result.fetch(field.to_s)
     end
@@ -27,6 +28,15 @@ module Semetric
     def api_key=(api_key)
       @api_key = api_key
       raise Semetric::Errors::InvalidApiKey if invalid_key?
+    end
+
+    def no_data_found?
+      !data["success"] && has_data_error_code?
+    end
+
+    def has_data_error_code?
+      error_code = data["error"]["code"].to_i
+      error_code == 204 || error_code == 404
     end
 
     def data(**options)

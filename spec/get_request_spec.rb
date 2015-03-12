@@ -1,9 +1,10 @@
 require 'spec_helper'
 
 describe Semetric::GetRequest, vcr: true do
+  let(:id) { 'fe66302b0aee49cfbd7d248403036def' }
   let(:path) do
     Semetric::Path::Generator.new(
-      id: 'fe66302b0aee49cfbd7d248403036def'
+      id: id
     ).data_type('plays')
   end
 
@@ -29,6 +30,27 @@ describe Semetric::GetRequest, vcr: true do
 
       expect(request.response :start_time, args).
         to_not eq default_start_time
+    end
+
+    context "for no data error" do
+      let(:path_generator) do
+        Semetric::Path::Generator.new(id: id)
+      end
+      let(:data_type) { 'fans' }
+
+      it "raises an error for invalid subsources" do
+        path = path_generator.data_type('any', data_type)
+        request = described_class.new(path, '8d9bafc5dbef47e881467320e1a1e8f3')
+        expect{ request.response('anyfield') }.
+          to raise_error Semetric::Errors::DataNotFound
+      end
+
+      it "raises an error for subsources with no data" do
+        path = path_generator.data_type('soundcloud', data_type)
+        request = described_class.new(path, '8d9bafc5dbef47e881467320e1a1e8f3')
+        expect{ request.response('anyfield') }.
+          to raise_error Semetric::Errors::DataNotFound
+      end
     end
   end
 end

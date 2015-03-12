@@ -6,19 +6,53 @@ module Semetric
       @path_generator = Semetric::Path::Generator.new(type: 'artist',
                                                       source: 'lastfm',
                                                       id: name)
-      @name = name
     end
 
-    def bio; entity_request.overview; end
-    def images; entity_request.images; end
+    def bio
+      entity_request.overview
+    end
+
+    def images
+      entity_request.images
+    end
+
+    def fans(subsource = nil, **options)
+      statistics_data(subsource, "fans", options)
+    end
+
+    def plays(subsource = nil, **options)
+      statistics_data(subsource, "plays", options)
+    end
+
+    def views(subsource = nil, **options)
+      statistics_data(subsource, "views", options)
+    end
+
+    def comments(subsource = nil, **options)
+      statistics_data(subsource, "comments", options)
+    end
+
+    def downloads(subsource = nil, **options)
+      statistics_data(subsource, "downloads", options)
+    end
 
     private
 
     attr_reader :path_generator
 
     def entity_request
-      request = Semetric::GetRequest.new(path_generator.basic, API_KEY)
-      Semetric::Entity.new(request)
+      request(path_generator.basic, Semetric::Entity)
+    end
+
+    def statistics_data(subsource, datatype, options)
+      path = path_generator.data_type(subsource, datatype)
+      statistics_request = request(path, Semetric::Statistics)
+      statistics_request.data(options)
+    end
+
+    def request(path, klass)
+      request = Semetric::GetRequest.new(path, API_KEY)
+      klass.new(request)
     end
   end
 end

@@ -22,8 +22,72 @@ describe Semetric::Artist, vcr: false do
 
   describe "#images" do
     it "gets images with url's" do
-      image_class = artist.images.first.klass
-      expect(image_class).to eq "image"
+      url = artist.images.first.url
+      expect(url).to include "cloudfront"
+    end
+  end
+
+  describe "#fans" do
+    it "returns data without any subsource" do
+      expect(artist.fans.first).to be_an Integer
+    end
+
+    it "returns data for a subsource" do
+      fans_with_subsource = artist.fans('facebook').first
+      expect(fans_with_subsource).to be_an Integer
+    end
+
+    it "returns data with options" do
+      fans_with_granularity = artist.fans('facebook', granularity: 'week').first
+      expect(fans_with_granularity).to be_an Integer
+    end
+  end
+
+  describe "#plays" do
+    it "returns data without any subsource" do
+      expect(artist.plays.first).to be_an Integer
+    end
+
+    it "returns data for a subsource" do
+      plays_with_subsource = artist.plays('vevo').first
+      expect(plays_with_subsource).to be_an Integer
+    end
+
+    it "returns data with options" do
+      plays_with_granularity = artist.plays('vevo', granularity: 'week').first
+      expect(plays_with_granularity).to be_an Integer
+    end
+  end
+
+  describe "#views" do
+    it "returns data without any subsource" do
+      expect(artist.views.first).to be_an Integer
+    end
+
+    it "returns data for a subsource" do
+      plays_with_subsource = artist.views('wikipedia').first
+      expect(plays_with_subsource).to be_an Integer
+    end
+
+    it "returns data with options" do
+      plays_with_granularity = artist.views('wikipedia', granularity: 'week').first
+      expect(plays_with_granularity).to be_an Integer
+    end
+  end
+
+  describe "#downloads" do
+    it "returns data without any subsource" do
+      expect(artist.downloads.first).to be_an Integer
+    end
+
+    it "returns data for a subsource" do
+      downloads_with_subsource = artist.downloads('bittorrent').first
+      expect(downloads_with_subsource).to be_an Integer
+    end
+
+    it "returns data with options" do
+      downloads_with_granularity = artist.downloads('bittorrent', granularity: 'week').first
+      expect(downloads_with_granularity).to be_an Integer
     end
   end
 end

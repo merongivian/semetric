@@ -48,8 +48,8 @@ describe Semetric::Entity, vcr: true do
       specify { expect(entity.description).    to be_nil }
       specify { expect(entity.overview).       to include "band from Abingdon" }
       specify { expect(entity.available_until).to be_nil }
-      specify { expect(entity.rank).           to eq 651 }
-      specify { expect(entity.previous_rank).  to eq 675 }
+      specify { expect(entity.rank).           to eq 3365 }
+      specify { expect(entity.previous_rank).  to eq 3821 }
       specify { expect(entity.has_data).       to be true }
     end
   end
