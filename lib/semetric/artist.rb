@@ -36,12 +36,21 @@ module Semetric
       statistics_data(subsource, "downloads", options)
     end
 
+    def events(type)
+      event_data(type)
+    end
+
     private
 
     attr_reader :path_generator
 
     def entity_request
       request(path_generator.basic, Semetric::Entity)
+    end
+
+    def event_data(type)
+      path = path_generator.event(type)
+      request(path, Semetric::Event).data
     end
 
     def statistics_data(subsource, datatype, options)

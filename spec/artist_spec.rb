@@ -90,4 +90,11 @@ describe Semetric::Artist, vcr: false do
       expect(downloads_with_granularity).to be_an Integer
     end
   end
+
+  describe "#events" do
+    it "returns data as for a type of event" do
+      event = artist.events('release').first
+      expect(event["class"]).to eq "album"
+    end
+  end
 end
