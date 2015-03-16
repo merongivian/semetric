@@ -11,7 +11,7 @@ module Semetric
         basic + "location/#{type}"
       end
 
-      def age_gender(type)
+      def people_category(type)
         options = %w[age gender]
         check_options(options, type)
         basic + type

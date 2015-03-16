@@ -10,9 +10,10 @@ module Semetric
       self.api_key = api_key
     end
 
-    def response(field, **options)
+    def response(field = nil, **options)
       raise Semetric::Errors::DataNotFound if no_data_found?
       result = data(options)['response']
+      return result unless field
       result.fetch(field.to_s)
     end
 

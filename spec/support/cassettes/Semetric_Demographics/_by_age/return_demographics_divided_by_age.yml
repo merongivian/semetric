@@ -1,0 +1,129 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.semetric.com/artist/lastfm:ladytron/demographics/twitter/age?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Mar 2015 18:07:46 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '181'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server00; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"data": [{"age": "00-16", "percent": 0.01007194}, {"age":
+        "17-19", "percent": 0.1021583}, {"age": "20-24", "percent": 0.2302158}, {"age":
+        "25-29", "percent": 0.4273381}, {"age": "30-34", "percent": 0.1179856}, {"age":
+        "35-39", "percent": 0.05179856}, {"age": "40-49", "percent": 0.05179856},
+        {"age": "50-59", "percent": 0.005755396}, {"age": "60-69", "percent": 0.001438849},
+        {"age": "70-99", "percent": 0.001438849}]}, "success": true}'
+    http_version: 
+  recorded_at: Fri, 13 Mar 2015 18:07:48 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/artist/lastfm:ladytron/demographics/twitter/age?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Mar 2015 18:07:47 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '181'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"data": [{"age": "00-16", "percent": 0.01007194}, {"age":
+        "17-19", "percent": 0.1021583}, {"age": "20-24", "percent": 0.2302158}, {"age":
+        "25-29", "percent": 0.4273381}, {"age": "30-34", "percent": 0.1179856}, {"age":
+        "35-39", "percent": 0.05179856}, {"age": "40-49", "percent": 0.05179856},
+        {"age": "50-59", "percent": 0.005755396}, {"age": "60-69", "percent": 0.001438849},
+        {"age": "70-99", "percent": 0.001438849}]}, "success": true}'
+    http_version: 
+  recorded_at: Fri, 13 Mar 2015 18:07:48 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/artist/lastfm:ladytron/demographics/twitter/age?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Mar 2015 18:07:47 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '181'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server00; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"data": [{"age": "00-16", "percent": 0.01007194}, {"age":
+        "17-19", "percent": 0.1021583}, {"age": "20-24", "percent": 0.2302158}, {"age":
+        "25-29", "percent": 0.4273381}, {"age": "30-34", "percent": 0.1179856}, {"age":
+        "35-39", "percent": 0.05179856}, {"age": "40-49", "percent": 0.05179856},
+        {"age": "50-59", "percent": 0.005755396}, {"age": "60-69", "percent": 0.001438849},
+        {"age": "70-99", "percent": 0.001438849}]}, "success": true}'
+    http_version: 
+  recorded_at: Fri, 13 Mar 2015 18:07:49 GMT
+recorded_with: VCR 2.9.3

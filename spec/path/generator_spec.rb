@@ -96,8 +96,8 @@ describe Semetric::Path::Generator do
       let(:demographic_type) { "city" }
 
       it "returns a path for a location option" do
-        tipi = :location
-        expect(path.demographics subsource, demographic_type, tipi).
+        demographic_method = :location
+        expect(path.demographics subsource, demographic_type, demographic_method).
           to eq demographic_path
       end
     end
@@ -107,8 +107,8 @@ describe Semetric::Path::Generator do
       let(:demographic_type) { "age" }
 
       it "returns a path for a location option" do
-        tipi = :age_gender
-        expect(path.demographics subsource, demographic_type, tipi).
+        demographic_method = :people_category
+        expect(path.demographics subsource, demographic_type, demographic_method).
           to eq demographic_path
       end
     end

@@ -15,14 +15,14 @@ describe Semetric::Path::Demographic do
     end
   end
 
-  describe "#age_gender" do
+  describe "#people_category" do
     it "accepts only valid options" do
-      expect{ demographic_path.age_gender "gender" }.
+      expect{ demographic_path.people_category "gender" }.
         to_not raise_error
     end
 
     it "raises an error for an invalid option" do
-      expect{ demographic_path.age_gender "any option" }.
+      expect{ demographic_path.people_category "any option" }.
         to raise_error Semetric::Errors::Demographics::InvalidOption
     end
   end

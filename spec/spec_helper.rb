@@ -28,6 +28,7 @@ require 'semetric/get_request'
 require 'semetric/artist'
 require 'semetric/statistics'
 require 'semetric/event'
+require 'semetric/demographics'
 
 Coveralls.wear!
 

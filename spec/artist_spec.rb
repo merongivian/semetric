@@ -97,4 +97,16 @@ describe Semetric::Artist, vcr: false do
       expect(event["class"]).to eq "album"
     end
   end
+
+  describe "#demographics" do
+    it "returns data for a subsource and divided by country as default " do
+      demographic = artist.demographics('twitter').first
+      expect(demographic).to have_key "country"
+    end
+
+    it "returns data divided by age" do
+      demographic = artist.demographics('twitter', category: "age").first
+      expect(demographic["age"]).to eq "00-16"
+    end
+  end
 end
