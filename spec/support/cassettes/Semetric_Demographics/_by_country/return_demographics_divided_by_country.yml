@@ -1,0 +1,198 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.semetric.com/artist/lastfm:ladytron/demographics/twitter/location/country?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Mar 2015 17:38:14 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '463'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": [{"country": {"code": "US", "class": "country", "name":
+        "United States"}, "value": 887}, {"country": {"code": "GB", "class": "country",
+        "name": "United Kingdom"}, "value": 390}, {"country": {"code": "MX", "class":
+        "country", "name": "Mexico"}, "value": 317}, {"country": {"code": "CA", "class":
+        "country", "name": "Canada"}, "value": 158}, {"country": {"code": "CL", "class":
+        "country", "name": "Chile"}, "value": 138}, {"country": {"code": "AU", "class":
+        "country", "name": "Australia"}, "value": 69}, {"country": {"code": "BR",
+        "class": "country", "name": "Brazil"}, "value": 66}, {"country": {"code":
+        "ES", "class": "country", "name": "Spain"}, "value": 64}, {"country": {"code":
+        "IT", "class": "country", "name": "Italy"}, "value": 46}, {"country": {"code":
+        "DE", "class": "country", "name": "Germany"}, "value": 45}, {"country": {"code":
+        "SE", "class": "country", "name": "Sweden"}, "value": 38}, {"country": {"code":
+        "FR", "class": "country", "name": "France"}, "value": 32}, {"country": {"code":
+        "GR", "class": "country", "name": "Greece"}, "value": 31}, {"country": {"code":
+        "NL", "class": "country", "name": "Netherlands"}, "value": 28}, {"country":
+        {"code": "RS", "class": "country", "name": "Serbia"}, "value": 18}, {"country":
+        {"code": "FI", "class": "country", "name": "Finland"}, "value": 17}, {"country":
+        {"code": "ID", "class": "country", "name": "Indonesia"}, "value": 16}, {"country":
+        {"code": "BE", "class": "country", "name": "Belgium"}, "value": 15}, {"country":
+        {"code": "TR", "class": "country", "name": "Turkey"}, "value": 14}, {"country":
+        {"code": "EC", "class": "country", "name": "Ecuador"}, "value": 8}, {"country":
+        {"code": "AR", "class": "country", "name": "Argentina"}, "value": 7}, {"country":
+        {"code": "HK", "class": "country", "name": "Hong Kong"}, "value": 6}, {"country":
+        {"code": "ZA", "class": "country", "name": "South Africa"}, "value": 5}, {"country":
+        {"code": "BO", "class": "country", "name": "Bolivia"}, "value": 4}, {"country":
+        {"code": "DO", "class": "country", "name": "Dominican Republic"}, "value":
+        3}, {"country": {"code": "GE", "class": "country", "name": "Georgia"}, "value":
+        2}, {"country": {"code": "EE", "class": "country", "name": "Estonia"}, "value":
+        1}], "success": true}'
+    http_version: 
+  recorded_at: Fri, 13 Mar 2015 17:38:15 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/artist/lastfm:ladytron/demographics/twitter/location/country?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Mar 2015 17:38:14 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '463'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": [{"country": {"code": "US", "class": "country", "name":
+        "United States"}, "value": 887}, {"country": {"code": "GB", "class": "country",
+        "name": "United Kingdom"}, "value": 390}, {"country": {"code": "MX", "class":
+        "country", "name": "Mexico"}, "value": 317}, {"country": {"code": "CA", "class":
+        "country", "name": "Canada"}, "value": 158}, {"country": {"code": "CL", "class":
+        "country", "name": "Chile"}, "value": 138}, {"country": {"code": "AU", "class":
+        "country", "name": "Australia"}, "value": 69}, {"country": {"code": "BR",
+        "class": "country", "name": "Brazil"}, "value": 66}, {"country": {"code":
+        "ES", "class": "country", "name": "Spain"}, "value": 64}, {"country": {"code":
+        "IT", "class": "country", "name": "Italy"}, "value": 46}, {"country": {"code":
+        "DE", "class": "country", "name": "Germany"}, "value": 45}, {"country": {"code":
+        "SE", "class": "country", "name": "Sweden"}, "value": 38}, {"country": {"code":
+        "FR", "class": "country", "name": "France"}, "value": 32}, {"country": {"code":
+        "GR", "class": "country", "name": "Greece"}, "value": 31}, {"country": {"code":
+        "NL", "class": "country", "name": "Netherlands"}, "value": 28}, {"country":
+        {"code": "RS", "class": "country", "name": "Serbia"}, "value": 18}, {"country":
+        {"code": "FI", "class": "country", "name": "Finland"}, "value": 17}, {"country":
+        {"code": "ID", "class": "country", "name": "Indonesia"}, "value": 16}, {"country":
+        {"code": "BE", "class": "country", "name": "Belgium"}, "value": 15}, {"country":
+        {"code": "TR", "class": "country", "name": "Turkey"}, "value": 14}, {"country":
+        {"code": "EC", "class": "country", "name": "Ecuador"}, "value": 8}, {"country":
+        {"code": "AR", "class": "country", "name": "Argentina"}, "value": 7}, {"country":
+        {"code": "HK", "class": "country", "name": "Hong Kong"}, "value": 6}, {"country":
+        {"code": "ZA", "class": "country", "name": "South Africa"}, "value": 5}, {"country":
+        {"code": "BO", "class": "country", "name": "Bolivia"}, "value": 4}, {"country":
+        {"code": "DO", "class": "country", "name": "Dominican Republic"}, "value":
+        3}, {"country": {"code": "GE", "class": "country", "name": "Georgia"}, "value":
+        2}, {"country": {"code": "EE", "class": "country", "name": "Estonia"}, "value":
+        1}], "success": true}'
+    http_version: 
+  recorded_at: Fri, 13 Mar 2015 17:38:16 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/artist/lastfm:ladytron/demographics/twitter/location/country?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Mar 2015 17:38:15 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '463'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": [{"country": {"code": "US", "class": "country", "name":
+        "United States"}, "value": 887}, {"country": {"code": "GB", "class": "country",
+        "name": "United Kingdom"}, "value": 390}, {"country": {"code": "MX", "class":
+        "country", "name": "Mexico"}, "value": 317}, {"country": {"code": "CA", "class":
+        "country", "name": "Canada"}, "value": 158}, {"country": {"code": "CL", "class":
+        "country", "name": "Chile"}, "value": 138}, {"country": {"code": "AU", "class":
+        "country", "name": "Australia"}, "value": 69}, {"country": {"code": "BR",
+        "class": "country", "name": "Brazil"}, "value": 66}, {"country": {"code":
+        "ES", "class": "country", "name": "Spain"}, "value": 64}, {"country": {"code":
+        "IT", "class": "country", "name": "Italy"}, "value": 46}, {"country": {"code":
+        "DE", "class": "country", "name": "Germany"}, "value": 45}, {"country": {"code":
+        "SE", "class": "country", "name": "Sweden"}, "value": 38}, {"country": {"code":
+        "FR", "class": "country", "name": "France"}, "value": 32}, {"country": {"code":
+        "GR", "class": "country", "name": "Greece"}, "value": 31}, {"country": {"code":
+        "NL", "class": "country", "name": "Netherlands"}, "value": 28}, {"country":
+        {"code": "RS", "class": "country", "name": "Serbia"}, "value": 18}, {"country":
+        {"code": "FI", "class": "country", "name": "Finland"}, "value": 17}, {"country":
+        {"code": "ID", "class": "country", "name": "Indonesia"}, "value": 16}, {"country":
+        {"code": "BE", "class": "country", "name": "Belgium"}, "value": 15}, {"country":
+        {"code": "TR", "class": "country", "name": "Turkey"}, "value": 14}, {"country":
+        {"code": "EC", "class": "country", "name": "Ecuador"}, "value": 8}, {"country":
+        {"code": "AR", "class": "country", "name": "Argentina"}, "value": 7}, {"country":
+        {"code": "HK", "class": "country", "name": "Hong Kong"}, "value": 6}, {"country":
+        {"code": "ZA", "class": "country", "name": "South Africa"}, "value": 5}, {"country":
+        {"code": "BO", "class": "country", "name": "Bolivia"}, "value": 4}, {"country":
+        {"code": "DO", "class": "country", "name": "Dominican Republic"}, "value":
+        3}, {"country": {"code": "GE", "class": "country", "name": "Georgia"}, "value":
+        2}, {"country": {"code": "EE", "class": "country", "name": "Estonia"}, "value":
+        1}], "success": true}'
+    http_version: 
+  recorded_at: Fri, 13 Mar 2015 17:38:16 GMT
+recorded_with: VCR 2.9.3

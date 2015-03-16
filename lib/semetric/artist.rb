@@ -6,6 +6,7 @@ module Semetric
       @path_generator = Semetric::Path::Generator.new(type: 'artist',
                                                       source: 'lastfm',
                                                       id: name)
+      @name = name
     end
 
     def bio
@@ -34,6 +35,11 @@ module Semetric
 
     def downloads(subsource = nil, **options)
       statistics_data(subsource, "downloads", options)
+    end
+
+    def demographics(subsource, category: "country")
+      demographics_request = Semetric::Demographics.new(subsource, @name)
+      demographics_request.public_send("by_#{category}")
     end
 
     def events(type)

@@ -70,9 +70,9 @@ module Semetric
         basic + "/#{event_type}/"
       end
 
-      def demographics(subsource, demographic_type, tipi)
+      def demographics(subsource, demographic_type, method_name)
         dem_path = Demographic.new(subsource)
-        basic + dem_path.send(tipi, demographic_type)
+        basic + dem_path.send(method_name, demographic_type)
       end
     end
   end

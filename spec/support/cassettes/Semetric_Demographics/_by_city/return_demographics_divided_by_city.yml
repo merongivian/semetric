@@ -1,0 +1,495 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.semetric.com/artist/lastfm:ladytron/demographics/twitter/location/city?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Mar 2015 17:47:32 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2147'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": [{"city": {"latitude": "19.428470611572266", "region":
+        {"country": {"code": "MX", "class": "country", "name": "Mexico"}, "class":
+        "region", "name": "Distrito Federal"}, "class": "city", "longitude": "-99.1276626587",
+        "name": "Mexico City"}, "value": 233}, {"city": {"latitude": "51.50852966308594",
+        "region": {"country": {"code": "GB", "class": "country", "name": "United Kingdom"},
+        "class": "region", "name": "England, Greater London"}, "class": "city", "longitude":
+        "-0.12574000656604767", "name": "London"}, "value": 167}, {"city": {"latitude":
+        "34.05223083496094", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "California, Los Angeles
+        County"}, "class": "city", "longitude": "-118.24368286132812", "name": "Los
+        Angeles"}, "value": 123}, {"city": {"latitude": "-33.456939697265625", "region":
+        {"country": {"code": "CL", "class": "country", "name": "Chile"}, "class":
+        "region", "name": "Regi\u00f3n Metropolitana de Santiago, Provincia de Santiago,
+        Santiago"}, "class": "city", "longitude": "-70.64826965332031", "name": "Santiago"},
+        "value": 106}, {"city": {"latitude": "40.714271545410156", "region": {"country":
+        {"code": "US", "class": "country", "name": "United States"}, "class": "region",
+        "name": "New York"}, "class": "city", "longitude": "-74.00596618652344", "name":
+        "New York City"}, "value": 85}, {"city": {"latitude": "41.85002899169922",
+        "region": {"country": {"code": "US", "class": "country", "name": "United States"},
+        "class": "region", "name": "Illinois, Cook County"}, "class": "city", "longitude":
+        "-87.6500473022", "name": "Chicago"}, "value": 68}, {"city": {"latitude":
+        "53.410579681396484", "region": {"country": {"code": "GB", "class": "country",
+        "name": "United Kingdom"}, "class": "region", "name": "England, City and Borough
+        of Liverpool"}, "class": "city", "longitude": "-2.977940082550049", "name":
+        "Liverpool"}, "value": 43}, {"city": {"latitude": "4.609710216522217", "region":
+        {"country": {"code": "CO", "class": "country", "name": "Colombia"}, "class":
+        "region", "name": "Distrito Capital de Bogot\u00e1"}, "class": "city", "longitude":
+        "-74.08174896240234", "name": "Bogot\u00e1"}, "value": 40}, {"city": {"latitude":
+        "47.60620880126953", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "Washington, King County"},
+        "class": "city", "longitude": "-122.33206939697266", "name": "Seattle"}, "value":
+        36}, {"city": {"latitude": "37.77492904663086", "region": {"country": {"code":
+        "US", "class": "country", "name": "United States"}, "class": "region", "name":
+        "California, San Francisco County"}, "class": "city", "longitude": "-122.41941833496094",
+        "name": "San Francisco"}, "value": 33}, {"city": {"latitude": "40.65010070800781",
+        "region": {"country": {"code": "US", "class": "country", "name": "United States"},
+        "class": "region", "name": "New York, Kings County"}, "class": "city", "longitude":
+        "-73.94957733154297", "name": "Brooklyn"}, "value": 31}, {"city": {"latitude":
+        "32.715328216552734", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "California, San Diego
+        County"}, "class": "city", "longitude": "-117.15725708007812", "name": "San
+        Diego"}, "value": 30}, {"city": {"latitude": "49.24966049194336", "region":
+        {"country": {"code": "CA", "class": "country", "name": "Canada"}, "class":
+        "region", "name": "British Columbia"}, "class": "city", "longitude": "-123.11933898925781",
+        "name": "Vancouver"}, "value": 29}, {"city": {"latitude": "-23.547500610351562",
+        "region": {"country": {"code": "BR", "class": "country", "name": "Brazil"},
+        "class": "region", "name": "Estado de S\u00e3o Paulo, S\u00e3o Paulo"}, "class":
+        "city", "longitude": "-46.6361083984", "name": "S\u00e3o Paulo"}, "value":
+        27}, {"city": {"latitude": "53.48094940185547", "region": {"country": {"code":
+        "GB", "class": "country", "name": "United Kingdom"}, "class": "region", "name":
+        "England, City and Borough of Manchester"}, "class": "city", "longitude":
+        "-2.2374300956726074", "name": "Manchester"}, "value": 26}, {"city": {"latitude":
+        "-37.81399917602539", "region": {"country": {"code": "AU", "class": "country",
+        "name": "Australia"}, "class": "region", "name": "State of Victoria, Melbourne"},
+        "class": "city", "longitude": "144.96331787109375", "name": "Melbourne"},
+        "value": 24}, {"city": {"latitude": "-12.043180465698242", "region": {"country":
+        {"code": "PE", "class": "country", "name": "Peru"}, "class": "region", "name":
+        "Provincia de Lima"}, "class": "city", "longitude": "-77.02823638916016",
+        "name": "Lima"}, "value": 22}, {"city": {"latitude": "37.97945022583008",
+        "region": {"country": {"code": "GR", "class": "country", "name": "Greece"},
+        "class": "region", "name": "Attica, Nomarch\u00eda Ath\u00ednas, Dimos Athens"},
+        "class": "city", "longitude": "23.71622085571289", "name": "Athens"}, "value":
+        21}, {"city": {"latitude": "32.783058166503906", "region": {"country": {"code":
+        "US", "class": "country", "name": "United States"}, "class": "region", "name":
+        "Texas, Dallas County"}, "class": "city", "longitude": "-96.80667114257812",
+        "name": "Dallas"}, "value": 20}, {"city": {"latitude": "45.5234489441", "region":
+        {"country": {"code": "US", "class": "country", "name": "United States"}, "class":
+        "region", "name": "Oregon, Multnomah County"}, "class": "city", "longitude":
+        "-122.67620849609375", "name": "Portland"}, "value": 19}, {"city": {"latitude":
+        "39.73915100097656", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "Colorado, Denver County"},
+        "class": "city", "longitude": "-104.98470306396484", "name": "Denver"}, "value":
+        18}, {"city": {"latitude": "39.95233917236328", "region": {"country": {"code":
+        "US", "class": "country", "name": "United States"}, "class": "region", "name":
+        "Pennsylvania, Philadelphia County"}, "class": "city", "longitude": "-75.16378784179688",
+        "name": "Philadelphia"}, "value": 17}, {"city": {"latitude": "29.763280868530273",
+        "region": {"country": {"code": "US", "class": "country", "name": "United States"},
+        "class": "region", "name": "Texas, Harris County"}, "class": "city", "longitude":
+        "-95.36327362060547", "name": "Houston"}, "value": 16}, {"city": {"latitude":
+        "48.85340881347656", "region": {"country": {"code": "FR", "class": "country",
+        "name": "France"}, "class": "region", "name": "R\u00e9gion \u00cele-de-France,
+        Paris, Paris, Paris"}, "class": "city", "longitude": "2.34879994392", "name":
+        "Paris"}, "value": 15}, {"city": {"latitude": "51.05010986328125", "region":
+        {"country": {"code": "CA", "class": "country", "name": "Canada"}, "class":
+        "region", "name": "Alberta"}, "class": "city", "longitude": "-114.08528900146484",
+        "name": "Calgary"}, "value": 14}, {"city": {"latitude": "19.043340683", "region":
+        {"country": {"code": "MX", "class": "country", "name": "Mexico"}, "class":
+        "region", "name": "Estado de Puebla"}, "class": "city", "longitude": "-98.2019271851",
+        "name": "Puebla de Zaragoza"}, "value": 13}, {"city": {"latitude": "44.80400848388672",
+        "region": {"country": {"code": "RS", "class": "country", "name": "Serbia"},
+        "class": "region", "name": "Central Serbia"}, "class": "city", "longitude":
+        "20.465129852294922", "name": "Belgrade"}, "value": 11}, {"city": {"latitude":
+        "52.48141860961914", "region": {"country": {"code": "GB", "class": "country",
+        "name": "United Kingdom"}, "class": "region", "name": "England, City and Borough
+        of Birmingham"}, "class": "city", "longitude": "-1.8998299837112427", "name":
+        "Birmingham"}, "value": 10}, {"city": {"latitude": "32.50270080566406", "region":
+        {"country": {"code": "MX", "class": "country", "name": "Mexico"}, "class":
+        "region", "name": "Estado de Baja California"}, "class": "city", "longitude":
+        "-117.00370788574219", "name": "Tijuana"}, "value": 9}, {"city": {"latitude":
+        "-27.467939376831055", "region": {"country": {"code": "AU", "class": "country",
+        "name": "Australia"}, "class": "region", "name": "State of Queensland, Brisbane"},
+        "class": "city", "longitude": "153.02809143066406", "name": "Brisbane"}, "value":
+        8}, {"city": {"latitude": "54.97328186035156", "region": {"country": {"code":
+        "GB", "class": "country", "name": "United Kingdom"}, "class": "region", "name":
+        "England, City and Borough of Newcastle upon Tyne"}, "class": "city", "longitude":
+        "-1.6139600276947021", "name": "Newcastle upon Tyne"}, "value": 7}, {"city":
+        {"latitude": "55.95206069946289", "region": {"country": {"code": "GB", "class":
+        "country", "name": "United Kingdom"}, "class": "region", "name": "Scotland,
+        City of Edinburgh"}, "class": "city", "longitude": "-3.1964800357818604",
+        "name": "Edinburgh"}, "value": 6}, {"city": {"latitude": "42.886451721191406",
+        "region": {"country": {"code": "US", "class": "country", "name": "United States"},
+        "class": "region", "name": "New York, Erie County"}, "class": "city", "longitude":
+        "-78.87837219238281", "name": "Buffalo"}, "value": 5}, {"city": {"latitude":
+        "31.75872039794922", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "Texas, El Paso County"},
+        "class": "city", "longitude": "-106.48693084716797", "name": "El Paso"}, "value":
+        4}, {"city": {"latitude": "43.03889846801758", "region": {"country": {"code":
+        "US", "class": "country", "name": "United States"}, "class": "region", "name":
+        "Wisconsin, Milwaukee County"}, "class": "city", "longitude": "-87.9064712524",
+        "name": "Milwaukee"}, "value": 3}, {"city": {"latitude": "-38.73965072631836",
+        "region": {"country": {"code": "CL", "class": "country", "name": "Chile"},
+        "class": "region", "name": "Regi\u00f3n de la Araucan\u00eda, Provincia de
+        Caut\u00edn, Temuco"}, "class": "city", "longitude": "-72.59841918945312",
+        "name": "Temuco"}, "value": 2}, {"city": {"latitude": "47.16667175292969",
+        "region": {"country": {"code": "RO", "class": "country", "name": "Romania"},
+        "class": "region", "name": "Jude\u0163ul Ia\u015fi, Municipiul Ia\u015fi"},
+        "class": "city", "longitude": "27.600000381469727", "name": "Ia\u015fi"},
+        "value": 1}], "success": true}'
+    http_version: 
+  recorded_at: Fri, 13 Mar 2015 17:47:34 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/artist/lastfm:ladytron/demographics/twitter/location/city?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Mar 2015 17:47:33 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2147'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server00; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": [{"city": {"latitude": "19.428470611572266", "region":
+        {"country": {"code": "MX", "class": "country", "name": "Mexico"}, "class":
+        "region", "name": "Distrito Federal"}, "class": "city", "longitude": "-99.1276626587",
+        "name": "Mexico City"}, "value": 233}, {"city": {"latitude": "51.50852966308594",
+        "region": {"country": {"code": "GB", "class": "country", "name": "United Kingdom"},
+        "class": "region", "name": "England, Greater London"}, "class": "city", "longitude":
+        "-0.12574000656604767", "name": "London"}, "value": 167}, {"city": {"latitude":
+        "34.05223083496094", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "California, Los Angeles
+        County"}, "class": "city", "longitude": "-118.24368286132812", "name": "Los
+        Angeles"}, "value": 123}, {"city": {"latitude": "-33.456939697265625", "region":
+        {"country": {"code": "CL", "class": "country", "name": "Chile"}, "class":
+        "region", "name": "Regi\u00f3n Metropolitana de Santiago, Provincia de Santiago,
+        Santiago"}, "class": "city", "longitude": "-70.64826965332031", "name": "Santiago"},
+        "value": 106}, {"city": {"latitude": "40.714271545410156", "region": {"country":
+        {"code": "US", "class": "country", "name": "United States"}, "class": "region",
+        "name": "New York"}, "class": "city", "longitude": "-74.00596618652344", "name":
+        "New York City"}, "value": 85}, {"city": {"latitude": "41.85002899169922",
+        "region": {"country": {"code": "US", "class": "country", "name": "United States"},
+        "class": "region", "name": "Illinois, Cook County"}, "class": "city", "longitude":
+        "-87.6500473022", "name": "Chicago"}, "value": 68}, {"city": {"latitude":
+        "53.410579681396484", "region": {"country": {"code": "GB", "class": "country",
+        "name": "United Kingdom"}, "class": "region", "name": "England, City and Borough
+        of Liverpool"}, "class": "city", "longitude": "-2.977940082550049", "name":
+        "Liverpool"}, "value": 43}, {"city": {"latitude": "4.609710216522217", "region":
+        {"country": {"code": "CO", "class": "country", "name": "Colombia"}, "class":
+        "region", "name": "Distrito Capital de Bogot\u00e1"}, "class": "city", "longitude":
+        "-74.08174896240234", "name": "Bogot\u00e1"}, "value": 40}, {"city": {"latitude":
+        "47.60620880126953", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "Washington, King County"},
+        "class": "city", "longitude": "-122.33206939697266", "name": "Seattle"}, "value":
+        36}, {"city": {"latitude": "37.77492904663086", "region": {"country": {"code":
+        "US", "class": "country", "name": "United States"}, "class": "region", "name":
+        "California, San Francisco County"}, "class": "city", "longitude": "-122.41941833496094",
+        "name": "San Francisco"}, "value": 33}, {"city": {"latitude": "40.65010070800781",
+        "region": {"country": {"code": "US", "class": "country", "name": "United States"},
+        "class": "region", "name": "New York, Kings County"}, "class": "city", "longitude":
+        "-73.94957733154297", "name": "Brooklyn"}, "value": 31}, {"city": {"latitude":
+        "32.715328216552734", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "California, San Diego
+        County"}, "class": "city", "longitude": "-117.15725708007812", "name": "San
+        Diego"}, "value": 30}, {"city": {"latitude": "49.24966049194336", "region":
+        {"country": {"code": "CA", "class": "country", "name": "Canada"}, "class":
+        "region", "name": "British Columbia"}, "class": "city", "longitude": "-123.11933898925781",
+        "name": "Vancouver"}, "value": 29}, {"city": {"latitude": "-23.547500610351562",
+        "region": {"country": {"code": "BR", "class": "country", "name": "Brazil"},
+        "class": "region", "name": "Estado de S\u00e3o Paulo, S\u00e3o Paulo"}, "class":
+        "city", "longitude": "-46.6361083984", "name": "S\u00e3o Paulo"}, "value":
+        27}, {"city": {"latitude": "53.48094940185547", "region": {"country": {"code":
+        "GB", "class": "country", "name": "United Kingdom"}, "class": "region", "name":
+        "England, City and Borough of Manchester"}, "class": "city", "longitude":
+        "-2.2374300956726074", "name": "Manchester"}, "value": 26}, {"city": {"latitude":
+        "-37.81399917602539", "region": {"country": {"code": "AU", "class": "country",
+        "name": "Australia"}, "class": "region", "name": "State of Victoria, Melbourne"},
+        "class": "city", "longitude": "144.96331787109375", "name": "Melbourne"},
+        "value": 24}, {"city": {"latitude": "-12.043180465698242", "region": {"country":
+        {"code": "PE", "class": "country", "name": "Peru"}, "class": "region", "name":
+        "Provincia de Lima"}, "class": "city", "longitude": "-77.02823638916016",
+        "name": "Lima"}, "value": 22}, {"city": {"latitude": "37.97945022583008",
+        "region": {"country": {"code": "GR", "class": "country", "name": "Greece"},
+        "class": "region", "name": "Attica, Nomarch\u00eda Ath\u00ednas, Dimos Athens"},
+        "class": "city", "longitude": "23.71622085571289", "name": "Athens"}, "value":
+        21}, {"city": {"latitude": "32.783058166503906", "region": {"country": {"code":
+        "US", "class": "country", "name": "United States"}, "class": "region", "name":
+        "Texas, Dallas County"}, "class": "city", "longitude": "-96.80667114257812",
+        "name": "Dallas"}, "value": 20}, {"city": {"latitude": "45.5234489441", "region":
+        {"country": {"code": "US", "class": "country", "name": "United States"}, "class":
+        "region", "name": "Oregon, Multnomah County"}, "class": "city", "longitude":
+        "-122.67620849609375", "name": "Portland"}, "value": 19}, {"city": {"latitude":
+        "39.73915100097656", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "Colorado, Denver County"},
+        "class": "city", "longitude": "-104.98470306396484", "name": "Denver"}, "value":
+        18}, {"city": {"latitude": "39.95233917236328", "region": {"country": {"code":
+        "US", "class": "country", "name": "United States"}, "class": "region", "name":
+        "Pennsylvania, Philadelphia County"}, "class": "city", "longitude": "-75.16378784179688",
+        "name": "Philadelphia"}, "value": 17}, {"city": {"latitude": "29.763280868530273",
+        "region": {"country": {"code": "US", "class": "country", "name": "United States"},
+        "class": "region", "name": "Texas, Harris County"}, "class": "city", "longitude":
+        "-95.36327362060547", "name": "Houston"}, "value": 16}, {"city": {"latitude":
+        "48.85340881347656", "region": {"country": {"code": "FR", "class": "country",
+        "name": "France"}, "class": "region", "name": "R\u00e9gion \u00cele-de-France,
+        Paris, Paris, Paris"}, "class": "city", "longitude": "2.34879994392", "name":
+        "Paris"}, "value": 15}, {"city": {"latitude": "51.05010986328125", "region":
+        {"country": {"code": "CA", "class": "country", "name": "Canada"}, "class":
+        "region", "name": "Alberta"}, "class": "city", "longitude": "-114.08528900146484",
+        "name": "Calgary"}, "value": 14}, {"city": {"latitude": "19.043340683", "region":
+        {"country": {"code": "MX", "class": "country", "name": "Mexico"}, "class":
+        "region", "name": "Estado de Puebla"}, "class": "city", "longitude": "-98.2019271851",
+        "name": "Puebla de Zaragoza"}, "value": 13}, {"city": {"latitude": "44.80400848388672",
+        "region": {"country": {"code": "RS", "class": "country", "name": "Serbia"},
+        "class": "region", "name": "Central Serbia"}, "class": "city", "longitude":
+        "20.465129852294922", "name": "Belgrade"}, "value": 11}, {"city": {"latitude":
+        "52.48141860961914", "region": {"country": {"code": "GB", "class": "country",
+        "name": "United Kingdom"}, "class": "region", "name": "England, City and Borough
+        of Birmingham"}, "class": "city", "longitude": "-1.8998299837112427", "name":
+        "Birmingham"}, "value": 10}, {"city": {"latitude": "32.50270080566406", "region":
+        {"country": {"code": "MX", "class": "country", "name": "Mexico"}, "class":
+        "region", "name": "Estado de Baja California"}, "class": "city", "longitude":
+        "-117.00370788574219", "name": "Tijuana"}, "value": 9}, {"city": {"latitude":
+        "-27.467939376831055", "region": {"country": {"code": "AU", "class": "country",
+        "name": "Australia"}, "class": "region", "name": "State of Queensland, Brisbane"},
+        "class": "city", "longitude": "153.02809143066406", "name": "Brisbane"}, "value":
+        8}, {"city": {"latitude": "54.97328186035156", "region": {"country": {"code":
+        "GB", "class": "country", "name": "United Kingdom"}, "class": "region", "name":
+        "England, City and Borough of Newcastle upon Tyne"}, "class": "city", "longitude":
+        "-1.6139600276947021", "name": "Newcastle upon Tyne"}, "value": 7}, {"city":
+        {"latitude": "55.95206069946289", "region": {"country": {"code": "GB", "class":
+        "country", "name": "United Kingdom"}, "class": "region", "name": "Scotland,
+        City of Edinburgh"}, "class": "city", "longitude": "-3.1964800357818604",
+        "name": "Edinburgh"}, "value": 6}, {"city": {"latitude": "42.886451721191406",
+        "region": {"country": {"code": "US", "class": "country", "name": "United States"},
+        "class": "region", "name": "New York, Erie County"}, "class": "city", "longitude":
+        "-78.87837219238281", "name": "Buffalo"}, "value": 5}, {"city": {"latitude":
+        "31.75872039794922", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "Texas, El Paso County"},
+        "class": "city", "longitude": "-106.48693084716797", "name": "El Paso"}, "value":
+        4}, {"city": {"latitude": "43.03889846801758", "region": {"country": {"code":
+        "US", "class": "country", "name": "United States"}, "class": "region", "name":
+        "Wisconsin, Milwaukee County"}, "class": "city", "longitude": "-87.9064712524",
+        "name": "Milwaukee"}, "value": 3}, {"city": {"latitude": "-38.73965072631836",
+        "region": {"country": {"code": "CL", "class": "country", "name": "Chile"},
+        "class": "region", "name": "Regi\u00f3n de la Araucan\u00eda, Provincia de
+        Caut\u00edn, Temuco"}, "class": "city", "longitude": "-72.59841918945312",
+        "name": "Temuco"}, "value": 2}, {"city": {"latitude": "47.16667175292969",
+        "region": {"country": {"code": "RO", "class": "country", "name": "Romania"},
+        "class": "region", "name": "Jude\u0163ul Ia\u015fi, Municipiul Ia\u015fi"},
+        "class": "city", "longitude": "27.600000381469727", "name": "Ia\u015fi"},
+        "value": 1}], "success": true}'
+    http_version: 
+  recorded_at: Fri, 13 Mar 2015 17:47:35 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/artist/lastfm:ladytron/demographics/twitter/location/city?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Mar 2015 17:47:33 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2147'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": [{"city": {"latitude": "19.428470611572266", "region":
+        {"country": {"code": "MX", "class": "country", "name": "Mexico"}, "class":
+        "region", "name": "Distrito Federal"}, "class": "city", "longitude": "-99.1276626587",
+        "name": "Mexico City"}, "value": 233}, {"city": {"latitude": "51.50852966308594",
+        "region": {"country": {"code": "GB", "class": "country", "name": "United Kingdom"},
+        "class": "region", "name": "England, Greater London"}, "class": "city", "longitude":
+        "-0.12574000656604767", "name": "London"}, "value": 167}, {"city": {"latitude":
+        "34.05223083496094", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "California, Los Angeles
+        County"}, "class": "city", "longitude": "-118.24368286132812", "name": "Los
+        Angeles"}, "value": 123}, {"city": {"latitude": "-33.456939697265625", "region":
+        {"country": {"code": "CL", "class": "country", "name": "Chile"}, "class":
+        "region", "name": "Regi\u00f3n Metropolitana de Santiago, Provincia de Santiago,
+        Santiago"}, "class": "city", "longitude": "-70.64826965332031", "name": "Santiago"},
+        "value": 106}, {"city": {"latitude": "40.714271545410156", "region": {"country":
+        {"code": "US", "class": "country", "name": "United States"}, "class": "region",
+        "name": "New York"}, "class": "city", "longitude": "-74.00596618652344", "name":
+        "New York City"}, "value": 85}, {"city": {"latitude": "41.85002899169922",
+        "region": {"country": {"code": "US", "class": "country", "name": "United States"},
+        "class": "region", "name": "Illinois, Cook County"}, "class": "city", "longitude":
+        "-87.6500473022", "name": "Chicago"}, "value": 68}, {"city": {"latitude":
+        "53.410579681396484", "region": {"country": {"code": "GB", "class": "country",
+        "name": "United Kingdom"}, "class": "region", "name": "England, City and Borough
+        of Liverpool"}, "class": "city", "longitude": "-2.977940082550049", "name":
+        "Liverpool"}, "value": 43}, {"city": {"latitude": "4.609710216522217", "region":
+        {"country": {"code": "CO", "class": "country", "name": "Colombia"}, "class":
+        "region", "name": "Distrito Capital de Bogot\u00e1"}, "class": "city", "longitude":
+        "-74.08174896240234", "name": "Bogot\u00e1"}, "value": 40}, {"city": {"latitude":
+        "47.60620880126953", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "Washington, King County"},
+        "class": "city", "longitude": "-122.33206939697266", "name": "Seattle"}, "value":
+        36}, {"city": {"latitude": "37.77492904663086", "region": {"country": {"code":
+        "US", "class": "country", "name": "United States"}, "class": "region", "name":
+        "California, San Francisco County"}, "class": "city", "longitude": "-122.41941833496094",
+        "name": "San Francisco"}, "value": 33}, {"city": {"latitude": "40.65010070800781",
+        "region": {"country": {"code": "US", "class": "country", "name": "United States"},
+        "class": "region", "name": "New York, Kings County"}, "class": "city", "longitude":
+        "-73.94957733154297", "name": "Brooklyn"}, "value": 31}, {"city": {"latitude":
+        "32.715328216552734", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "California, San Diego
+        County"}, "class": "city", "longitude": "-117.15725708007812", "name": "San
+        Diego"}, "value": 30}, {"city": {"latitude": "49.24966049194336", "region":
+        {"country": {"code": "CA", "class": "country", "name": "Canada"}, "class":
+        "region", "name": "British Columbia"}, "class": "city", "longitude": "-123.11933898925781",
+        "name": "Vancouver"}, "value": 29}, {"city": {"latitude": "-23.547500610351562",
+        "region": {"country": {"code": "BR", "class": "country", "name": "Brazil"},
+        "class": "region", "name": "Estado de S\u00e3o Paulo, S\u00e3o Paulo"}, "class":
+        "city", "longitude": "-46.6361083984", "name": "S\u00e3o Paulo"}, "value":
+        27}, {"city": {"latitude": "53.48094940185547", "region": {"country": {"code":
+        "GB", "class": "country", "name": "United Kingdom"}, "class": "region", "name":
+        "England, City and Borough of Manchester"}, "class": "city", "longitude":
+        "-2.2374300956726074", "name": "Manchester"}, "value": 26}, {"city": {"latitude":
+        "-37.81399917602539", "region": {"country": {"code": "AU", "class": "country",
+        "name": "Australia"}, "class": "region", "name": "State of Victoria, Melbourne"},
+        "class": "city", "longitude": "144.96331787109375", "name": "Melbourne"},
+        "value": 24}, {"city": {"latitude": "-12.043180465698242", "region": {"country":
+        {"code": "PE", "class": "country", "name": "Peru"}, "class": "region", "name":
+        "Provincia de Lima"}, "class": "city", "longitude": "-77.02823638916016",
+        "name": "Lima"}, "value": 22}, {"city": {"latitude": "37.97945022583008",
+        "region": {"country": {"code": "GR", "class": "country", "name": "Greece"},
+        "class": "region", "name": "Attica, Nomarch\u00eda Ath\u00ednas, Dimos Athens"},
+        "class": "city", "longitude": "23.71622085571289", "name": "Athens"}, "value":
+        21}, {"city": {"latitude": "32.783058166503906", "region": {"country": {"code":
+        "US", "class": "country", "name": "United States"}, "class": "region", "name":
+        "Texas, Dallas County"}, "class": "city", "longitude": "-96.80667114257812",
+        "name": "Dallas"}, "value": 20}, {"city": {"latitude": "45.5234489441", "region":
+        {"country": {"code": "US", "class": "country", "name": "United States"}, "class":
+        "region", "name": "Oregon, Multnomah County"}, "class": "city", "longitude":
+        "-122.67620849609375", "name": "Portland"}, "value": 19}, {"city": {"latitude":
+        "39.73915100097656", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "Colorado, Denver County"},
+        "class": "city", "longitude": "-104.98470306396484", "name": "Denver"}, "value":
+        18}, {"city": {"latitude": "39.95233917236328", "region": {"country": {"code":
+        "US", "class": "country", "name": "United States"}, "class": "region", "name":
+        "Pennsylvania, Philadelphia County"}, "class": "city", "longitude": "-75.16378784179688",
+        "name": "Philadelphia"}, "value": 17}, {"city": {"latitude": "29.763280868530273",
+        "region": {"country": {"code": "US", "class": "country", "name": "United States"},
+        "class": "region", "name": "Texas, Harris County"}, "class": "city", "longitude":
+        "-95.36327362060547", "name": "Houston"}, "value": 16}, {"city": {"latitude":
+        "48.85340881347656", "region": {"country": {"code": "FR", "class": "country",
+        "name": "France"}, "class": "region", "name": "R\u00e9gion \u00cele-de-France,
+        Paris, Paris, Paris"}, "class": "city", "longitude": "2.34879994392", "name":
+        "Paris"}, "value": 15}, {"city": {"latitude": "51.05010986328125", "region":
+        {"country": {"code": "CA", "class": "country", "name": "Canada"}, "class":
+        "region", "name": "Alberta"}, "class": "city", "longitude": "-114.08528900146484",
+        "name": "Calgary"}, "value": 14}, {"city": {"latitude": "19.043340683", "region":
+        {"country": {"code": "MX", "class": "country", "name": "Mexico"}, "class":
+        "region", "name": "Estado de Puebla"}, "class": "city", "longitude": "-98.2019271851",
+        "name": "Puebla de Zaragoza"}, "value": 13}, {"city": {"latitude": "44.80400848388672",
+        "region": {"country": {"code": "RS", "class": "country", "name": "Serbia"},
+        "class": "region", "name": "Central Serbia"}, "class": "city", "longitude":
+        "20.465129852294922", "name": "Belgrade"}, "value": 11}, {"city": {"latitude":
+        "52.48141860961914", "region": {"country": {"code": "GB", "class": "country",
+        "name": "United Kingdom"}, "class": "region", "name": "England, City and Borough
+        of Birmingham"}, "class": "city", "longitude": "-1.8998299837112427", "name":
+        "Birmingham"}, "value": 10}, {"city": {"latitude": "32.50270080566406", "region":
+        {"country": {"code": "MX", "class": "country", "name": "Mexico"}, "class":
+        "region", "name": "Estado de Baja California"}, "class": "city", "longitude":
+        "-117.00370788574219", "name": "Tijuana"}, "value": 9}, {"city": {"latitude":
+        "-27.467939376831055", "region": {"country": {"code": "AU", "class": "country",
+        "name": "Australia"}, "class": "region", "name": "State of Queensland, Brisbane"},
+        "class": "city", "longitude": "153.02809143066406", "name": "Brisbane"}, "value":
+        8}, {"city": {"latitude": "54.97328186035156", "region": {"country": {"code":
+        "GB", "class": "country", "name": "United Kingdom"}, "class": "region", "name":
+        "England, City and Borough of Newcastle upon Tyne"}, "class": "city", "longitude":
+        "-1.6139600276947021", "name": "Newcastle upon Tyne"}, "value": 7}, {"city":
+        {"latitude": "55.95206069946289", "region": {"country": {"code": "GB", "class":
+        "country", "name": "United Kingdom"}, "class": "region", "name": "Scotland,
+        City of Edinburgh"}, "class": "city", "longitude": "-3.1964800357818604",
+        "name": "Edinburgh"}, "value": 6}, {"city": {"latitude": "42.886451721191406",
+        "region": {"country": {"code": "US", "class": "country", "name": "United States"},
+        "class": "region", "name": "New York, Erie County"}, "class": "city", "longitude":
+        "-78.87837219238281", "name": "Buffalo"}, "value": 5}, {"city": {"latitude":
+        "31.75872039794922", "region": {"country": {"code": "US", "class": "country",
+        "name": "United States"}, "class": "region", "name": "Texas, El Paso County"},
+        "class": "city", "longitude": "-106.48693084716797", "name": "El Paso"}, "value":
+        4}, {"city": {"latitude": "43.03889846801758", "region": {"country": {"code":
+        "US", "class": "country", "name": "United States"}, "class": "region", "name":
+        "Wisconsin, Milwaukee County"}, "class": "city", "longitude": "-87.9064712524",
+        "name": "Milwaukee"}, "value": 3}, {"city": {"latitude": "-38.73965072631836",
+        "region": {"country": {"code": "CL", "class": "country", "name": "Chile"},
+        "class": "region", "name": "Regi\u00f3n de la Araucan\u00eda, Provincia de
+        Caut\u00edn, Temuco"}, "class": "city", "longitude": "-72.59841918945312",
+        "name": "Temuco"}, "value": 2}, {"city": {"latitude": "47.16667175292969",
+        "region": {"country": {"code": "RO", "class": "country", "name": "Romania"},
+        "class": "region", "name": "Jude\u0163ul Ia\u015fi, Municipiul Ia\u015fi"},
+        "class": "city", "longitude": "27.600000381469727", "name": "Ia\u015fi"},
+        "value": 1}], "success": true}'
+    http_version: 
+  recorded_at: Fri, 13 Mar 2015 17:47:35 GMT
+recorded_with: VCR 2.9.3
