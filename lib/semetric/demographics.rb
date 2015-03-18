@@ -1,5 +1,7 @@
 module Semetric
   class Demographics
+    LOCATION_TYPES = %w(country city)
+
     def initialize(subsource, name)
       @subsource = subsource
       @path_generator = Semetric::Path::Generator.new(type: 'artist',
@@ -8,40 +10,41 @@ module Semetric
     end
 
     def by_country
-      location_data("country")
+      data("country")
     end
 
     def by_city
-      location_data("city")
+      data("city")
     end
 
     def by_gender
-      people_category_data("gender")
+      data("gender")
     end
 
     def by_age
-      people_category_data("age")
+      data("age")
     end
 
     private
 
-    def location_data(subtype)
-      data(:location, subtype)
+    def data(type)
+      LOCATION_TYPES.include?(type) ? location_request(type) : request(type)
     end
 
-    def people_category_data(subtype)
-      data(:people_category, subtype)
-    end
-
-    def data(type, subtype)
-      path = @path_generator.demographics(@subsource, subtype, type)
+    def location_request(type)
+      path = demographic_path + "location/#{type}"
       request = Semetric::GetRequest.new(path, Semetric::Artist::API_KEY)
+      request.response
+    end
 
-      if type == :location
-        request.response
-      elsif type == :people_category
-        request.response("data")
-      end
+    def request(type)
+      path = demographic_path + type
+      request = Semetric::GetRequest.new(path, Semetric::Artist::API_KEY)
+      request.response("data")
+    end
+
+    def demographic_path
+      @path_generator.basic + "/demographics/#{@subsource}/"
     end
   end
 end
