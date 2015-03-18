@@ -83,34 +83,4 @@ describe Semetric::Path::Generator do
         to eq "/#{type}/#{id}/#{event_type}/"
     end
   end
-
-  context "for #demographics" do
-    let(:path)                   { described_class.new(type: type,id: id) }
-    let(:subsource)              { 'twitter' }
-    let(:demographic_path) do
-      "/#{type}/#{id}/demographics/#{subsource}/#{sub_path}"
-    end
-
-    describe "location" do
-      let(:sub_path)         { "location/#{demographic_type}" }
-      let(:demographic_type) { "city" }
-
-      it "returns a path for a location option" do
-        demographic_method = :location
-        expect(path.demographics subsource, demographic_type, demographic_method).
-          to eq demographic_path
-      end
-    end
-
-    describe "age_gender" do
-      let(:sub_path)         { "#{demographic_type}" }
-      let(:demographic_type) { "age" }
-
-      it "returns a path for a location option" do
-        demographic_method = :people_category
-        expect(path.demographics subsource, demographic_type, demographic_method).
-          to eq demographic_path
-      end
-    end
-  end
 end
