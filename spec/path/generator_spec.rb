@@ -56,31 +56,4 @@ describe Semetric::Path::Generator do
         to eq "/#{type}/#{id}"
     end
   end
-
-  describe "#with_datatype" do
-    let(:path) { described_class.new(type: type,id: id) }
-    let(:data_type) { 'comments' }
-
-    it "returns a path with a subsource" do
-      subsource = 'facebook'
-
-      expect(path.data_type subsource, data_type).
-        to eq "/#{type}/#{id}/#{data_type}/#{subsource}"
-    end
-
-    it "returns a path with total instead of a subsource" do
-      expect(path.data_type data_type).
-        to eq "/#{type}/#{id}/#{data_type}/total"
-    end
-  end
-
-  describe "#event" do
-    let(:path)  { described_class.new(type: type,id: id) }
-    let(:event_type) { 'tv' }
-
-    it "returns a path for events" do
-      expect(path.event event_type).
-        to eq "/#{type}/#{id}/#{event_type}/"
-    end
-  end
 end

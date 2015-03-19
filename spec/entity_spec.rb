@@ -1,15 +1,7 @@
 require 'spec_helper'
 
 describe Semetric::Entity, vcr: true do
-  let(:api_key) { '8d9bafc5dbef47e881467320e1a1e8f3' }
-  let(:path) do
-    Semetric::Path::Generator.new(type: 'artist',
-                                  source: 'lastfm',
-                                  id: 'radiohead').basic
-  end
-  let(:entity_request) { Semetric::GetRequest.new(path, api_key) }
-  let(:entity) { Semetric::Entity.new(entity_request) }
-
+  let(:entity) { Semetric::Entity.new('radiohead') }
 
   context "when it retrieves data from a simple field" do
     specify { expect(entity.modified_by).      to be_nil }

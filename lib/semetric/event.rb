@@ -1,11 +1,21 @@
 module Semetric
   class Event
-    def initialize(request)
-      @request = request
+    def initialize(type, name)
+      @type = type
+      @path_generator = Path::Generator.new(type: 'artist',
+                                            source: 'lastfm',
+                                            id: name)
     end
 
     def data
-      @request.response("entities")
+      request = GetRequest.new(path, Artist::API_KEY)
+      request.response("entities")
+    end
+
+    private
+
+    def path
+      @path_generator.basic + "/#{@type}/"
     end
   end
 end

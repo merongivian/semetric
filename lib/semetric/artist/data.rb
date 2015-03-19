@@ -4,9 +4,6 @@ module Semetric
 
     class Data
       def initialize(name)
-        @path_generator = Semetric::Path::Generator.new(type: 'artist',
-                                                        source: 'lastfm',
-                                                        id: name)
         @name = name
       end
 
@@ -31,25 +28,14 @@ module Semetric
       end
 
       def events(type)
-        event_data(type)
+        events_request = Semetric::Event.new(type, @name)
+        events_request.data
       end
 
       private
 
-      attr_reader :path_generator
-
       def entity_request
-        request(path_generator.basic, Semetric::Entity)
-      end
-
-      def event_data(type)
-        path = path_generator.event(type)
-        request(path, Semetric::Event).data
-      end
-
-      def request(path, klass)
-        request = Semetric::GetRequest.new(path, API_KEY)
-        klass.new(request)
+        Semetric::Entity.new(@name)
       end
     end
   end
