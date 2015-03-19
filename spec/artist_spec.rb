@@ -3,17 +3,6 @@ require 'spec_helper'
 describe Semetric::Artist::Data, vcr: false do
   let(:artist) { described_class.new('ladytron') }
 
-  describe "#initialize" do
-    it "uses type:lastfm entity:artist as default values" do
-      name = "ladytron"
-      expect(Semetric::Path::Generator).
-        to receive(:new).with(type: 'artist',
-                              source: 'lastfm',
-                              id: name)
-      described_class.new(name)
-    end
-  end
-
   describe "#bio" do
     it "gets the biography" do
       expect(artist.bio).to include "formed in 1999 in Liverpool"

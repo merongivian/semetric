@@ -58,15 +58,6 @@ module Semetric
 
         "/#{@type}/#{complete_id}"
       end
-
-      def data_type(subsource = nil, data_type)
-        subsource ||= 'total'
-        basic + "/#{data_type}/#{subsource}"
-      end
-
-      def event(event_type)
-        basic + "/#{event_type}/"
-      end
     end
   end
 end

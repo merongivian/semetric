@@ -1,29 +1,43 @@
 module Semetric
-  class Entity < SimpleDelegator
+  class Entity
     FIELDS = %w(modified_by name modification_date creation_date
                 genre record_id).freeze
 
     SUMMARY_FIELDS = %w(description overview available_until
                         rank previous_rank has_data).freeze
 
+    def initialize(name)
+      @path_generator = Path::Generator.new(type: 'artist',
+                                            source: 'lastfm',
+                                            id: name)
+    end
+
     def data_class
-      response("class")
+      data.response("class")
     end
 
     def images
-      Image.build_from_array response("images")
+      Image.build_from_array data.response("images")
     end
 
     FIELDS.each do |field_name|
       define_method field_name do
-        response(field_name)
+        data.response(field_name)
       end
     end
 
     SUMMARY_FIELDS.each do |field_name|
       define_method field_name do
-        response("summary").fetch(field_name)
+        response = data.response("summary")
+        response.fetch(field_name)
       end
+    end
+
+    private
+
+    def data
+      path = @path_generator.basic
+      GetRequest.new(path, Artist::API_KEY)
     end
   end
 end
