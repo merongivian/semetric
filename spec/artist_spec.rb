@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe Semetric::Artist, vcr: false do
-  let(:artist) { Semetric::Artist.new('ladytron') }
+describe Semetric::Artist::Data, vcr: false do
+  let(:artist) { described_class.new('ladytron') }
 
   describe "#initialize" do
     it "uses type:lastfm entity:artist as default values" do
@@ -10,7 +10,7 @@ describe Semetric::Artist, vcr: false do
         to receive(:new).with(type: 'artist',
                               source: 'lastfm',
                               id: name)
-      Semetric::Artist.new(name)
+      described_class.new(name)
     end
   end
 
@@ -28,7 +28,7 @@ describe Semetric::Artist, vcr: false do
   end
 
   describe "#fans" do
-    it "returns data without any subsource" do
+    it "returns data with a default subsource" do
       expect(artist.fans.first).to be_an Integer
     end
 
@@ -44,7 +44,7 @@ describe Semetric::Artist, vcr: false do
   end
 
   describe "#plays" do
-    it "returns data without any subsource" do
+    it "returns data with a default subsource" do
       expect(artist.plays.first).to be_an Integer
     end
 
@@ -60,7 +60,7 @@ describe Semetric::Artist, vcr: false do
   end
 
   describe "#views" do
-    it "returns data without any subsource" do
+    it "returns data with a default subsource" do
       expect(artist.views.first).to be_an Integer
     end
 
@@ -76,7 +76,7 @@ describe Semetric::Artist, vcr: false do
   end
 
   describe "#downloads" do
-    it "returns data without any subsource" do
+    it "returns data with a default subsource" do
       expect(artist.downloads.first).to be_an Integer
     end
 
