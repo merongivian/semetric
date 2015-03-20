@@ -1,0 +1,411 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/75f972a32f3547e197668d545f4cda1d?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 02:50:13 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2559'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Comments last week", "now_id": "75f972a32f3547e197668d545f4cda1d",
+        "start_time": 1426464000, "period": 604800, "class": "chart", "end_time":
+        1427068800, "previous_id": "df9d0f0662f35701a1408746f1c53a84", "data": [{"rank":
+        1, "value": 807, "artist": {"id": "10d8768440d7411aa0b2a29d3f57d266", "class":
+        "artist", "name": "Martin Garrix"}}, {"rank": 2, "value": 319, "artist": {"id":
+        "dfa05d9e32b541ba9a68554f92b6472c", "class": "artist", "name": "Angel Haze"}},
+        {"rank": 2, "value": 319, "artist": {"id": "c95325a134074fd2b4a3d864b3a10a6d",
+        "class": "artist", "name": "Ellie Goulding"}}, {"rank": 3, "value": 315, "artist":
+        {"id": "808af0a2a9284350b0722bae5a3c801c", "class": "artist", "name": "Oliver
+        Heldens"}}, {"rank": 4, "value": 309, "artist": {"id": "9b86d8039c0a46ab990a58282db5fcea",
+        "class": "artist", "name": "Calvin Harris"}}, {"rank": 5, "value": 263, "artist":
+        {"id": "6dc64d111d694e09bb08fa782cf2a481", "class": "artist", "name": "Major
+        Lazer"}}, {"rank": 6, "value": 233, "artist": {"id": "d679aa630adf478a87b8af0894c9804d",
+        "class": "artist", "name": "Lakim"}}, {"rank": 7, "value": 229, "artist":
+        {"id": "fd8c9a16ceff44fcba6cde4d17563dd5", "class": "artist", "name": "GTA"}},
+        {"rank": 8, "value": 228, "artist": {"id": "0627c06d711d42788bf76ba5754ef5dd",
+        "class": "artist", "name": "Lane 8"}}, {"rank": 9, "value": 225, "artist":
+        {"id": "c135b4b4b1c34e25b1a43c1cbf583525", "class": "artist", "name": "Tchami"}},
+        {"rank": 10, "value": 191, "artist": {"id": "35e680bde82649fa96df31728ec99dc7",
+        "class": "artist", "name": "Vicetone"}}, {"rank": 11, "value": 183, "artist":
+        {"id": "af659e3aa8a84fd2ab2485252809ee42", "class": "artist", "name": "Kygo"}},
+        {"rank": 12, "value": 172, "artist": {"id": "7668a8e2506b4282b396ee6c2851979e",
+        "class": "artist", "name": "Skrillex"}}, {"rank": 13, "value": 171, "artist":
+        {"id": "64802d34b36147bea0b26b89563829f6", "class": "artist", "name": "Ti\u00ebsto"}},
+        {"rank": 14, "value": 153, "artist": {"id": "8500dae01e8541cc876fdc16db144f84",
+        "class": "artist", "name": "Yung Lean"}}, {"rank": 15, "value": 149, "artist":
+        {"id": "d708c62b92da40dc9f1bd0c0f9c6303a", "class": "artist", "name": "Claptone"}},
+        {"rank": 16, "value": 135, "artist": {"id": "60e236509463488587908c039532b6a5",
+        "class": "artist", "name": "Steve Aoki"}}, {"rank": 17, "value": 131, "artist":
+        {"id": "1be68f4b475d422a8cea885b437618ff", "class": "artist", "name": "Will
+        Sparks"}}, {"rank": 18, "value": 127, "artist": {"id": "9bda237db46a497cb19b14713f26c1cc",
+        "class": "artist", "name": "Metro Boomin"}}, {"rank": 19, "value": 124, "artist":
+        {"id": "9cd8b8b0189f414fa37acc0f55f92cfa", "class": "artist", "name": "Zimmer"}},
+        {"rank": 20, "value": 122, "artist": {"id": "e8d80b3a45164f2c8ca5cad2829ae865",
+        "class": "artist", "name": "Don Diablo"}}, {"rank": 21, "value": 116, "artist":
+        {"id": "df3c7987c3bc47958a4ef597c98f302f", "class": "artist", "name": "Nightcore"}},
+        {"rank": 22, "value": 115, "artist": {"id": "62ffcdcffe12433fa6a11df74fbf945a",
+        "class": "artist", "name": "Years & Years"}}, {"rank": 23, "value": 108, "artist":
+        {"id": "7ed71380285c4c6db75adc875f2d8f55", "class": "artist", "name": "AFK"}},
+        {"rank": 24, "value": 107, "artist": {"id": "e80b5e207eaf45b88e16a0089e02c76b",
+        "class": "artist", "name": "Jeremih"}}, {"rank": 25, "value": 103, "artist":
+        {"id": "f7c6a7d71bb7456ab5038928075f5c5e", "class": "artist", "name": "AVALON
+        EMERSON"}}, {"rank": 26, "value": 101, "artist": {"id": "5a073389bc98477d96bb111c3521a160",
+        "class": "artist", "name": "Hardwell"}}, {"rank": 27, "value": 100, "artist":
+        {"id": "0c1a57e8d0254e82bd6dfff5c794b8a8", "class": "artist", "name": "DJ
+        Carnage"}}, {"rank": 28, "value": 98, "artist": {"id": "401ae78c9ac14ea5867ad9add278c080",
+        "class": "artist", "name": "Diplo"}}, {"rank": 29, "value": 97, "artist":
+        {"id": "9fdefba7316a408086e744360dcd33ad", "class": "artist", "name": "Virtual
+        Riot"}}, {"rank": 30, "value": 95, "artist": {"id": "294f32141fa74167804da500568454e3",
+        "class": "artist", "name": "ESTA"}}, {"rank": 31, "value": 94, "artist": {"id":
+        "555d3359b6a84172b105ca28f54e5128", "class": "artist", "name": "Pitbull"}},
+        {"rank": 32, "value": 89, "artist": {"id": "558f8c7665d24310a094ab7e86f176b3",
+        "class": "artist", "name": "G-Eazy"}}, {"rank": 33, "value": 87, "artist":
+        {"id": "38c6f366d6554278b6815c3fdb864087", "class": "artist", "name": "Sam
+        Gellaitry"}}, {"rank": 33, "value": 87, "artist": {"id": "6af9a2f1e26b473d893798ee53a125c0",
+        "class": "artist", "name": "Seven Lions"}}, {"rank": 34, "value": 86, "artist":
+        {"id": "c74fdb8563744e9dba5eaa66a0914d5f", "class": "artist", "name": "Fall
+        Out Boy"}}, {"rank": 35, "value": 84, "artist": {"id": "992dad9458d9430e9a3c7d7a847507e1",
+        "class": "artist", "name": "Azizi Gibson"}}, {"rank": 36, "value": 81, "artist":
+        {"id": "f59d71fceb5d415c9584d8fb766c8577", "class": "artist", "name": "W&W"}},
+        {"rank": 37, "value": 80, "artist": {"id": "99d5643e48a14e30adf213b276b1e9ef",
+        "class": "artist", "name": "Ant TC1"}}, {"rank": 37, "value": 80, "artist":
+        {"id": "97c4d2dcb96348c7a0fbd6270875a071", "class": "artist", "name": "Chris
+        Brown"}}, {"rank": 38, "value": 79, "artist": {"id": "8a3448f501ca414694780a51589d7d53",
+        "class": "artist", "name": "Big Sean"}}, {"rank": 39, "value": 76, "artist":
+        {"id": "73681d82316d4700b238dd6e38d76a74", "class": "artist", "name": "The
+        Magician"}}, {"rank": 39, "value": 76, "artist": {"id": "2f964ca647e347a6aa4587539b19bf9b",
+        "class": "artist", "name": "Getter"}}, {"rank": 40, "value": 75, "artist":
+        {"id": "989d2b1d4096493da81df517c7338f18", "class": "artist", "name": "RL
+        Grime"}}, {"rank": 40, "value": 75, "artist": {"id": "e6a281bf274c4edcb7fd72ebd820d929",
+        "class": "artist", "name": "Knife Party"}}, {"rank": 41, "value": 73, "artist":
+        {"id": "269baae96450431dbc0dbfb0bf6c7d1d", "class": "artist", "name": "Kaskade"}},
+        {"rank": 42, "value": 71, "artist": {"id": "d8a9c5de3c27491d8fd669db81a18eed",
+        "class": "artist", "name": "Zeds Dead"}}, {"rank": 42, "value": 71, "artist":
+        {"id": "875015f463474d1fa309afbefaa99449", "class": "artist", "name": "Torro
+        Torro"}}, {"rank": 43, "value": 69, "artist": {"id": "396ae0eb8daa46019d1f65de7987d680",
+        "class": "artist", "name": "Yellow Claw"}}, {"rank": 43, "value": 69, "artist":
+        {"id": "e036eb38506e45dcbb7ffd19713d8486", "class": "artist", "name": "R3hab"}},
+        {"rank": 43, "value": 69, "artist": {"id": "d5d2efa143564aea8bfadc93429b65c9",
+        "class": "artist", "name": "Above & Beyond"}}, {"rank": 44, "value": 67, "artist":
+        {"id": "3b43fae8eb8145dbb6f584ac6d70c7a4", "class": "artist", "name": "Action
+        Bronson"}}, {"rank": 44, "value": 67, "artist": {"id": "88085a94b153488794cbf7b490c81148",
+        "class": "artist", "name": "Gareth Emery"}}, {"rank": 44, "value": 67, "artist":
+        {"id": "bb90c8e714874ba9b6a965d5fbde1604", "class": "artist", "name": "The
+        Chainsmokers"}}, {"rank": 45, "value": 65, "artist": {"id": "04ba4e4bd7e34432b082c500fc589ee7",
+        "class": "artist", "name": "CAKED UP"}}, {"rank": 45, "value": 65, "artist":
+        {"id": "a15494bc1798430fa04d8a0e519dc868", "class": "artist", "name": "John
+        Legend"}}, {"rank": 45, "value": 65, "artist": {"id": "1582edeeaff54a13a3961adf5ccdbd10",
+        "class": "artist", "name": "Bicep"}}, {"rank": 46, "value": 64, "artist":
+        {"id": "7b3cc589fd9d4b7a8021fdf61d12ca23", "class": "artist", "name": "Midnight
+        Tyrannosaurus"}}, {"rank": 47, "value": 63, "artist": {"id": "7d952dee50024ac8b0c4f0184722303b",
+        "class": "artist", "name": "GRiZ"}}, {"rank": 47, "value": 63, "artist": {"id":
+        "c49ee32e6d794681996a21515afddff6", "class": "artist", "name": "David Guetta"}},
+        {"rank": 48, "value": 62, "artist": {"id": "73fbdfdd5275437f8b986f705ae4f508",
+        "class": "artist", "name": "Downlow''d"}}, {"rank": 49, "value": 61, "artist":
+        {"id": "a4d63a2c177248fc84d9127ca649f935", "class": "artist", "name": "Amon
+        Tobin"}}, {"rank": 50, "value": 59, "artist": {"id": "543bad33f0754321a5093cbafd635f83",
+        "class": "artist", "name": "Tove Lo"}}, {"rank": 50, "value": 59, "artist":
+        {"id": "30bb41baeb44424e86b0d9ca1d30aa2d", "class": "artist", "name": "Jack
+        Beats"}}], "id": "fe0eab28e4bd543eb52bf8c406accdff"}, "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 02:50:15 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/75f972a32f3547e197668d545f4cda1d?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 02:50:14 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2559'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Comments last week", "now_id": "75f972a32f3547e197668d545f4cda1d",
+        "start_time": 1426464000, "period": 604800, "class": "chart", "end_time":
+        1427068800, "previous_id": "df9d0f0662f35701a1408746f1c53a84", "data": [{"rank":
+        1, "value": 807, "artist": {"id": "10d8768440d7411aa0b2a29d3f57d266", "class":
+        "artist", "name": "Martin Garrix"}}, {"rank": 2, "value": 319, "artist": {"id":
+        "dfa05d9e32b541ba9a68554f92b6472c", "class": "artist", "name": "Angel Haze"}},
+        {"rank": 2, "value": 319, "artist": {"id": "c95325a134074fd2b4a3d864b3a10a6d",
+        "class": "artist", "name": "Ellie Goulding"}}, {"rank": 3, "value": 315, "artist":
+        {"id": "808af0a2a9284350b0722bae5a3c801c", "class": "artist", "name": "Oliver
+        Heldens"}}, {"rank": 4, "value": 309, "artist": {"id": "9b86d8039c0a46ab990a58282db5fcea",
+        "class": "artist", "name": "Calvin Harris"}}, {"rank": 5, "value": 263, "artist":
+        {"id": "6dc64d111d694e09bb08fa782cf2a481", "class": "artist", "name": "Major
+        Lazer"}}, {"rank": 6, "value": 233, "artist": {"id": "d679aa630adf478a87b8af0894c9804d",
+        "class": "artist", "name": "Lakim"}}, {"rank": 7, "value": 229, "artist":
+        {"id": "fd8c9a16ceff44fcba6cde4d17563dd5", "class": "artist", "name": "GTA"}},
+        {"rank": 8, "value": 228, "artist": {"id": "0627c06d711d42788bf76ba5754ef5dd",
+        "class": "artist", "name": "Lane 8"}}, {"rank": 9, "value": 225, "artist":
+        {"id": "c135b4b4b1c34e25b1a43c1cbf583525", "class": "artist", "name": "Tchami"}},
+        {"rank": 10, "value": 191, "artist": {"id": "35e680bde82649fa96df31728ec99dc7",
+        "class": "artist", "name": "Vicetone"}}, {"rank": 11, "value": 183, "artist":
+        {"id": "af659e3aa8a84fd2ab2485252809ee42", "class": "artist", "name": "Kygo"}},
+        {"rank": 12, "value": 172, "artist": {"id": "7668a8e2506b4282b396ee6c2851979e",
+        "class": "artist", "name": "Skrillex"}}, {"rank": 13, "value": 171, "artist":
+        {"id": "64802d34b36147bea0b26b89563829f6", "class": "artist", "name": "Ti\u00ebsto"}},
+        {"rank": 14, "value": 153, "artist": {"id": "8500dae01e8541cc876fdc16db144f84",
+        "class": "artist", "name": "Yung Lean"}}, {"rank": 15, "value": 149, "artist":
+        {"id": "d708c62b92da40dc9f1bd0c0f9c6303a", "class": "artist", "name": "Claptone"}},
+        {"rank": 16, "value": 135, "artist": {"id": "60e236509463488587908c039532b6a5",
+        "class": "artist", "name": "Steve Aoki"}}, {"rank": 17, "value": 131, "artist":
+        {"id": "1be68f4b475d422a8cea885b437618ff", "class": "artist", "name": "Will
+        Sparks"}}, {"rank": 18, "value": 127, "artist": {"id": "9bda237db46a497cb19b14713f26c1cc",
+        "class": "artist", "name": "Metro Boomin"}}, {"rank": 19, "value": 124, "artist":
+        {"id": "9cd8b8b0189f414fa37acc0f55f92cfa", "class": "artist", "name": "Zimmer"}},
+        {"rank": 20, "value": 122, "artist": {"id": "e8d80b3a45164f2c8ca5cad2829ae865",
+        "class": "artist", "name": "Don Diablo"}}, {"rank": 21, "value": 116, "artist":
+        {"id": "df3c7987c3bc47958a4ef597c98f302f", "class": "artist", "name": "Nightcore"}},
+        {"rank": 22, "value": 115, "artist": {"id": "62ffcdcffe12433fa6a11df74fbf945a",
+        "class": "artist", "name": "Years & Years"}}, {"rank": 23, "value": 108, "artist":
+        {"id": "7ed71380285c4c6db75adc875f2d8f55", "class": "artist", "name": "AFK"}},
+        {"rank": 24, "value": 107, "artist": {"id": "e80b5e207eaf45b88e16a0089e02c76b",
+        "class": "artist", "name": "Jeremih"}}, {"rank": 25, "value": 103, "artist":
+        {"id": "f7c6a7d71bb7456ab5038928075f5c5e", "class": "artist", "name": "AVALON
+        EMERSON"}}, {"rank": 26, "value": 101, "artist": {"id": "5a073389bc98477d96bb111c3521a160",
+        "class": "artist", "name": "Hardwell"}}, {"rank": 27, "value": 100, "artist":
+        {"id": "0c1a57e8d0254e82bd6dfff5c794b8a8", "class": "artist", "name": "DJ
+        Carnage"}}, {"rank": 28, "value": 98, "artist": {"id": "401ae78c9ac14ea5867ad9add278c080",
+        "class": "artist", "name": "Diplo"}}, {"rank": 29, "value": 97, "artist":
+        {"id": "9fdefba7316a408086e744360dcd33ad", "class": "artist", "name": "Virtual
+        Riot"}}, {"rank": 30, "value": 95, "artist": {"id": "294f32141fa74167804da500568454e3",
+        "class": "artist", "name": "ESTA"}}, {"rank": 31, "value": 94, "artist": {"id":
+        "555d3359b6a84172b105ca28f54e5128", "class": "artist", "name": "Pitbull"}},
+        {"rank": 32, "value": 89, "artist": {"id": "558f8c7665d24310a094ab7e86f176b3",
+        "class": "artist", "name": "G-Eazy"}}, {"rank": 33, "value": 87, "artist":
+        {"id": "38c6f366d6554278b6815c3fdb864087", "class": "artist", "name": "Sam
+        Gellaitry"}}, {"rank": 33, "value": 87, "artist": {"id": "6af9a2f1e26b473d893798ee53a125c0",
+        "class": "artist", "name": "Seven Lions"}}, {"rank": 34, "value": 86, "artist":
+        {"id": "c74fdb8563744e9dba5eaa66a0914d5f", "class": "artist", "name": "Fall
+        Out Boy"}}, {"rank": 35, "value": 84, "artist": {"id": "992dad9458d9430e9a3c7d7a847507e1",
+        "class": "artist", "name": "Azizi Gibson"}}, {"rank": 36, "value": 81, "artist":
+        {"id": "f59d71fceb5d415c9584d8fb766c8577", "class": "artist", "name": "W&W"}},
+        {"rank": 37, "value": 80, "artist": {"id": "99d5643e48a14e30adf213b276b1e9ef",
+        "class": "artist", "name": "Ant TC1"}}, {"rank": 37, "value": 80, "artist":
+        {"id": "97c4d2dcb96348c7a0fbd6270875a071", "class": "artist", "name": "Chris
+        Brown"}}, {"rank": 38, "value": 79, "artist": {"id": "8a3448f501ca414694780a51589d7d53",
+        "class": "artist", "name": "Big Sean"}}, {"rank": 39, "value": 76, "artist":
+        {"id": "73681d82316d4700b238dd6e38d76a74", "class": "artist", "name": "The
+        Magician"}}, {"rank": 39, "value": 76, "artist": {"id": "2f964ca647e347a6aa4587539b19bf9b",
+        "class": "artist", "name": "Getter"}}, {"rank": 40, "value": 75, "artist":
+        {"id": "989d2b1d4096493da81df517c7338f18", "class": "artist", "name": "RL
+        Grime"}}, {"rank": 40, "value": 75, "artist": {"id": "e6a281bf274c4edcb7fd72ebd820d929",
+        "class": "artist", "name": "Knife Party"}}, {"rank": 41, "value": 73, "artist":
+        {"id": "269baae96450431dbc0dbfb0bf6c7d1d", "class": "artist", "name": "Kaskade"}},
+        {"rank": 42, "value": 71, "artist": {"id": "d8a9c5de3c27491d8fd669db81a18eed",
+        "class": "artist", "name": "Zeds Dead"}}, {"rank": 42, "value": 71, "artist":
+        {"id": "875015f463474d1fa309afbefaa99449", "class": "artist", "name": "Torro
+        Torro"}}, {"rank": 43, "value": 69, "artist": {"id": "396ae0eb8daa46019d1f65de7987d680",
+        "class": "artist", "name": "Yellow Claw"}}, {"rank": 43, "value": 69, "artist":
+        {"id": "e036eb38506e45dcbb7ffd19713d8486", "class": "artist", "name": "R3hab"}},
+        {"rank": 43, "value": 69, "artist": {"id": "d5d2efa143564aea8bfadc93429b65c9",
+        "class": "artist", "name": "Above & Beyond"}}, {"rank": 44, "value": 67, "artist":
+        {"id": "3b43fae8eb8145dbb6f584ac6d70c7a4", "class": "artist", "name": "Action
+        Bronson"}}, {"rank": 44, "value": 67, "artist": {"id": "88085a94b153488794cbf7b490c81148",
+        "class": "artist", "name": "Gareth Emery"}}, {"rank": 44, "value": 67, "artist":
+        {"id": "bb90c8e714874ba9b6a965d5fbde1604", "class": "artist", "name": "The
+        Chainsmokers"}}, {"rank": 45, "value": 65, "artist": {"id": "04ba4e4bd7e34432b082c500fc589ee7",
+        "class": "artist", "name": "CAKED UP"}}, {"rank": 45, "value": 65, "artist":
+        {"id": "a15494bc1798430fa04d8a0e519dc868", "class": "artist", "name": "John
+        Legend"}}, {"rank": 45, "value": 65, "artist": {"id": "1582edeeaff54a13a3961adf5ccdbd10",
+        "class": "artist", "name": "Bicep"}}, {"rank": 46, "value": 64, "artist":
+        {"id": "7b3cc589fd9d4b7a8021fdf61d12ca23", "class": "artist", "name": "Midnight
+        Tyrannosaurus"}}, {"rank": 47, "value": 63, "artist": {"id": "7d952dee50024ac8b0c4f0184722303b",
+        "class": "artist", "name": "GRiZ"}}, {"rank": 47, "value": 63, "artist": {"id":
+        "c49ee32e6d794681996a21515afddff6", "class": "artist", "name": "David Guetta"}},
+        {"rank": 48, "value": 62, "artist": {"id": "73fbdfdd5275437f8b986f705ae4f508",
+        "class": "artist", "name": "Downlow''d"}}, {"rank": 49, "value": 61, "artist":
+        {"id": "a4d63a2c177248fc84d9127ca649f935", "class": "artist", "name": "Amon
+        Tobin"}}, {"rank": 50, "value": 59, "artist": {"id": "543bad33f0754321a5093cbafd635f83",
+        "class": "artist", "name": "Tove Lo"}}, {"rank": 50, "value": 59, "artist":
+        {"id": "30bb41baeb44424e86b0d9ca1d30aa2d", "class": "artist", "name": "Jack
+        Beats"}}], "id": "fe0eab28e4bd543eb52bf8c406accdff"}, "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 02:50:15 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/75f972a32f3547e197668d545f4cda1d?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 02:50:14 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2559'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Comments last week", "now_id": "75f972a32f3547e197668d545f4cda1d",
+        "start_time": 1426464000, "period": 604800, "class": "chart", "end_time":
+        1427068800, "previous_id": "df9d0f0662f35701a1408746f1c53a84", "data": [{"rank":
+        1, "value": 807, "artist": {"id": "10d8768440d7411aa0b2a29d3f57d266", "class":
+        "artist", "name": "Martin Garrix"}}, {"rank": 2, "value": 319, "artist": {"id":
+        "dfa05d9e32b541ba9a68554f92b6472c", "class": "artist", "name": "Angel Haze"}},
+        {"rank": 2, "value": 319, "artist": {"id": "c95325a134074fd2b4a3d864b3a10a6d",
+        "class": "artist", "name": "Ellie Goulding"}}, {"rank": 3, "value": 315, "artist":
+        {"id": "808af0a2a9284350b0722bae5a3c801c", "class": "artist", "name": "Oliver
+        Heldens"}}, {"rank": 4, "value": 309, "artist": {"id": "9b86d8039c0a46ab990a58282db5fcea",
+        "class": "artist", "name": "Calvin Harris"}}, {"rank": 5, "value": 263, "artist":
+        {"id": "6dc64d111d694e09bb08fa782cf2a481", "class": "artist", "name": "Major
+        Lazer"}}, {"rank": 6, "value": 233, "artist": {"id": "d679aa630adf478a87b8af0894c9804d",
+        "class": "artist", "name": "Lakim"}}, {"rank": 7, "value": 229, "artist":
+        {"id": "fd8c9a16ceff44fcba6cde4d17563dd5", "class": "artist", "name": "GTA"}},
+        {"rank": 8, "value": 228, "artist": {"id": "0627c06d711d42788bf76ba5754ef5dd",
+        "class": "artist", "name": "Lane 8"}}, {"rank": 9, "value": 225, "artist":
+        {"id": "c135b4b4b1c34e25b1a43c1cbf583525", "class": "artist", "name": "Tchami"}},
+        {"rank": 10, "value": 191, "artist": {"id": "35e680bde82649fa96df31728ec99dc7",
+        "class": "artist", "name": "Vicetone"}}, {"rank": 11, "value": 183, "artist":
+        {"id": "af659e3aa8a84fd2ab2485252809ee42", "class": "artist", "name": "Kygo"}},
+        {"rank": 12, "value": 172, "artist": {"id": "7668a8e2506b4282b396ee6c2851979e",
+        "class": "artist", "name": "Skrillex"}}, {"rank": 13, "value": 171, "artist":
+        {"id": "64802d34b36147bea0b26b89563829f6", "class": "artist", "name": "Ti\u00ebsto"}},
+        {"rank": 14, "value": 153, "artist": {"id": "8500dae01e8541cc876fdc16db144f84",
+        "class": "artist", "name": "Yung Lean"}}, {"rank": 15, "value": 149, "artist":
+        {"id": "d708c62b92da40dc9f1bd0c0f9c6303a", "class": "artist", "name": "Claptone"}},
+        {"rank": 16, "value": 135, "artist": {"id": "60e236509463488587908c039532b6a5",
+        "class": "artist", "name": "Steve Aoki"}}, {"rank": 17, "value": 131, "artist":
+        {"id": "1be68f4b475d422a8cea885b437618ff", "class": "artist", "name": "Will
+        Sparks"}}, {"rank": 18, "value": 127, "artist": {"id": "9bda237db46a497cb19b14713f26c1cc",
+        "class": "artist", "name": "Metro Boomin"}}, {"rank": 19, "value": 124, "artist":
+        {"id": "9cd8b8b0189f414fa37acc0f55f92cfa", "class": "artist", "name": "Zimmer"}},
+        {"rank": 20, "value": 122, "artist": {"id": "e8d80b3a45164f2c8ca5cad2829ae865",
+        "class": "artist", "name": "Don Diablo"}}, {"rank": 21, "value": 116, "artist":
+        {"id": "df3c7987c3bc47958a4ef597c98f302f", "class": "artist", "name": "Nightcore"}},
+        {"rank": 22, "value": 115, "artist": {"id": "62ffcdcffe12433fa6a11df74fbf945a",
+        "class": "artist", "name": "Years & Years"}}, {"rank": 23, "value": 108, "artist":
+        {"id": "7ed71380285c4c6db75adc875f2d8f55", "class": "artist", "name": "AFK"}},
+        {"rank": 24, "value": 107, "artist": {"id": "e80b5e207eaf45b88e16a0089e02c76b",
+        "class": "artist", "name": "Jeremih"}}, {"rank": 25, "value": 103, "artist":
+        {"id": "f7c6a7d71bb7456ab5038928075f5c5e", "class": "artist", "name": "AVALON
+        EMERSON"}}, {"rank": 26, "value": 101, "artist": {"id": "5a073389bc98477d96bb111c3521a160",
+        "class": "artist", "name": "Hardwell"}}, {"rank": 27, "value": 100, "artist":
+        {"id": "0c1a57e8d0254e82bd6dfff5c794b8a8", "class": "artist", "name": "DJ
+        Carnage"}}, {"rank": 28, "value": 98, "artist": {"id": "401ae78c9ac14ea5867ad9add278c080",
+        "class": "artist", "name": "Diplo"}}, {"rank": 29, "value": 97, "artist":
+        {"id": "9fdefba7316a408086e744360dcd33ad", "class": "artist", "name": "Virtual
+        Riot"}}, {"rank": 30, "value": 95, "artist": {"id": "294f32141fa74167804da500568454e3",
+        "class": "artist", "name": "ESTA"}}, {"rank": 31, "value": 94, "artist": {"id":
+        "555d3359b6a84172b105ca28f54e5128", "class": "artist", "name": "Pitbull"}},
+        {"rank": 32, "value": 89, "artist": {"id": "558f8c7665d24310a094ab7e86f176b3",
+        "class": "artist", "name": "G-Eazy"}}, {"rank": 33, "value": 87, "artist":
+        {"id": "38c6f366d6554278b6815c3fdb864087", "class": "artist", "name": "Sam
+        Gellaitry"}}, {"rank": 33, "value": 87, "artist": {"id": "6af9a2f1e26b473d893798ee53a125c0",
+        "class": "artist", "name": "Seven Lions"}}, {"rank": 34, "value": 86, "artist":
+        {"id": "c74fdb8563744e9dba5eaa66a0914d5f", "class": "artist", "name": "Fall
+        Out Boy"}}, {"rank": 35, "value": 84, "artist": {"id": "992dad9458d9430e9a3c7d7a847507e1",
+        "class": "artist", "name": "Azizi Gibson"}}, {"rank": 36, "value": 81, "artist":
+        {"id": "f59d71fceb5d415c9584d8fb766c8577", "class": "artist", "name": "W&W"}},
+        {"rank": 37, "value": 80, "artist": {"id": "99d5643e48a14e30adf213b276b1e9ef",
+        "class": "artist", "name": "Ant TC1"}}, {"rank": 37, "value": 80, "artist":
+        {"id": "97c4d2dcb96348c7a0fbd6270875a071", "class": "artist", "name": "Chris
+        Brown"}}, {"rank": 38, "value": 79, "artist": {"id": "8a3448f501ca414694780a51589d7d53",
+        "class": "artist", "name": "Big Sean"}}, {"rank": 39, "value": 76, "artist":
+        {"id": "73681d82316d4700b238dd6e38d76a74", "class": "artist", "name": "The
+        Magician"}}, {"rank": 39, "value": 76, "artist": {"id": "2f964ca647e347a6aa4587539b19bf9b",
+        "class": "artist", "name": "Getter"}}, {"rank": 40, "value": 75, "artist":
+        {"id": "989d2b1d4096493da81df517c7338f18", "class": "artist", "name": "RL
+        Grime"}}, {"rank": 40, "value": 75, "artist": {"id": "e6a281bf274c4edcb7fd72ebd820d929",
+        "class": "artist", "name": "Knife Party"}}, {"rank": 41, "value": 73, "artist":
+        {"id": "269baae96450431dbc0dbfb0bf6c7d1d", "class": "artist", "name": "Kaskade"}},
+        {"rank": 42, "value": 71, "artist": {"id": "d8a9c5de3c27491d8fd669db81a18eed",
+        "class": "artist", "name": "Zeds Dead"}}, {"rank": 42, "value": 71, "artist":
+        {"id": "875015f463474d1fa309afbefaa99449", "class": "artist", "name": "Torro
+        Torro"}}, {"rank": 43, "value": 69, "artist": {"id": "396ae0eb8daa46019d1f65de7987d680",
+        "class": "artist", "name": "Yellow Claw"}}, {"rank": 43, "value": 69, "artist":
+        {"id": "e036eb38506e45dcbb7ffd19713d8486", "class": "artist", "name": "R3hab"}},
+        {"rank": 43, "value": 69, "artist": {"id": "d5d2efa143564aea8bfadc93429b65c9",
+        "class": "artist", "name": "Above & Beyond"}}, {"rank": 44, "value": 67, "artist":
+        {"id": "3b43fae8eb8145dbb6f584ac6d70c7a4", "class": "artist", "name": "Action
+        Bronson"}}, {"rank": 44, "value": 67, "artist": {"id": "88085a94b153488794cbf7b490c81148",
+        "class": "artist", "name": "Gareth Emery"}}, {"rank": 44, "value": 67, "artist":
+        {"id": "bb90c8e714874ba9b6a965d5fbde1604", "class": "artist", "name": "The
+        Chainsmokers"}}, {"rank": 45, "value": 65, "artist": {"id": "04ba4e4bd7e34432b082c500fc589ee7",
+        "class": "artist", "name": "CAKED UP"}}, {"rank": 45, "value": 65, "artist":
+        {"id": "a15494bc1798430fa04d8a0e519dc868", "class": "artist", "name": "John
+        Legend"}}, {"rank": 45, "value": 65, "artist": {"id": "1582edeeaff54a13a3961adf5ccdbd10",
+        "class": "artist", "name": "Bicep"}}, {"rank": 46, "value": 64, "artist":
+        {"id": "7b3cc589fd9d4b7a8021fdf61d12ca23", "class": "artist", "name": "Midnight
+        Tyrannosaurus"}}, {"rank": 47, "value": 63, "artist": {"id": "7d952dee50024ac8b0c4f0184722303b",
+        "class": "artist", "name": "GRiZ"}}, {"rank": 47, "value": 63, "artist": {"id":
+        "c49ee32e6d794681996a21515afddff6", "class": "artist", "name": "David Guetta"}},
+        {"rank": 48, "value": 62, "artist": {"id": "73fbdfdd5275437f8b986f705ae4f508",
+        "class": "artist", "name": "Downlow''d"}}, {"rank": 49, "value": 61, "artist":
+        {"id": "a4d63a2c177248fc84d9127ca649f935", "class": "artist", "name": "Amon
+        Tobin"}}, {"rank": 50, "value": 59, "artist": {"id": "543bad33f0754321a5093cbafd635f83",
+        "class": "artist", "name": "Tove Lo"}}, {"rank": 50, "value": 59, "artist":
+        {"id": "30bb41baeb44424e86b0d9ca1d30aa2d", "class": "artist", "name": "Jack
+        Beats"}}], "id": "fe0eab28e4bd543eb52bf8c406accdff"}, "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 02:50:16 GMT
+recorded_with: VCR 2.9.3

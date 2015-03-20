@@ -1,0 +1,359 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/b857276b34cf488f9a934765c3281af7?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 03:04:35 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2465'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Plays High Flyers", "now_id": "b857276b34cf488f9a934765c3281af7",
+        "start_time": 1426636800, "period": 86400, "class": "chart", "end_time": 1426723200,
+        "previous_id": "e4d1301f7326532ca5734004fe8a775f", "data": [{"value": 11618.20544224,
+        "rank": 1, "artist": {"class": "artist", "name": "Kelly Clarkson", "id": "4facef8ca72442bcb6ecf741820a4c16"}},
+        {"value": 9039.70763882, "rank": 2, "artist": {"class": "artist", "name":
+        "Banda Carnaval", "id": "c6b2c89fc0ec4347b38718513ae70223"}}, {"value": 3231.39749893,
+        "rank": 3, "artist": {"class": "artist", "name": "Tiziano Ferro", "id": "fc43d48fc3bb4a53ba9d0ce93426d0e5"}},
+        {"value": 2106.91272996, "rank": 4, "artist": {"class": "artist", "name":
+        "Shawn Mendes", "id": "408afb22b87d44b2aed0983b0e6cb9b1"}}, {"value": 1810.40866313,
+        "rank": 5, "artist": {"class": "artist", "name": "Los Inquietos Del Norte",
+        "id": "7802b8b8440642c795eecd8564d90d2c"}}, {"value": 1376.39439436, "rank":
+        6, "artist": {"class": "artist", "name": "Beck", "id": "6987f5344ebf4a368d92ff3e092a5df4"}},
+        {"value": 1316.32937399, "rank": 7, "artist": {"class": "artist", "name":
+        "Vaults", "id": "4df53609d61148db9af91e312cde64a2"}}, {"value": 835.52913528,
+        "rank": 8, "artist": {"class": "artist", "name": "Espinoza Paz", "id": "7b6ca5785ac247b1815ca57795889a14"}},
+        {"value": 812.02692068, "rank": 9, "artist": {"class": "artist", "name": "AlunaGeorge",
+        "id": "6b173fdda9e143b7932ec9e394ea4511"}}, {"value": 791.75108038, "rank":
+        10, "artist": {"class": "artist", "name": "Ta-Ku", "id": "7ae0addfe3374a0888de59466068975b"}},
+        {"value": 603.75741038, "rank": 11, "artist": {"class": "artist", "name":
+        "Of Monsters and Men", "id": "159a435384414018bf7f2c210a612f95"}}, {"value":
+        595.09975743, "rank": 12, "artist": {"class": "artist", "name": "Vianney",
+        "id": "2145fa8662364ea1bcc922bc0e8d1cc8"}}, {"value": 542.90852368, "rank":
+        13, "artist": {"class": "artist", "name": "U2", "id": "939330d2101941d0a4d36447fe60c622"}},
+        {"value": 538.52347535, "rank": 14, "artist": {"class": "artist", "name":
+        "Zac Brown Band", "id": "c2ba29d1ddd54acf9cfb1ea4229b5382"}}, {"value": 514.04898842,
+        "rank": 15, "artist": {"class": "artist", "name": "Us", "id": "3768ecf125594ef38d041a9f159b81ff"}},
+        {"value": 511.36716508, "rank": 16, "artist": {"class": "artist", "name":
+        "Sid Sriram", "id": "11f3dc71f0af4a55ba216f4a88c8171f"}}, {"value": 414.08195639,
+        "rank": 17, "artist": {"class": "artist", "name": "Runaground", "id": "8a7c4a0214cf42b49027a21c473683d8"}},
+        {"value": 368.52633658, "rank": 18, "artist": {"class": "artist", "name":
+        "Excision", "id": "3c769ed234fd4f72888eeef05de5b53b"}}, {"value": 363.99944025,
+        "rank": 19, "artist": {"class": "artist", "name": "Die Antwoord", "id": "210b38fe5e934803b0e39cc2e66243a1"}},
+        {"value": 344.04741164, "rank": 20, "artist": {"class": "artist", "name":
+        "Porter Robinson", "id": "57702cd0c8d94e24b5b6e5acf66f8d56"}}, {"value": 337.90725201,
+        "rank": 21, "artist": {"class": "artist", "name": "Action Bronson", "id":
+        "3b43fae8eb8145dbb6f584ac6d70c7a4"}}, {"value": 318.64216158, "rank": 22,
+        "artist": {"class": "artist", "name": "Kodaline", "id": "5d6443f59c2c4e9195ee85e0e90efd33"}},
+        {"value": 313.91407243, "rank": 23, "artist": {"class": "artist", "name":
+        "The Veronicas", "id": "c3d403a7298848fe855f0c9a97bfb2ff"}}, {"value": 311.39726715,
+        "rank": 24, "artist": {"class": "artist", "name": "BADBADNOTGOOD", "id": "999b2a45bc9b4374b8f18c8bde9edf13"}},
+        {"value": 309.47793554, "rank": 25, "artist": {"class": "artist", "name":
+        "Andy & Lucas", "id": "8355e4c9ce5b40be9a6bd240ebd6e7e9"}}, {"value": 288.24689681,
+        "rank": 26, "artist": {"class": "artist", "name": "Lenno", "id": "c31c5ff4bb2847c3964473695ca509e1"}},
+        {"value": 240.24182467, "rank": 27, "artist": {"class": "artist", "name":
+        "I Prevail", "id": "09d85192b9e84749ac9d0b4a8226eac1"}}, {"value": 226.35114623,
+        "rank": 28, "artist": {"class": "artist", "name": "M.I.A.", "id": "9c9dc0f9093d4be78652e1c1bbc89761"}},
+        {"value": 213.17412849, "rank": 29, "artist": {"class": "artist", "name":
+        "Alice Russell", "id": "5adf8f5b0b954de386a6395316f5c17e"}}, {"value": 192.34144133,
+        "rank": 30, "artist": {"class": "artist", "name": "Kip Moore", "id": "7854371d492f4e3394b07f93007d2b15"}},
+        {"value": 190.32699013, "rank": 31, "artist": {"class": "artist", "name":
+        "Karlos Ros\u00e9", "id": "531fdbbf1bbf41098d97daf46f3464bf"}}, {"value":
+        190.04366327, "rank": 32, "artist": {"class": "artist", "name": "The Charlatans",
+        "id": "41d3cb0341f74469af339b7c6c8b129b"}}, {"value": 182.93335611, "rank":
+        33, "artist": {"class": "artist", "name": "Beenie Man", "id": "c3bbcd2ffd184c61a6a21cc82f366f28"}},
+        {"value": 173.21732724, "rank": 34, "artist": {"class": "artist", "name":
+        "The Cribs", "id": "81c6049e0bd544ab972c3552cb691529"}}, {"value": 172.32611144,
+        "rank": 35, "artist": {"class": "artist", "name": "Alex Wiley", "id": "4db9dad74ef940339551a4afedb89f0a"}},
+        {"value": 172.13098736, "rank": 36, "artist": {"class": "artist", "name":
+        "Rob Zombie", "id": "8776f83575d646f6b8b019ccfaccbb74"}}, {"value": 170.10806272,
+        "rank": 37, "artist": {"class": "artist", "name": "Randy Houser", "id": "6062bf55feb1468089ab45b98851d86c"}},
+        {"value": 165.86916903, "rank": 38, "artist": {"class": "artist", "name":
+        "Dimitri Vegas & Like Mike", "id": "88537ef8ad914d1797e63ef16fcbb13f"}}, {"value":
+        164.94623204, "rank": 39, "artist": {"class": "artist", "name": "Earl Sweatshirt",
+        "id": "2b4b6d4b993547c08a7ec208186dd3a5"}}, {"value": 154.48030731, "rank":
+        40, "artist": {"class": "artist", "name": "Mark Knopfler", "id": "49d8dfa0246c4432b0334b4704782b33"}},
+        {"value": 148.47880808, "rank": 41, "artist": {"class": "artist", "name":
+        "Bloodhound Gang", "id": "39623188a83f4ee3887d47d0f36a4750"}}, {"value": 142.14120261,
+        "rank": 42, "artist": {"class": "artist", "name": "The Jane Doze", "id": "2d3447a3a2d4400fb132aa432a9e1478"}},
+        {"value": 135.60198378, "rank": 43, "artist": {"class": "artist", "name":
+        "Blasterjaxx", "id": "f8b83d0aa995402787e01a50de3d8752"}}, {"value": 133.72698304,
+        "rank": 44, "artist": {"class": "artist", "name": "Wankelmut", "id": "2fefc012117e4d86986e5b3e997da62a"}},
+        {"value": 130.66752273, "rank": 45, "artist": {"class": "artist", "name":
+        "Doctor P", "id": "d89b09b5fd0143a4bbbc14c4683b8b86"}}, {"value": 121.34121549,
+        "rank": 46, "artist": {"class": "artist", "name": "Tierra Cali", "id": "470d8aa32bd24581955069603ff9351e"}},
+        {"value": 120.70119767, "rank": 47, "artist": {"class": "artist", "name":
+        "Just Blaze", "id": "b38cd945095a49119dc37f40dc0f667c"}}, {"value": 120.66421051,
+        "rank": 48, "artist": {"class": "artist", "name": "Alison Wonderland", "id":
+        "5659f25e34784e07ae2de20d63fa3069"}}, {"value": 117.33151488, "rank": 49,
+        "artist": {"class": "artist", "name": "Bilal Saeed", "id": "5bf17864277e4396bdd043d8e18f48be"}},
+        {"value": 115.95332046, "rank": 50, "artist": {"class": "artist", "name":
+        "Le Youth", "id": "7f53a8a003114095834bb014712e2a7a"}}], "id": "5e4b04ebc15a542daad030821e99eb27"},
+        "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 03:04:37 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/b857276b34cf488f9a934765c3281af7?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 03:04:36 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2466'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Plays High Flyers", "now_id": "b857276b34cf488f9a934765c3281af7",
+        "start_time": 1426636800, "period": 86400, "class": "chart", "end_time": 1426723200,
+        "previous_id": "e4d1301f7326532ca5734004fe8a775f", "data": [{"rank": 1, "value":
+        11618.20544224, "artist": {"id": "4facef8ca72442bcb6ecf741820a4c16", "class":
+        "artist", "name": "Kelly Clarkson"}}, {"rank": 2, "value": 9039.70763882,
+        "artist": {"id": "c6b2c89fc0ec4347b38718513ae70223", "class": "artist", "name":
+        "Banda Carnaval"}}, {"rank": 3, "value": 3231.39749893, "artist": {"id": "fc43d48fc3bb4a53ba9d0ce93426d0e5",
+        "class": "artist", "name": "Tiziano Ferro"}}, {"rank": 4, "value": 2106.91272996,
+        "artist": {"id": "408afb22b87d44b2aed0983b0e6cb9b1", "class": "artist", "name":
+        "Shawn Mendes"}}, {"rank": 5, "value": 1810.40866313, "artist": {"id": "7802b8b8440642c795eecd8564d90d2c",
+        "class": "artist", "name": "Los Inquietos Del Norte"}}, {"rank": 6, "value":
+        1376.39439436, "artist": {"id": "6987f5344ebf4a368d92ff3e092a5df4", "class":
+        "artist", "name": "Beck"}}, {"rank": 7, "value": 1316.32937399, "artist":
+        {"id": "4df53609d61148db9af91e312cde64a2", "class": "artist", "name": "Vaults"}},
+        {"rank": 8, "value": 835.52913528, "artist": {"id": "7b6ca5785ac247b1815ca57795889a14",
+        "class": "artist", "name": "Espinoza Paz"}}, {"rank": 9, "value": 812.02692068,
+        "artist": {"id": "6b173fdda9e143b7932ec9e394ea4511", "class": "artist", "name":
+        "AlunaGeorge"}}, {"rank": 10, "value": 791.75108038, "artist": {"id": "7ae0addfe3374a0888de59466068975b",
+        "class": "artist", "name": "Ta-Ku"}}, {"rank": 11, "value": 603.75741038,
+        "artist": {"id": "159a435384414018bf7f2c210a612f95", "class": "artist", "name":
+        "Of Monsters and Men"}}, {"rank": 12, "value": 595.09975743, "artist": {"id":
+        "2145fa8662364ea1bcc922bc0e8d1cc8", "class": "artist", "name": "Vianney"}},
+        {"rank": 13, "value": 542.90852368, "artist": {"id": "939330d2101941d0a4d36447fe60c622",
+        "class": "artist", "name": "U2"}}, {"rank": 14, "value": 538.52347535, "artist":
+        {"id": "c2ba29d1ddd54acf9cfb1ea4229b5382", "class": "artist", "name": "Zac
+        Brown Band"}}, {"rank": 15, "value": 514.04898842, "artist": {"id": "3768ecf125594ef38d041a9f159b81ff",
+        "class": "artist", "name": "Us"}}, {"rank": 16, "value": 511.36716508, "artist":
+        {"id": "11f3dc71f0af4a55ba216f4a88c8171f", "class": "artist", "name": "Sid
+        Sriram"}}, {"rank": 17, "value": 414.08195639, "artist": {"id": "8a7c4a0214cf42b49027a21c473683d8",
+        "class": "artist", "name": "Runaground"}}, {"rank": 18, "value": 368.52633658,
+        "artist": {"id": "3c769ed234fd4f72888eeef05de5b53b", "class": "artist", "name":
+        "Excision"}}, {"rank": 19, "value": 363.99944025, "artist": {"id": "210b38fe5e934803b0e39cc2e66243a1",
+        "class": "artist", "name": "Die Antwoord"}}, {"rank": 20, "value": 344.04741164,
+        "artist": {"id": "57702cd0c8d94e24b5b6e5acf66f8d56", "class": "artist", "name":
+        "Porter Robinson"}}, {"rank": 21, "value": 337.90725201, "artist": {"id":
+        "3b43fae8eb8145dbb6f584ac6d70c7a4", "class": "artist", "name": "Action Bronson"}},
+        {"rank": 22, "value": 318.64216158, "artist": {"id": "5d6443f59c2c4e9195ee85e0e90efd33",
+        "class": "artist", "name": "Kodaline"}}, {"rank": 23, "value": 313.91407243,
+        "artist": {"id": "c3d403a7298848fe855f0c9a97bfb2ff", "class": "artist", "name":
+        "The Veronicas"}}, {"rank": 24, "value": 311.39726715, "artist": {"id": "999b2a45bc9b4374b8f18c8bde9edf13",
+        "class": "artist", "name": "BADBADNOTGOOD"}}, {"rank": 25, "value": 309.47793554,
+        "artist": {"id": "8355e4c9ce5b40be9a6bd240ebd6e7e9", "class": "artist", "name":
+        "Andy & Lucas"}}, {"rank": 26, "value": 288.24689681, "artist": {"id": "c31c5ff4bb2847c3964473695ca509e1",
+        "class": "artist", "name": "Lenno"}}, {"rank": 27, "value": 240.24182467,
+        "artist": {"id": "09d85192b9e84749ac9d0b4a8226eac1", "class": "artist", "name":
+        "I Prevail"}}, {"rank": 28, "value": 226.35114623, "artist": {"id": "9c9dc0f9093d4be78652e1c1bbc89761",
+        "class": "artist", "name": "M.I.A."}}, {"rank": 29, "value": 213.17412849,
+        "artist": {"id": "5adf8f5b0b954de386a6395316f5c17e", "class": "artist", "name":
+        "Alice Russell"}}, {"rank": 30, "value": 192.34144133, "artist": {"id": "7854371d492f4e3394b07f93007d2b15",
+        "class": "artist", "name": "Kip Moore"}}, {"rank": 31, "value": 190.32699013,
+        "artist": {"id": "531fdbbf1bbf41098d97daf46f3464bf", "class": "artist", "name":
+        "Karlos Ros\u00e9"}}, {"rank": 32, "value": 190.04366327, "artist": {"id":
+        "41d3cb0341f74469af339b7c6c8b129b", "class": "artist", "name": "The Charlatans"}},
+        {"rank": 33, "value": 182.93335611, "artist": {"id": "c3bbcd2ffd184c61a6a21cc82f366f28",
+        "class": "artist", "name": "Beenie Man"}}, {"rank": 34, "value": 173.21732724,
+        "artist": {"id": "81c6049e0bd544ab972c3552cb691529", "class": "artist", "name":
+        "The Cribs"}}, {"rank": 35, "value": 172.32611144, "artist": {"id": "4db9dad74ef940339551a4afedb89f0a",
+        "class": "artist", "name": "Alex Wiley"}}, {"rank": 36, "value": 172.13098736,
+        "artist": {"id": "8776f83575d646f6b8b019ccfaccbb74", "class": "artist", "name":
+        "Rob Zombie"}}, {"rank": 37, "value": 170.10806272, "artist": {"id": "6062bf55feb1468089ab45b98851d86c",
+        "class": "artist", "name": "Randy Houser"}}, {"rank": 38, "value": 165.86916903,
+        "artist": {"id": "88537ef8ad914d1797e63ef16fcbb13f", "class": "artist", "name":
+        "Dimitri Vegas & Like Mike"}}, {"rank": 39, "value": 164.94623204, "artist":
+        {"id": "2b4b6d4b993547c08a7ec208186dd3a5", "class": "artist", "name": "Earl
+        Sweatshirt"}}, {"rank": 40, "value": 154.48030731, "artist": {"id": "49d8dfa0246c4432b0334b4704782b33",
+        "class": "artist", "name": "Mark Knopfler"}}, {"rank": 41, "value": 148.47880808,
+        "artist": {"id": "39623188a83f4ee3887d47d0f36a4750", "class": "artist", "name":
+        "Bloodhound Gang"}}, {"rank": 42, "value": 142.14120261, "artist": {"id":
+        "2d3447a3a2d4400fb132aa432a9e1478", "class": "artist", "name": "The Jane Doze"}},
+        {"rank": 43, "value": 135.60198378, "artist": {"id": "f8b83d0aa995402787e01a50de3d8752",
+        "class": "artist", "name": "Blasterjaxx"}}, {"rank": 44, "value": 133.72698304,
+        "artist": {"id": "2fefc012117e4d86986e5b3e997da62a", "class": "artist", "name":
+        "Wankelmut"}}, {"rank": 45, "value": 130.66752273, "artist": {"id": "d89b09b5fd0143a4bbbc14c4683b8b86",
+        "class": "artist", "name": "Doctor P"}}, {"rank": 46, "value": 121.34121549,
+        "artist": {"id": "470d8aa32bd24581955069603ff9351e", "class": "artist", "name":
+        "Tierra Cali"}}, {"rank": 47, "value": 120.70119767, "artist": {"id": "b38cd945095a49119dc37f40dc0f667c",
+        "class": "artist", "name": "Just Blaze"}}, {"rank": 48, "value": 120.66421051,
+        "artist": {"id": "5659f25e34784e07ae2de20d63fa3069", "class": "artist", "name":
+        "Alison Wonderland"}}, {"rank": 49, "value": 117.33151488, "artist": {"id":
+        "5bf17864277e4396bdd043d8e18f48be", "class": "artist", "name": "Bilal Saeed"}},
+        {"rank": 50, "value": 115.95332046, "artist": {"id": "7f53a8a003114095834bb014712e2a7a",
+        "class": "artist", "name": "Le Youth"}}], "id": "5e4b04ebc15a542daad030821e99eb27"},
+        "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 03:04:37 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/b857276b34cf488f9a934765c3281af7?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 03:04:36 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2466'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Plays High Flyers", "now_id": "b857276b34cf488f9a934765c3281af7",
+        "start_time": 1426636800, "period": 86400, "class": "chart", "end_time": 1426723200,
+        "previous_id": "e4d1301f7326532ca5734004fe8a775f", "data": [{"rank": 1, "value":
+        11618.20544224, "artist": {"id": "4facef8ca72442bcb6ecf741820a4c16", "class":
+        "artist", "name": "Kelly Clarkson"}}, {"rank": 2, "value": 9039.70763882,
+        "artist": {"id": "c6b2c89fc0ec4347b38718513ae70223", "class": "artist", "name":
+        "Banda Carnaval"}}, {"rank": 3, "value": 3231.39749893, "artist": {"id": "fc43d48fc3bb4a53ba9d0ce93426d0e5",
+        "class": "artist", "name": "Tiziano Ferro"}}, {"rank": 4, "value": 2106.91272996,
+        "artist": {"id": "408afb22b87d44b2aed0983b0e6cb9b1", "class": "artist", "name":
+        "Shawn Mendes"}}, {"rank": 5, "value": 1810.40866313, "artist": {"id": "7802b8b8440642c795eecd8564d90d2c",
+        "class": "artist", "name": "Los Inquietos Del Norte"}}, {"rank": 6, "value":
+        1376.39439436, "artist": {"id": "6987f5344ebf4a368d92ff3e092a5df4", "class":
+        "artist", "name": "Beck"}}, {"rank": 7, "value": 1316.32937399, "artist":
+        {"id": "4df53609d61148db9af91e312cde64a2", "class": "artist", "name": "Vaults"}},
+        {"rank": 8, "value": 835.52913528, "artist": {"id": "7b6ca5785ac247b1815ca57795889a14",
+        "class": "artist", "name": "Espinoza Paz"}}, {"rank": 9, "value": 812.02692068,
+        "artist": {"id": "6b173fdda9e143b7932ec9e394ea4511", "class": "artist", "name":
+        "AlunaGeorge"}}, {"rank": 10, "value": 791.75108038, "artist": {"id": "7ae0addfe3374a0888de59466068975b",
+        "class": "artist", "name": "Ta-Ku"}}, {"rank": 11, "value": 603.75741038,
+        "artist": {"id": "159a435384414018bf7f2c210a612f95", "class": "artist", "name":
+        "Of Monsters and Men"}}, {"rank": 12, "value": 595.09975743, "artist": {"id":
+        "2145fa8662364ea1bcc922bc0e8d1cc8", "class": "artist", "name": "Vianney"}},
+        {"rank": 13, "value": 542.90852368, "artist": {"id": "939330d2101941d0a4d36447fe60c622",
+        "class": "artist", "name": "U2"}}, {"rank": 14, "value": 538.52347535, "artist":
+        {"id": "c2ba29d1ddd54acf9cfb1ea4229b5382", "class": "artist", "name": "Zac
+        Brown Band"}}, {"rank": 15, "value": 514.04898842, "artist": {"id": "3768ecf125594ef38d041a9f159b81ff",
+        "class": "artist", "name": "Us"}}, {"rank": 16, "value": 511.36716508, "artist":
+        {"id": "11f3dc71f0af4a55ba216f4a88c8171f", "class": "artist", "name": "Sid
+        Sriram"}}, {"rank": 17, "value": 414.08195639, "artist": {"id": "8a7c4a0214cf42b49027a21c473683d8",
+        "class": "artist", "name": "Runaground"}}, {"rank": 18, "value": 368.52633658,
+        "artist": {"id": "3c769ed234fd4f72888eeef05de5b53b", "class": "artist", "name":
+        "Excision"}}, {"rank": 19, "value": 363.99944025, "artist": {"id": "210b38fe5e934803b0e39cc2e66243a1",
+        "class": "artist", "name": "Die Antwoord"}}, {"rank": 20, "value": 344.04741164,
+        "artist": {"id": "57702cd0c8d94e24b5b6e5acf66f8d56", "class": "artist", "name":
+        "Porter Robinson"}}, {"rank": 21, "value": 337.90725201, "artist": {"id":
+        "3b43fae8eb8145dbb6f584ac6d70c7a4", "class": "artist", "name": "Action Bronson"}},
+        {"rank": 22, "value": 318.64216158, "artist": {"id": "5d6443f59c2c4e9195ee85e0e90efd33",
+        "class": "artist", "name": "Kodaline"}}, {"rank": 23, "value": 313.91407243,
+        "artist": {"id": "c3d403a7298848fe855f0c9a97bfb2ff", "class": "artist", "name":
+        "The Veronicas"}}, {"rank": 24, "value": 311.39726715, "artist": {"id": "999b2a45bc9b4374b8f18c8bde9edf13",
+        "class": "artist", "name": "BADBADNOTGOOD"}}, {"rank": 25, "value": 309.47793554,
+        "artist": {"id": "8355e4c9ce5b40be9a6bd240ebd6e7e9", "class": "artist", "name":
+        "Andy & Lucas"}}, {"rank": 26, "value": 288.24689681, "artist": {"id": "c31c5ff4bb2847c3964473695ca509e1",
+        "class": "artist", "name": "Lenno"}}, {"rank": 27, "value": 240.24182467,
+        "artist": {"id": "09d85192b9e84749ac9d0b4a8226eac1", "class": "artist", "name":
+        "I Prevail"}}, {"rank": 28, "value": 226.35114623, "artist": {"id": "9c9dc0f9093d4be78652e1c1bbc89761",
+        "class": "artist", "name": "M.I.A."}}, {"rank": 29, "value": 213.17412849,
+        "artist": {"id": "5adf8f5b0b954de386a6395316f5c17e", "class": "artist", "name":
+        "Alice Russell"}}, {"rank": 30, "value": 192.34144133, "artist": {"id": "7854371d492f4e3394b07f93007d2b15",
+        "class": "artist", "name": "Kip Moore"}}, {"rank": 31, "value": 190.32699013,
+        "artist": {"id": "531fdbbf1bbf41098d97daf46f3464bf", "class": "artist", "name":
+        "Karlos Ros\u00e9"}}, {"rank": 32, "value": 190.04366327, "artist": {"id":
+        "41d3cb0341f74469af339b7c6c8b129b", "class": "artist", "name": "The Charlatans"}},
+        {"rank": 33, "value": 182.93335611, "artist": {"id": "c3bbcd2ffd184c61a6a21cc82f366f28",
+        "class": "artist", "name": "Beenie Man"}}, {"rank": 34, "value": 173.21732724,
+        "artist": {"id": "81c6049e0bd544ab972c3552cb691529", "class": "artist", "name":
+        "The Cribs"}}, {"rank": 35, "value": 172.32611144, "artist": {"id": "4db9dad74ef940339551a4afedb89f0a",
+        "class": "artist", "name": "Alex Wiley"}}, {"rank": 36, "value": 172.13098736,
+        "artist": {"id": "8776f83575d646f6b8b019ccfaccbb74", "class": "artist", "name":
+        "Rob Zombie"}}, {"rank": 37, "value": 170.10806272, "artist": {"id": "6062bf55feb1468089ab45b98851d86c",
+        "class": "artist", "name": "Randy Houser"}}, {"rank": 38, "value": 165.86916903,
+        "artist": {"id": "88537ef8ad914d1797e63ef16fcbb13f", "class": "artist", "name":
+        "Dimitri Vegas & Like Mike"}}, {"rank": 39, "value": 164.94623204, "artist":
+        {"id": "2b4b6d4b993547c08a7ec208186dd3a5", "class": "artist", "name": "Earl
+        Sweatshirt"}}, {"rank": 40, "value": 154.48030731, "artist": {"id": "49d8dfa0246c4432b0334b4704782b33",
+        "class": "artist", "name": "Mark Knopfler"}}, {"rank": 41, "value": 148.47880808,
+        "artist": {"id": "39623188a83f4ee3887d47d0f36a4750", "class": "artist", "name":
+        "Bloodhound Gang"}}, {"rank": 42, "value": 142.14120261, "artist": {"id":
+        "2d3447a3a2d4400fb132aa432a9e1478", "class": "artist", "name": "The Jane Doze"}},
+        {"rank": 43, "value": 135.60198378, "artist": {"id": "f8b83d0aa995402787e01a50de3d8752",
+        "class": "artist", "name": "Blasterjaxx"}}, {"rank": 44, "value": 133.72698304,
+        "artist": {"id": "2fefc012117e4d86986e5b3e997da62a", "class": "artist", "name":
+        "Wankelmut"}}, {"rank": 45, "value": 130.66752273, "artist": {"id": "d89b09b5fd0143a4bbbc14c4683b8b86",
+        "class": "artist", "name": "Doctor P"}}, {"rank": 46, "value": 121.34121549,
+        "artist": {"id": "470d8aa32bd24581955069603ff9351e", "class": "artist", "name":
+        "Tierra Cali"}}, {"rank": 47, "value": 120.70119767, "artist": {"id": "b38cd945095a49119dc37f40dc0f667c",
+        "class": "artist", "name": "Just Blaze"}}, {"rank": 48, "value": 120.66421051,
+        "artist": {"id": "5659f25e34784e07ae2de20d63fa3069", "class": "artist", "name":
+        "Alison Wonderland"}}, {"rank": 49, "value": 117.33151488, "artist": {"id":
+        "5bf17864277e4396bdd043d8e18f48be", "class": "artist", "name": "Bilal Saeed"}},
+        {"rank": 50, "value": 115.95332046, "artist": {"id": "7f53a8a003114095834bb014712e2a7a",
+        "class": "artist", "name": "Le Youth"}}], "id": "5e4b04ebc15a542daad030821e99eb27"},
+        "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 03:04:37 GMT
+recorded_with: VCR 2.9.3
