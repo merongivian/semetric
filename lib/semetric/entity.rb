@@ -7,7 +7,7 @@ module Semetric
                         rank previous_rank has_data).freeze
 
     def initialize(name)
-      @path_generator = Path::Generator.new(type: 'artist',
+      @path_generator = Path.new(type: 'artist',
                                             source: 'lastfm',
                                             id: name)
     end

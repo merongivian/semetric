@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Semetric::GetRequest, vcr: true do
   let(:id) { 'fe66302b0aee49cfbd7d248403036def' }
   let(:path) do
-    Semetric::Path::Generator.new(
+    Semetric::Path.new(
       id: id
     ).basic + "/plays/total"
   end
@@ -34,7 +34,7 @@ describe Semetric::GetRequest, vcr: true do
 
     context "for no data error" do
       let(:path_generator) do
-        Semetric::Path::Generator.new(id: id)
+        Semetric::Path.new(id: id)
       end
       let(:data_type) { 'fans' }
 

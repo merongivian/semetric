@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Semetric::Path::Generator do
+describe Semetric::Path do
   let(:id)   {"beatles"}
   let(:type) {"artist"}
 

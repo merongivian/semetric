@@ -4,7 +4,7 @@ module Semetric
       def initialize(type, subsource, name)
         @type = type
         @subsource = subsource
-        @path_generator = Path::Generator.new(type: 'artist',
+        @path_generator = Path.new(type: 'artist',
                                               source: 'lastfm',
                                               id: name)
       end
