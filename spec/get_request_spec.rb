@@ -4,6 +4,8 @@ describe Semetric::GetRequest, vcr: true do
   let(:id) { 'fe66302b0aee49cfbd7d248403036def' }
   let(:path) do
     Semetric::Path.new(
+      source: nil,
+      type: 'entity',
       id: id
     ).basic + "/plays/total"
   end
@@ -34,7 +36,7 @@ describe Semetric::GetRequest, vcr: true do
 
     context "for no data error" do
       let(:path_generator) do
-        Semetric::Path.new(id: id)
+        Semetric::Path.new(source: nil, type: 'entity', id: id)
       end
       let(:data_type) { 'fans' }
 

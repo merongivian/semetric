@@ -2,9 +2,7 @@ module Semetric
   class Event
     def initialize(type, name)
       @type = type
-      @path_generator = Path.new(type: 'artist',
-                                            source: 'lastfm',
-                                            id: name)
+      @path_generator = Path.new(id: name)
     end
 
     def data

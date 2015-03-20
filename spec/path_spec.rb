@@ -8,7 +8,7 @@ describe Semetric::Path do
     id_with_spaces = 'id  with   spaces '
     subject { described_class.new(id: id_with_spaces) }
 
-    it { is_expected.to have_attributes(type: 'entity', source: nil) }
+    it { is_expected.to have_attributes(type: 'artist', source: 'lastfm') }
 
     it "handles id with spaces" do
       expect(subject.id).to eq 'id+with+spaces'
@@ -24,7 +24,7 @@ describe Semetric::Path do
     end
 
     it "returns a path with semetric as default source" do
-      path   = described_class.new(type: type,id: id)
+      path   = described_class.new(type: type, id: id, source: nil)
 
       expect(path.basic).
         to eq "/#{type}/#{id}"

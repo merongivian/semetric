@@ -4,9 +4,7 @@ module Semetric
       def initialize(type, subsource, name)
         @type = type
         @subsource = subsource
-        @path_generator = Path.new(type: 'artist',
-                                              source: 'lastfm',
-                                              id: name)
+        @path_generator = Path.new(id: name)
       end
 
       def data(granularity: 'day', variant: 'diff')

@@ -1034,4 +1034,156 @@ http_interactions:
         86400}, "success": true}'
     http_version: 
   recorded_at: Wed, 11 Mar 2015 16:47:52 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/artist/lastfm:fe66302b0aee49cfbd7d248403036def/plays/total?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 19:53:01 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '129'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success": false, "error": {"msg": "No data found for artist with
+        ID lastfm:fe66302b0aee49cfbd7d248403036def", "code": 204}}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 19:53:02 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/artist/lastfm:fe66302b0aee49cfbd7d248403036def/plays/total?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 19:53:01 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '129'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success": false, "error": {"msg": "No data found for artist with
+        ID lastfm:fe66302b0aee49cfbd7d248403036def", "code": 204}}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 19:53:02 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/artist/lastfm:fe66302b0aee49cfbd7d248403036def/plays/total?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 19:53:01 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '129'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success": false, "error": {"msg": "No data found for artist with
+        ID lastfm:fe66302b0aee49cfbd7d248403036def", "code": 204}}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 19:53:03 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/artist/lastfm:fe66302b0aee49cfbd7d248403036def/plays/total?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 19:53:02 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '129'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success": false, "error": {"msg": "No data found for artist with
+        ID lastfm:fe66302b0aee49cfbd7d248403036def", "code": 204}}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 19:53:03 GMT
 recorded_with: VCR 2.9.3

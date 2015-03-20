@@ -2,7 +2,7 @@ module Semetric
   class Path
     attr_reader :id, :source, :type
 
-    def initialize(type: 'entity', source: nil, id:)
+    def initialize(type: 'artist', source: 'lastfm', id:)
       @type    = type
       @source  = source
       @id      = id.strip.gsub(/\s+/, "+")
