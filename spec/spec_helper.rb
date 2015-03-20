@@ -27,6 +27,7 @@ require 'semetric/image'
 require 'semetric/get_request'
 require 'semetric/artist/statistics'
 require 'semetric/artist/data'
+require 'semetric/artist/charts'
 require 'semetric/event'
 require 'semetric/demographics'
 

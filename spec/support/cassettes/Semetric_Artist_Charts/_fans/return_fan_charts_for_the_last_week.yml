@@ -1,0 +1,1189 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/bb789492225c4c4da2e15f617acc9982?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 01:29:48 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2198'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Fans added last day", "now_id": "bb789492225c4c4da2e15f617acc9982",
+        "start_time": 1426636800, "period": 86400, "class": "chart", "end_time": 1426723200,
+        "previous_id": "5c016d8f9fd0586dafb8d0fefafb175e", "data": [{"value": 125872,
+        "rank": 1, "artist": {"class": "artist", "name": "Taylor Swift", "id": "5e8dba506c2b4091bee56bc7c4088afc"}},
+        {"value": 83917, "rank": 2, "artist": {"class": "artist", "name": "Ariana
+        Grande", "id": "35bff379cd084f6e92fc145b3496843f"}}, {"value": 80981, "rank":
+        3, "artist": {"class": "artist", "name": "Adam Levine", "id": "2e103f3cd92c455ba16229a0350e5df6"}},
+        {"value": 78777, "rank": 4, "artist": {"class": "artist", "name": "Katy Perry",
+        "id": "ebb718f927a34f00ba154c632ad10c92"}}, {"value": 73510, "rank": 5, "artist":
+        {"class": "artist", "name": "Justin Timberlake", "id": "90b42f912f4a4a5988af16a7c2222f55"}},
+        {"value": 65894, "rank": 6, "artist": {"class": "artist", "name": "Rihanna",
+        "id": "ed61fe981f9143fe82536a0e5e9836f7"}}, {"value": 61401, "rank": 7, "artist":
+        {"class": "artist", "name": "Selena Gomez", "id": "625cc7cba2bf4a3ab438f5cbf7c72cb3"}},
+        {"value": 60658, "rank": 8, "artist": {"class": "artist", "name": "Justin
+        Bieber", "id": "74d4539c16624efc9471c5a93292c6e7"}}, {"value": 49118, "rank":
+        9, "artist": {"class": "artist", "name": "Jennifer Lopez", "id": "eb81b94504414e5cb5f968b66fe2435f"}},
+        {"value": 38495, "rank": 10, "artist": {"class": "artist", "name": "Beyonc\u00e9",
+        "id": "123084cfba9e4c93a530e1eff2108180"}}, {"value": 35926, "rank": 11, "artist":
+        {"class": "artist", "name": "Drake", "id": "87e0e4ccc7f4415cbd6ba60ad49943b6"}},
+        {"value": 35691, "rank": 12, "artist": {"class": "artist", "name": "Nicki
+        Minaj", "id": "bf7008d12c9b4d03a109322ccdb2a99f"}}, {"value": 34892, "rank":
+        13, "artist": {"class": "artist", "name": "Madonna", "id": "2c38f7500c82471092d1c10a66155b87"}},
+        {"value": 30471, "rank": 14, "artist": {"class": "artist", "name": "Big Sean",
+        "id": "8a3448f501ca414694780a51589d7d53"}}, {"value": 29701, "rank": 15, "artist":
+        {"class": "artist", "name": "Lucy Hale", "id": "5fee11415d4047cdb412bb27dadd5005"}},
+        {"value": 27522, "rank": 16, "artist": {"class": "artist", "name": "Demi Lovato",
+        "id": "8cea592f14ce4d4a806f7ef20e68ea11"}}, {"value": 26590, "rank": 17, "artist":
+        {"class": "artist", "name": "Wiz Khalifa", "id": "84e295002637485ea94b49672bd02919"}},
+        {"value": 25586, "rank": 18, "artist": {"class": "artist", "name": "Miley
+        Cyrus", "id": "66d1dafffcf5498db51176946d25bcb8"}}, {"value": 23966, "rank":
+        19, "artist": {"class": "artist", "name": "Nicky Jam", "id": "86c1ebbeb8ea4d39a350da40db7018c6"}},
+        {"value": 23788, "rank": 20, "artist": {"class": "artist", "name": "Lady Gaga",
+        "id": "fe66302b0aee49cfbd7d248403036def"}}, {"value": 22011, "rank": 21, "artist":
+        {"class": "artist", "name": "Maroon 5", "id": "dfede336c5de47ac84d570166275dd2e"}},
+        {"value": 21291, "rank": 22, "artist": {"class": "artist", "name": "Sam Smith",
+        "id": "e66ea9bb1d354454b274095a36d7482b"}}, {"value": 21069, "rank": 23, "artist":
+        {"class": "artist", "name": "Shakira", "id": "1418b8d3a3284125a319764083790b7c"}},
+        {"value": 20621, "rank": 24, "artist": {"class": "artist", "name": "Kanye
+        West", "id": "b5eccd4e8ae24cc49b80fedfe74581d1"}}, {"value": 20449, "rank":
+        25, "artist": {"class": "artist", "name": "Ellie Goulding", "id": "c95325a134074fd2b4a3d864b3a10a6d"}},
+        {"value": 20444, "rank": 26, "artist": {"class": "artist", "name": "Maluma",
+        "id": "3912a91f0be442b78ae5329b7038cd8e"}}, {"value": 18304, "rank": 27, "artist":
+        {"class": "artist", "name": "Lil Wayne", "id": "08f2c17632f349c7a742c56289b98465"}},
+        {"value": 17641, "rank": 28, "artist": {"class": "artist", "name": "Avril
+        Lavigne", "id": "f8a609633416493eac1855fd9df8a8bb"}}, {"value": 16990, "rank":
+        29, "artist": {"class": "artist", "name": "Pharrell Williams", "id": "2e886fbf8ab1439fba08107b02a0822d"}},
+        {"value": 15981, "rank": 30, "artist": {"class": "artist", "name": "Lana Del
+        Rey", "id": "8e8ff37e49164e62be5ec99a9a79c568"}}, {"value": 15532, "rank":
+        31, "artist": {"class": "artist", "name": "Meghan Trainor", "id": "9317e3b373464a658ad07718122cae5d"}},
+        {"value": 14470, "rank": 32, "artist": {"class": "artist", "name": "Bruno
+        Mars", "id": "27659dfce05141f98e12bf8746ee9465"}}, {"value": 14329, "rank":
+        33, "artist": {"class": "artist", "name": "Harry Styles", "id": "2d10d606e1a340e8bd81b62529942b59"}},
+        {"value": 13989, "rank": 34, "artist": {"class": "artist", "name": "Austin
+        Mahone", "id": "3a161e54c7414950bcceec105495cae9"}}, {"value": 13941, "rank":
+        35, "artist": {"class": "artist", "name": "Christina Aguilera", "id": "b287316cfbfe4170b1d253dd557742ca"}},
+        {"value": 13110, "rank": 36, "artist": {"class": "artist", "name": "Romeo
+        Santos", "id": "9bf7e395a5754601809f5223ccfc46dd"}}, {"value": 12920, "rank":
+        37, "artist": {"class": "artist", "name": "Luan Santana", "id": "f1280f4741f94a64902d90161849c761"}},
+        {"value": 12825, "rank": 38, "artist": {"class": "artist", "name": "A. R.
+        Rahman", "id": "2e1d24a4bab1490c802ed1dd48741929"}}, {"value": 12664, "rank":
+        39, "artist": {"class": "artist", "name": "Alicia Keys", "id": "1b6186f6a5924ad89c6330f7def7d6e6"}},
+        {"value": 12543, "rank": 40, "artist": {"class": "artist", "name": "Lucas
+        Lucco", "id": "1effa207b2ee466694a08578bc2ed3be"}}, {"value": 12523, "rank":
+        41, "artist": {"class": "artist", "name": "Anitta", "id": "b4669c107b3d4fca89dc42048656e48b"}},
+        {"value": 12478, "rank": 42, "artist": {"class": "artist", "name": "One Direction",
+        "id": "d63c13f693fa43d49a399380c122c57d"}}, {"value": 12385, "rank": 43, "artist":
+        {"class": "artist", "name": "Pitbull", "id": "555d3359b6a84172b105ca28f54e5128"}},
+        {"value": 11945, "rank": 44, "artist": {"class": "artist", "name": "Thal\u00eda",
+        "id": "ed81532deaa64309a9d9dbc332d727d0"}}, {"value": 11765, "rank": 45, "artist":
+        {"class": "artist", "name": "Daddy Yankee", "id": "3aeaee1ace81432ca762da92bb67dd62"}},
+        {"value": 11627, "rank": 46, "artist": {"class": "artist", "name": "Marina
+        & The Diamonds", "id": "bfa195fc00c445d69185c32656f11b74"}}, {"value": 11054,
+        "rank": 47, "artist": {"class": "artist", "name": "Meek Mill", "id": "52deb03fc6c641fb9bdffc65e1e64784"}},
+        {"value": 11035, "rank": 48, "artist": {"class": "artist", "name": "Plies",
+        "id": "2e79c793535b4769bd49577be654fe7b"}}, {"value": 10958, "rank": 49, "artist":
+        {"class": "artist", "name": "Elissa", "id": "4f343c8acad942d893f5606c3251cd55"}},
+        {"value": 10803, "rank": 50, "artist": {"class": "artist", "name": "Martin
+        Garrix", "id": "10d8768440d7411aa0b2a29d3f57d266"}}], "id": "e95ce66b764b50878a4db86d355b6b6a"},
+        "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 01:29:50 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/bb789492225c4c4da2e15f617acc9982?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 01:29:49 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2203'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Fans added last day", "now_id": "bb789492225c4c4da2e15f617acc9982",
+        "start_time": 1426636800, "period": 86400, "class": "chart", "end_time": 1426723200,
+        "previous_id": "5c016d8f9fd0586dafb8d0fefafb175e", "data": [{"rank": 1, "value":
+        125872, "artist": {"id": "5e8dba506c2b4091bee56bc7c4088afc", "class": "artist",
+        "name": "Taylor Swift"}}, {"rank": 2, "value": 83917, "artist": {"id": "35bff379cd084f6e92fc145b3496843f",
+        "class": "artist", "name": "Ariana Grande"}}, {"rank": 3, "value": 80981,
+        "artist": {"id": "2e103f3cd92c455ba16229a0350e5df6", "class": "artist", "name":
+        "Adam Levine"}}, {"rank": 4, "value": 78777, "artist": {"id": "ebb718f927a34f00ba154c632ad10c92",
+        "class": "artist", "name": "Katy Perry"}}, {"rank": 5, "value": 73510, "artist":
+        {"id": "90b42f912f4a4a5988af16a7c2222f55", "class": "artist", "name": "Justin
+        Timberlake"}}, {"rank": 6, "value": 65894, "artist": {"id": "ed61fe981f9143fe82536a0e5e9836f7",
+        "class": "artist", "name": "Rihanna"}}, {"rank": 7, "value": 61401, "artist":
+        {"id": "625cc7cba2bf4a3ab438f5cbf7c72cb3", "class": "artist", "name": "Selena
+        Gomez"}}, {"rank": 8, "value": 60658, "artist": {"id": "74d4539c16624efc9471c5a93292c6e7",
+        "class": "artist", "name": "Justin Bieber"}}, {"rank": 9, "value": 49118,
+        "artist": {"id": "eb81b94504414e5cb5f968b66fe2435f", "class": "artist", "name":
+        "Jennifer Lopez"}}, {"rank": 10, "value": 38495, "artist": {"id": "123084cfba9e4c93a530e1eff2108180",
+        "class": "artist", "name": "Beyonc\u00e9"}}, {"rank": 11, "value": 35926,
+        "artist": {"id": "87e0e4ccc7f4415cbd6ba60ad49943b6", "class": "artist", "name":
+        "Drake"}}, {"rank": 12, "value": 35691, "artist": {"id": "bf7008d12c9b4d03a109322ccdb2a99f",
+        "class": "artist", "name": "Nicki Minaj"}}, {"rank": 13, "value": 34892, "artist":
+        {"id": "2c38f7500c82471092d1c10a66155b87", "class": "artist", "name": "Madonna"}},
+        {"rank": 14, "value": 30471, "artist": {"id": "8a3448f501ca414694780a51589d7d53",
+        "class": "artist", "name": "Big Sean"}}, {"rank": 15, "value": 29701, "artist":
+        {"id": "5fee11415d4047cdb412bb27dadd5005", "class": "artist", "name": "Lucy
+        Hale"}}, {"rank": 16, "value": 27522, "artist": {"id": "8cea592f14ce4d4a806f7ef20e68ea11",
+        "class": "artist", "name": "Demi Lovato"}}, {"rank": 17, "value": 26590, "artist":
+        {"id": "84e295002637485ea94b49672bd02919", "class": "artist", "name": "Wiz
+        Khalifa"}}, {"rank": 18, "value": 25586, "artist": {"id": "66d1dafffcf5498db51176946d25bcb8",
+        "class": "artist", "name": "Miley Cyrus"}}, {"rank": 19, "value": 23966, "artist":
+        {"id": "86c1ebbeb8ea4d39a350da40db7018c6", "class": "artist", "name": "Nicky
+        Jam"}}, {"rank": 20, "value": 23788, "artist": {"id": "fe66302b0aee49cfbd7d248403036def",
+        "class": "artist", "name": "Lady Gaga"}}, {"rank": 21, "value": 22011, "artist":
+        {"id": "dfede336c5de47ac84d570166275dd2e", "class": "artist", "name": "Maroon
+        5"}}, {"rank": 22, "value": 21291, "artist": {"id": "e66ea9bb1d354454b274095a36d7482b",
+        "class": "artist", "name": "Sam Smith"}}, {"rank": 23, "value": 21069, "artist":
+        {"id": "1418b8d3a3284125a319764083790b7c", "class": "artist", "name": "Shakira"}},
+        {"rank": 24, "value": 20621, "artist": {"id": "b5eccd4e8ae24cc49b80fedfe74581d1",
+        "class": "artist", "name": "Kanye West"}}, {"rank": 25, "value": 20449, "artist":
+        {"id": "c95325a134074fd2b4a3d864b3a10a6d", "class": "artist", "name": "Ellie
+        Goulding"}}, {"rank": 26, "value": 20444, "artist": {"id": "3912a91f0be442b78ae5329b7038cd8e",
+        "class": "artist", "name": "Maluma"}}, {"rank": 27, "value": 18304, "artist":
+        {"id": "08f2c17632f349c7a742c56289b98465", "class": "artist", "name": "Lil
+        Wayne"}}, {"rank": 28, "value": 17641, "artist": {"id": "f8a609633416493eac1855fd9df8a8bb",
+        "class": "artist", "name": "Avril Lavigne"}}, {"rank": 29, "value": 16990,
+        "artist": {"id": "2e886fbf8ab1439fba08107b02a0822d", "class": "artist", "name":
+        "Pharrell Williams"}}, {"rank": 30, "value": 15981, "artist": {"id": "8e8ff37e49164e62be5ec99a9a79c568",
+        "class": "artist", "name": "Lana Del Rey"}}, {"rank": 31, "value": 15532,
+        "artist": {"id": "9317e3b373464a658ad07718122cae5d", "class": "artist", "name":
+        "Meghan Trainor"}}, {"rank": 32, "value": 14470, "artist": {"id": "27659dfce05141f98e12bf8746ee9465",
+        "class": "artist", "name": "Bruno Mars"}}, {"rank": 33, "value": 14329, "artist":
+        {"id": "2d10d606e1a340e8bd81b62529942b59", "class": "artist", "name": "Harry
+        Styles"}}, {"rank": 34, "value": 13989, "artist": {"id": "3a161e54c7414950bcceec105495cae9",
+        "class": "artist", "name": "Austin Mahone"}}, {"rank": 35, "value": 13941,
+        "artist": {"id": "b287316cfbfe4170b1d253dd557742ca", "class": "artist", "name":
+        "Christina Aguilera"}}, {"rank": 36, "value": 13110, "artist": {"id": "9bf7e395a5754601809f5223ccfc46dd",
+        "class": "artist", "name": "Romeo Santos"}}, {"rank": 37, "value": 12920,
+        "artist": {"id": "f1280f4741f94a64902d90161849c761", "class": "artist", "name":
+        "Luan Santana"}}, {"rank": 38, "value": 12825, "artist": {"id": "2e1d24a4bab1490c802ed1dd48741929",
+        "class": "artist", "name": "A. R. Rahman"}}, {"rank": 39, "value": 12664,
+        "artist": {"id": "1b6186f6a5924ad89c6330f7def7d6e6", "class": "artist", "name":
+        "Alicia Keys"}}, {"rank": 40, "value": 12543, "artist": {"id": "1effa207b2ee466694a08578bc2ed3be",
+        "class": "artist", "name": "Lucas Lucco"}}, {"rank": 41, "value": 12523, "artist":
+        {"id": "b4669c107b3d4fca89dc42048656e48b", "class": "artist", "name": "Anitta"}},
+        {"rank": 42, "value": 12478, "artist": {"id": "d63c13f693fa43d49a399380c122c57d",
+        "class": "artist", "name": "One Direction"}}, {"rank": 43, "value": 12385,
+        "artist": {"id": "555d3359b6a84172b105ca28f54e5128", "class": "artist", "name":
+        "Pitbull"}}, {"rank": 44, "value": 11945, "artist": {"id": "ed81532deaa64309a9d9dbc332d727d0",
+        "class": "artist", "name": "Thal\u00eda"}}, {"rank": 45, "value": 11765, "artist":
+        {"id": "3aeaee1ace81432ca762da92bb67dd62", "class": "artist", "name": "Daddy
+        Yankee"}}, {"rank": 46, "value": 11627, "artist": {"id": "bfa195fc00c445d69185c32656f11b74",
+        "class": "artist", "name": "Marina & The Diamonds"}}, {"rank": 47, "value":
+        11054, "artist": {"id": "52deb03fc6c641fb9bdffc65e1e64784", "class": "artist",
+        "name": "Meek Mill"}}, {"rank": 48, "value": 11035, "artist": {"id": "2e79c793535b4769bd49577be654fe7b",
+        "class": "artist", "name": "Plies"}}, {"rank": 49, "value": 10958, "artist":
+        {"id": "4f343c8acad942d893f5606c3251cd55", "class": "artist", "name": "Elissa"}},
+        {"rank": 50, "value": 10803, "artist": {"id": "10d8768440d7411aa0b2a29d3f57d266",
+        "class": "artist", "name": "Martin Garrix"}}], "id": "e95ce66b764b50878a4db86d355b6b6a"},
+        "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 01:29:51 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/bb789492225c4c4da2e15f617acc9982?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 01:29:50 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2203'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Fans added last day", "now_id": "bb789492225c4c4da2e15f617acc9982",
+        "start_time": 1426636800, "period": 86400, "class": "chart", "end_time": 1426723200,
+        "previous_id": "5c016d8f9fd0586dafb8d0fefafb175e", "data": [{"rank": 1, "value":
+        125872, "artist": {"id": "5e8dba506c2b4091bee56bc7c4088afc", "class": "artist",
+        "name": "Taylor Swift"}}, {"rank": 2, "value": 83917, "artist": {"id": "35bff379cd084f6e92fc145b3496843f",
+        "class": "artist", "name": "Ariana Grande"}}, {"rank": 3, "value": 80981,
+        "artist": {"id": "2e103f3cd92c455ba16229a0350e5df6", "class": "artist", "name":
+        "Adam Levine"}}, {"rank": 4, "value": 78777, "artist": {"id": "ebb718f927a34f00ba154c632ad10c92",
+        "class": "artist", "name": "Katy Perry"}}, {"rank": 5, "value": 73510, "artist":
+        {"id": "90b42f912f4a4a5988af16a7c2222f55", "class": "artist", "name": "Justin
+        Timberlake"}}, {"rank": 6, "value": 65894, "artist": {"id": "ed61fe981f9143fe82536a0e5e9836f7",
+        "class": "artist", "name": "Rihanna"}}, {"rank": 7, "value": 61401, "artist":
+        {"id": "625cc7cba2bf4a3ab438f5cbf7c72cb3", "class": "artist", "name": "Selena
+        Gomez"}}, {"rank": 8, "value": 60658, "artist": {"id": "74d4539c16624efc9471c5a93292c6e7",
+        "class": "artist", "name": "Justin Bieber"}}, {"rank": 9, "value": 49118,
+        "artist": {"id": "eb81b94504414e5cb5f968b66fe2435f", "class": "artist", "name":
+        "Jennifer Lopez"}}, {"rank": 10, "value": 38495, "artist": {"id": "123084cfba9e4c93a530e1eff2108180",
+        "class": "artist", "name": "Beyonc\u00e9"}}, {"rank": 11, "value": 35926,
+        "artist": {"id": "87e0e4ccc7f4415cbd6ba60ad49943b6", "class": "artist", "name":
+        "Drake"}}, {"rank": 12, "value": 35691, "artist": {"id": "bf7008d12c9b4d03a109322ccdb2a99f",
+        "class": "artist", "name": "Nicki Minaj"}}, {"rank": 13, "value": 34892, "artist":
+        {"id": "2c38f7500c82471092d1c10a66155b87", "class": "artist", "name": "Madonna"}},
+        {"rank": 14, "value": 30471, "artist": {"id": "8a3448f501ca414694780a51589d7d53",
+        "class": "artist", "name": "Big Sean"}}, {"rank": 15, "value": 29701, "artist":
+        {"id": "5fee11415d4047cdb412bb27dadd5005", "class": "artist", "name": "Lucy
+        Hale"}}, {"rank": 16, "value": 27522, "artist": {"id": "8cea592f14ce4d4a806f7ef20e68ea11",
+        "class": "artist", "name": "Demi Lovato"}}, {"rank": 17, "value": 26590, "artist":
+        {"id": "84e295002637485ea94b49672bd02919", "class": "artist", "name": "Wiz
+        Khalifa"}}, {"rank": 18, "value": 25586, "artist": {"id": "66d1dafffcf5498db51176946d25bcb8",
+        "class": "artist", "name": "Miley Cyrus"}}, {"rank": 19, "value": 23966, "artist":
+        {"id": "86c1ebbeb8ea4d39a350da40db7018c6", "class": "artist", "name": "Nicky
+        Jam"}}, {"rank": 20, "value": 23788, "artist": {"id": "fe66302b0aee49cfbd7d248403036def",
+        "class": "artist", "name": "Lady Gaga"}}, {"rank": 21, "value": 22011, "artist":
+        {"id": "dfede336c5de47ac84d570166275dd2e", "class": "artist", "name": "Maroon
+        5"}}, {"rank": 22, "value": 21291, "artist": {"id": "e66ea9bb1d354454b274095a36d7482b",
+        "class": "artist", "name": "Sam Smith"}}, {"rank": 23, "value": 21069, "artist":
+        {"id": "1418b8d3a3284125a319764083790b7c", "class": "artist", "name": "Shakira"}},
+        {"rank": 24, "value": 20621, "artist": {"id": "b5eccd4e8ae24cc49b80fedfe74581d1",
+        "class": "artist", "name": "Kanye West"}}, {"rank": 25, "value": 20449, "artist":
+        {"id": "c95325a134074fd2b4a3d864b3a10a6d", "class": "artist", "name": "Ellie
+        Goulding"}}, {"rank": 26, "value": 20444, "artist": {"id": "3912a91f0be442b78ae5329b7038cd8e",
+        "class": "artist", "name": "Maluma"}}, {"rank": 27, "value": 18304, "artist":
+        {"id": "08f2c17632f349c7a742c56289b98465", "class": "artist", "name": "Lil
+        Wayne"}}, {"rank": 28, "value": 17641, "artist": {"id": "f8a609633416493eac1855fd9df8a8bb",
+        "class": "artist", "name": "Avril Lavigne"}}, {"rank": 29, "value": 16990,
+        "artist": {"id": "2e886fbf8ab1439fba08107b02a0822d", "class": "artist", "name":
+        "Pharrell Williams"}}, {"rank": 30, "value": 15981, "artist": {"id": "8e8ff37e49164e62be5ec99a9a79c568",
+        "class": "artist", "name": "Lana Del Rey"}}, {"rank": 31, "value": 15532,
+        "artist": {"id": "9317e3b373464a658ad07718122cae5d", "class": "artist", "name":
+        "Meghan Trainor"}}, {"rank": 32, "value": 14470, "artist": {"id": "27659dfce05141f98e12bf8746ee9465",
+        "class": "artist", "name": "Bruno Mars"}}, {"rank": 33, "value": 14329, "artist":
+        {"id": "2d10d606e1a340e8bd81b62529942b59", "class": "artist", "name": "Harry
+        Styles"}}, {"rank": 34, "value": 13989, "artist": {"id": "3a161e54c7414950bcceec105495cae9",
+        "class": "artist", "name": "Austin Mahone"}}, {"rank": 35, "value": 13941,
+        "artist": {"id": "b287316cfbfe4170b1d253dd557742ca", "class": "artist", "name":
+        "Christina Aguilera"}}, {"rank": 36, "value": 13110, "artist": {"id": "9bf7e395a5754601809f5223ccfc46dd",
+        "class": "artist", "name": "Romeo Santos"}}, {"rank": 37, "value": 12920,
+        "artist": {"id": "f1280f4741f94a64902d90161849c761", "class": "artist", "name":
+        "Luan Santana"}}, {"rank": 38, "value": 12825, "artist": {"id": "2e1d24a4bab1490c802ed1dd48741929",
+        "class": "artist", "name": "A. R. Rahman"}}, {"rank": 39, "value": 12664,
+        "artist": {"id": "1b6186f6a5924ad89c6330f7def7d6e6", "class": "artist", "name":
+        "Alicia Keys"}}, {"rank": 40, "value": 12543, "artist": {"id": "1effa207b2ee466694a08578bc2ed3be",
+        "class": "artist", "name": "Lucas Lucco"}}, {"rank": 41, "value": 12523, "artist":
+        {"id": "b4669c107b3d4fca89dc42048656e48b", "class": "artist", "name": "Anitta"}},
+        {"rank": 42, "value": 12478, "artist": {"id": "d63c13f693fa43d49a399380c122c57d",
+        "class": "artist", "name": "One Direction"}}, {"rank": 43, "value": 12385,
+        "artist": {"id": "555d3359b6a84172b105ca28f54e5128", "class": "artist", "name":
+        "Pitbull"}}, {"rank": 44, "value": 11945, "artist": {"id": "ed81532deaa64309a9d9dbc332d727d0",
+        "class": "artist", "name": "Thal\u00eda"}}, {"rank": 45, "value": 11765, "artist":
+        {"id": "3aeaee1ace81432ca762da92bb67dd62", "class": "artist", "name": "Daddy
+        Yankee"}}, {"rank": 46, "value": 11627, "artist": {"id": "bfa195fc00c445d69185c32656f11b74",
+        "class": "artist", "name": "Marina & The Diamonds"}}, {"rank": 47, "value":
+        11054, "artist": {"id": "52deb03fc6c641fb9bdffc65e1e64784", "class": "artist",
+        "name": "Meek Mill"}}, {"rank": 48, "value": 11035, "artist": {"id": "2e79c793535b4769bd49577be654fe7b",
+        "class": "artist", "name": "Plies"}}, {"rank": 49, "value": 10958, "artist":
+        {"id": "4f343c8acad942d893f5606c3251cd55", "class": "artist", "name": "Elissa"}},
+        {"rank": 50, "value": 10803, "artist": {"id": "10d8768440d7411aa0b2a29d3f57d266",
+        "class": "artist", "name": "Martin Garrix"}}], "id": "e95ce66b764b50878a4db86d355b6b6a"},
+        "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 01:29:52 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/a5e7dbdfcd984dc28c350c26a2e703c0?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 01:32:30 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2218'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Fans added last week", "now_id": "a5e7dbdfcd984dc28c350c26a2e703c0",
+        "start_time": 1426464000, "period": 604800, "class": "chart", "end_time":
+        1427068800, "previous_id": "940f587982515193ae099b8076f4e12b", "data": [{"value":
+        409678, "rank": 1, "artist": {"class": "artist", "name": "Taylor Swift", "id":
+        "5e8dba506c2b4091bee56bc7c4088afc"}}, {"value": 228576, "rank": 2, "artist":
+        {"class": "artist", "name": "Justin Timberlake", "id": "90b42f912f4a4a5988af16a7c2222f55"}},
+        {"value": 226719, "rank": 3, "artist": {"class": "artist", "name": "Ariana
+        Grande", "id": "35bff379cd084f6e92fc145b3496843f"}}, {"value": 217044, "rank":
+        4, "artist": {"class": "artist", "name": "Katy Perry", "id": "ebb718f927a34f00ba154c632ad10c92"}},
+        {"value": 198147, "rank": 5, "artist": {"class": "artist", "name": "Rihanna",
+        "id": "ed61fe981f9143fe82536a0e5e9836f7"}}, {"value": 185789, "rank": 6, "artist":
+        {"class": "artist", "name": "Justin Bieber", "id": "74d4539c16624efc9471c5a93292c6e7"}},
+        {"value": 184774, "rank": 7, "artist": {"class": "artist", "name": "Selena
+        Gomez", "id": "625cc7cba2bf4a3ab438f5cbf7c72cb3"}}, {"value": 135208, "rank":
+        8, "artist": {"class": "artist", "name": "Nicki Minaj", "id": "bf7008d12c9b4d03a109322ccdb2a99f"}},
+        {"value": 116447, "rank": 9, "artist": {"class": "artist", "name": "Adam Levine",
+        "id": "2e103f3cd92c455ba16229a0350e5df6"}}, {"value": 115576, "rank": 10,
+        "artist": {"class": "artist", "name": "Jennifer Lopez", "id": "eb81b94504414e5cb5f968b66fe2435f"}},
+        {"value": 114272, "rank": 11, "artist": {"class": "artist", "name": "Drake",
+        "id": "87e0e4ccc7f4415cbd6ba60ad49943b6"}}, {"value": 107634, "rank": 12,
+        "artist": {"class": "artist", "name": "Beyonc\u00e9", "id": "123084cfba9e4c93a530e1eff2108180"}},
+        {"value": 94224, "rank": 13, "artist": {"class": "artist", "name": "Demi Lovato",
+        "id": "8cea592f14ce4d4a806f7ef20e68ea11"}}, {"value": 92037, "rank": 14, "artist":
+        {"class": "artist", "name": "Big Sean", "id": "8a3448f501ca414694780a51589d7d53"}},
+        {"value": 88922, "rank": 15, "artist": {"class": "artist", "name": "Wiz Khalifa",
+        "id": "84e295002637485ea94b49672bd02919"}}, {"value": 82699, "rank": 16, "artist":
+        {"class": "artist", "name": "Lucy Hale", "id": "5fee11415d4047cdb412bb27dadd5005"}},
+        {"value": 78381, "rank": 17, "artist": {"class": "artist", "name": "Nicky
+        Jam", "id": "86c1ebbeb8ea4d39a350da40db7018c6"}}, {"value": 76803, "rank":
+        18, "artist": {"class": "artist", "name": "Kanye West", "id": "b5eccd4e8ae24cc49b80fedfe74581d1"}},
+        {"value": 72537, "rank": 19, "artist": {"class": "artist", "name": "Ellie
+        Goulding", "id": "c95325a134074fd2b4a3d864b3a10a6d"}}, {"value": 71887, "rank":
+        20, "artist": {"class": "artist", "name": "Sam Smith", "id": "e66ea9bb1d354454b274095a36d7482b"}},
+        {"value": 71354, "rank": 21, "artist": {"class": "artist", "name": "Maluma",
+        "id": "3912a91f0be442b78ae5329b7038cd8e"}}, {"value": 67882, "rank": 22, "artist":
+        {"class": "artist", "name": "Maroon 5", "id": "dfede336c5de47ac84d570166275dd2e"}},
+        {"value": 64290, "rank": 23, "artist": {"class": "artist", "name": "Shakira",
+        "id": "1418b8d3a3284125a319764083790b7c"}}, {"value": 64267, "rank": 24, "artist":
+        {"class": "artist", "name": "Lady Gaga", "id": "fe66302b0aee49cfbd7d248403036def"}},
+        {"value": 62313, "rank": 25, "artist": {"class": "artist", "name": "Danna
+        Paola", "id": "ab7830dcf86b4508b3513f11fbd0b575"}}, {"value": 61702, "rank":
+        26, "artist": {"class": "artist", "name": "Joey Jordison", "id": "6a4951c5079e4f998a3585bd772b4188"}},
+        {"value": 58455, "rank": 27, "artist": {"class": "artist", "name": "Jacqueline
+        Fernandez", "id": "d41a51889e7f42cf95972481fd7530f2"}}, {"value": 58059, "rank":
+        28, "artist": {"class": "artist", "name": "Miley Cyrus", "id": "66d1dafffcf5498db51176946d25bcb8"}},
+        {"value": 57273, "rank": 29, "artist": {"class": "artist", "name": "Meghan
+        Trainor", "id": "9317e3b373464a658ad07718122cae5d"}}, {"value": 56526, "rank":
+        30, "artist": {"class": "artist", "name": "Romeo Santos", "id": "9bf7e395a5754601809f5223ccfc46dd"}},
+        {"value": 53174, "rank": 31, "artist": {"class": "artist", "name": "Lil Wayne",
+        "id": "08f2c17632f349c7a742c56289b98465"}}, {"value": 52294, "rank": 32, "artist":
+        {"class": "artist", "name": "Lucas Lucco", "id": "1effa207b2ee466694a08578bc2ed3be"}},
+        {"value": 51789, "rank": 33, "artist": {"class": "artist", "name": "Anitta",
+        "id": "b4669c107b3d4fca89dc42048656e48b"}}, {"value": 51537, "rank": 34, "artist":
+        {"class": "artist", "name": "Lana Del Rey", "id": "8e8ff37e49164e62be5ec99a9a79c568"}},
+        {"value": 49790, "rank": 35, "artist": {"class": "artist", "name": "Madonna",
+        "id": "2c38f7500c82471092d1c10a66155b87"}}, {"value": 47165, "rank": 36, "artist":
+        {"class": "artist", "name": "Pharrell Williams", "id": "2e886fbf8ab1439fba08107b02a0822d"}},
+        {"value": 46857, "rank": 37, "artist": {"class": "artist", "name": "Bruno
+        Mars", "id": "27659dfce05141f98e12bf8746ee9465"}}, {"value": 45478, "rank":
+        38, "artist": {"class": "artist", "name": "Zendaya", "id": "31633ddc951348748838e082a29a5304"}},
+        {"value": 45229, "rank": 39, "artist": {"class": "artist", "name": "Thal\u00eda",
+        "id": "ed81532deaa64309a9d9dbc332d727d0"}}, {"value": 44660, "rank": 40, "artist":
+        {"class": "artist", "name": "One Direction", "id": "d63c13f693fa43d49a399380c122c57d"}},
+        {"value": 43950, "rank": 41, "artist": {"class": "artist", "name": "Daddy
+        Yankee", "id": "3aeaee1ace81432ca762da92bb67dd62"}}, {"value": 43099, "rank":
+        42, "artist": {"class": "artist", "name": "Prince Royce", "id": "86eddf458dc74d4692fcd67f1f5a88b6"}},
+        {"value": 42726, "rank": 43, "artist": {"class": "artist", "name": "Luan Santana",
+        "id": "f1280f4741f94a64902d90161849c761"}}, {"value": 42694, "rank": 44, "artist":
+        {"class": "artist", "name": "Elissa", "id": "4f343c8acad942d893f5606c3251cd55"}},
+        {"value": 41050, "rank": 45, "artist": {"class": "artist", "name": "Marina
+        & The Diamonds", "id": "bfa195fc00c445d69185c32656f11b74"}}, {"value": 38709,
+        "rank": 46, "artist": {"class": "artist", "name": "Avril Lavigne", "id": "f8a609633416493eac1855fd9df8a8bb"}},
+        {"value": 38602, "rank": 47, "artist": {"class": "artist", "name": "A. R.
+        Rahman", "id": "2e1d24a4bab1490c802ed1dd48741929"}}, {"value": 38586, "rank":
+        48, "artist": {"class": "artist", "name": "Pitbull", "id": "555d3359b6a84172b105ca28f54e5128"}},
+        {"value": 38253, "rank": 49, "artist": {"class": "artist", "name": "Austin
+        Mahone", "id": "3a161e54c7414950bcceec105495cae9"}}, {"value": 38078, "rank":
+        50, "artist": {"class": "artist", "name": "Harry Styles", "id": "2d10d606e1a340e8bd81b62529942b59"}}],
+        "id": "9097c537b68c563eadc2cfce0991205f"}, "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 01:32:32 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/a5e7dbdfcd984dc28c350c26a2e703c0?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 01:32:32 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2226'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Fans added last week", "now_id": "a5e7dbdfcd984dc28c350c26a2e703c0",
+        "start_time": 1426464000, "period": 604800, "class": "chart", "end_time":
+        1427068800, "previous_id": "940f587982515193ae099b8076f4e12b", "data": [{"rank":
+        1, "value": 409678, "artist": {"id": "5e8dba506c2b4091bee56bc7c4088afc", "class":
+        "artist", "name": "Taylor Swift"}}, {"rank": 2, "value": 228576, "artist":
+        {"id": "90b42f912f4a4a5988af16a7c2222f55", "class": "artist", "name": "Justin
+        Timberlake"}}, {"rank": 3, "value": 226719, "artist": {"id": "35bff379cd084f6e92fc145b3496843f",
+        "class": "artist", "name": "Ariana Grande"}}, {"rank": 4, "value": 217044,
+        "artist": {"id": "ebb718f927a34f00ba154c632ad10c92", "class": "artist", "name":
+        "Katy Perry"}}, {"rank": 5, "value": 198147, "artist": {"id": "ed61fe981f9143fe82536a0e5e9836f7",
+        "class": "artist", "name": "Rihanna"}}, {"rank": 6, "value": 185789, "artist":
+        {"id": "74d4539c16624efc9471c5a93292c6e7", "class": "artist", "name": "Justin
+        Bieber"}}, {"rank": 7, "value": 184774, "artist": {"id": "625cc7cba2bf4a3ab438f5cbf7c72cb3",
+        "class": "artist", "name": "Selena Gomez"}}, {"rank": 8, "value": 135208,
+        "artist": {"id": "bf7008d12c9b4d03a109322ccdb2a99f", "class": "artist", "name":
+        "Nicki Minaj"}}, {"rank": 9, "value": 116447, "artist": {"id": "2e103f3cd92c455ba16229a0350e5df6",
+        "class": "artist", "name": "Adam Levine"}}, {"rank": 10, "value": 115576,
+        "artist": {"id": "eb81b94504414e5cb5f968b66fe2435f", "class": "artist", "name":
+        "Jennifer Lopez"}}, {"rank": 11, "value": 114272, "artist": {"id": "87e0e4ccc7f4415cbd6ba60ad49943b6",
+        "class": "artist", "name": "Drake"}}, {"rank": 12, "value": 107634, "artist":
+        {"id": "123084cfba9e4c93a530e1eff2108180", "class": "artist", "name": "Beyonc\u00e9"}},
+        {"rank": 13, "value": 94224, "artist": {"id": "8cea592f14ce4d4a806f7ef20e68ea11",
+        "class": "artist", "name": "Demi Lovato"}}, {"rank": 14, "value": 92037, "artist":
+        {"id": "8a3448f501ca414694780a51589d7d53", "class": "artist", "name": "Big
+        Sean"}}, {"rank": 15, "value": 88922, "artist": {"id": "84e295002637485ea94b49672bd02919",
+        "class": "artist", "name": "Wiz Khalifa"}}, {"rank": 16, "value": 82699, "artist":
+        {"id": "5fee11415d4047cdb412bb27dadd5005", "class": "artist", "name": "Lucy
+        Hale"}}, {"rank": 17, "value": 78381, "artist": {"id": "86c1ebbeb8ea4d39a350da40db7018c6",
+        "class": "artist", "name": "Nicky Jam"}}, {"rank": 18, "value": 76803, "artist":
+        {"id": "b5eccd4e8ae24cc49b80fedfe74581d1", "class": "artist", "name": "Kanye
+        West"}}, {"rank": 19, "value": 72537, "artist": {"id": "c95325a134074fd2b4a3d864b3a10a6d",
+        "class": "artist", "name": "Ellie Goulding"}}, {"rank": 20, "value": 71887,
+        "artist": {"id": "e66ea9bb1d354454b274095a36d7482b", "class": "artist", "name":
+        "Sam Smith"}}, {"rank": 21, "value": 71354, "artist": {"id": "3912a91f0be442b78ae5329b7038cd8e",
+        "class": "artist", "name": "Maluma"}}, {"rank": 22, "value": 67882, "artist":
+        {"id": "dfede336c5de47ac84d570166275dd2e", "class": "artist", "name": "Maroon
+        5"}}, {"rank": 23, "value": 64290, "artist": {"id": "1418b8d3a3284125a319764083790b7c",
+        "class": "artist", "name": "Shakira"}}, {"rank": 24, "value": 64267, "artist":
+        {"id": "fe66302b0aee49cfbd7d248403036def", "class": "artist", "name": "Lady
+        Gaga"}}, {"rank": 25, "value": 62313, "artist": {"id": "ab7830dcf86b4508b3513f11fbd0b575",
+        "class": "artist", "name": "Danna Paola"}}, {"rank": 26, "value": 61702, "artist":
+        {"id": "6a4951c5079e4f998a3585bd772b4188", "class": "artist", "name": "Joey
+        Jordison"}}, {"rank": 27, "value": 58455, "artist": {"id": "d41a51889e7f42cf95972481fd7530f2",
+        "class": "artist", "name": "Jacqueline Fernandez"}}, {"rank": 28, "value":
+        58059, "artist": {"id": "66d1dafffcf5498db51176946d25bcb8", "class": "artist",
+        "name": "Miley Cyrus"}}, {"rank": 29, "value": 57273, "artist": {"id": "9317e3b373464a658ad07718122cae5d",
+        "class": "artist", "name": "Meghan Trainor"}}, {"rank": 30, "value": 56526,
+        "artist": {"id": "9bf7e395a5754601809f5223ccfc46dd", "class": "artist", "name":
+        "Romeo Santos"}}, {"rank": 31, "value": 53174, "artist": {"id": "08f2c17632f349c7a742c56289b98465",
+        "class": "artist", "name": "Lil Wayne"}}, {"rank": 32, "value": 52294, "artist":
+        {"id": "1effa207b2ee466694a08578bc2ed3be", "class": "artist", "name": "Lucas
+        Lucco"}}, {"rank": 33, "value": 51789, "artist": {"id": "b4669c107b3d4fca89dc42048656e48b",
+        "class": "artist", "name": "Anitta"}}, {"rank": 34, "value": 51537, "artist":
+        {"id": "8e8ff37e49164e62be5ec99a9a79c568", "class": "artist", "name": "Lana
+        Del Rey"}}, {"rank": 35, "value": 49790, "artist": {"id": "2c38f7500c82471092d1c10a66155b87",
+        "class": "artist", "name": "Madonna"}}, {"rank": 36, "value": 47165, "artist":
+        {"id": "2e886fbf8ab1439fba08107b02a0822d", "class": "artist", "name": "Pharrell
+        Williams"}}, {"rank": 37, "value": 46857, "artist": {"id": "27659dfce05141f98e12bf8746ee9465",
+        "class": "artist", "name": "Bruno Mars"}}, {"rank": 38, "value": 45478, "artist":
+        {"id": "31633ddc951348748838e082a29a5304", "class": "artist", "name": "Zendaya"}},
+        {"rank": 39, "value": 45229, "artist": {"id": "ed81532deaa64309a9d9dbc332d727d0",
+        "class": "artist", "name": "Thal\u00eda"}}, {"rank": 40, "value": 44660, "artist":
+        {"id": "d63c13f693fa43d49a399380c122c57d", "class": "artist", "name": "One
+        Direction"}}, {"rank": 41, "value": 43950, "artist": {"id": "3aeaee1ace81432ca762da92bb67dd62",
+        "class": "artist", "name": "Daddy Yankee"}}, {"rank": 42, "value": 43099,
+        "artist": {"id": "86eddf458dc74d4692fcd67f1f5a88b6", "class": "artist", "name":
+        "Prince Royce"}}, {"rank": 43, "value": 42726, "artist": {"id": "f1280f4741f94a64902d90161849c761",
+        "class": "artist", "name": "Luan Santana"}}, {"rank": 44, "value": 42694,
+        "artist": {"id": "4f343c8acad942d893f5606c3251cd55", "class": "artist", "name":
+        "Elissa"}}, {"rank": 45, "value": 41050, "artist": {"id": "bfa195fc00c445d69185c32656f11b74",
+        "class": "artist", "name": "Marina & The Diamonds"}}, {"rank": 46, "value":
+        38709, "artist": {"id": "f8a609633416493eac1855fd9df8a8bb", "class": "artist",
+        "name": "Avril Lavigne"}}, {"rank": 47, "value": 38602, "artist": {"id": "2e1d24a4bab1490c802ed1dd48741929",
+        "class": "artist", "name": "A. R. Rahman"}}, {"rank": 48, "value": 38586,
+        "artist": {"id": "555d3359b6a84172b105ca28f54e5128", "class": "artist", "name":
+        "Pitbull"}}, {"rank": 49, "value": 38253, "artist": {"id": "3a161e54c7414950bcceec105495cae9",
+        "class": "artist", "name": "Austin Mahone"}}, {"rank": 50, "value": 38078,
+        "artist": {"id": "2d10d606e1a340e8bd81b62529942b59", "class": "artist", "name":
+        "Harry Styles"}}], "id": "9097c537b68c563eadc2cfce0991205f"}, "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 01:32:34 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/a5e7dbdfcd984dc28c350c26a2e703c0?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 01:32:34 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2226'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Fans added last week", "now_id": "a5e7dbdfcd984dc28c350c26a2e703c0",
+        "start_time": 1426464000, "period": 604800, "class": "chart", "end_time":
+        1427068800, "previous_id": "940f587982515193ae099b8076f4e12b", "data": [{"rank":
+        1, "value": 409678, "artist": {"id": "5e8dba506c2b4091bee56bc7c4088afc", "class":
+        "artist", "name": "Taylor Swift"}}, {"rank": 2, "value": 228576, "artist":
+        {"id": "90b42f912f4a4a5988af16a7c2222f55", "class": "artist", "name": "Justin
+        Timberlake"}}, {"rank": 3, "value": 226719, "artist": {"id": "35bff379cd084f6e92fc145b3496843f",
+        "class": "artist", "name": "Ariana Grande"}}, {"rank": 4, "value": 217044,
+        "artist": {"id": "ebb718f927a34f00ba154c632ad10c92", "class": "artist", "name":
+        "Katy Perry"}}, {"rank": 5, "value": 198147, "artist": {"id": "ed61fe981f9143fe82536a0e5e9836f7",
+        "class": "artist", "name": "Rihanna"}}, {"rank": 6, "value": 185789, "artist":
+        {"id": "74d4539c16624efc9471c5a93292c6e7", "class": "artist", "name": "Justin
+        Bieber"}}, {"rank": 7, "value": 184774, "artist": {"id": "625cc7cba2bf4a3ab438f5cbf7c72cb3",
+        "class": "artist", "name": "Selena Gomez"}}, {"rank": 8, "value": 135208,
+        "artist": {"id": "bf7008d12c9b4d03a109322ccdb2a99f", "class": "artist", "name":
+        "Nicki Minaj"}}, {"rank": 9, "value": 116447, "artist": {"id": "2e103f3cd92c455ba16229a0350e5df6",
+        "class": "artist", "name": "Adam Levine"}}, {"rank": 10, "value": 115576,
+        "artist": {"id": "eb81b94504414e5cb5f968b66fe2435f", "class": "artist", "name":
+        "Jennifer Lopez"}}, {"rank": 11, "value": 114272, "artist": {"id": "87e0e4ccc7f4415cbd6ba60ad49943b6",
+        "class": "artist", "name": "Drake"}}, {"rank": 12, "value": 107634, "artist":
+        {"id": "123084cfba9e4c93a530e1eff2108180", "class": "artist", "name": "Beyonc\u00e9"}},
+        {"rank": 13, "value": 94224, "artist": {"id": "8cea592f14ce4d4a806f7ef20e68ea11",
+        "class": "artist", "name": "Demi Lovato"}}, {"rank": 14, "value": 92037, "artist":
+        {"id": "8a3448f501ca414694780a51589d7d53", "class": "artist", "name": "Big
+        Sean"}}, {"rank": 15, "value": 88922, "artist": {"id": "84e295002637485ea94b49672bd02919",
+        "class": "artist", "name": "Wiz Khalifa"}}, {"rank": 16, "value": 82699, "artist":
+        {"id": "5fee11415d4047cdb412bb27dadd5005", "class": "artist", "name": "Lucy
+        Hale"}}, {"rank": 17, "value": 78381, "artist": {"id": "86c1ebbeb8ea4d39a350da40db7018c6",
+        "class": "artist", "name": "Nicky Jam"}}, {"rank": 18, "value": 76803, "artist":
+        {"id": "b5eccd4e8ae24cc49b80fedfe74581d1", "class": "artist", "name": "Kanye
+        West"}}, {"rank": 19, "value": 72537, "artist": {"id": "c95325a134074fd2b4a3d864b3a10a6d",
+        "class": "artist", "name": "Ellie Goulding"}}, {"rank": 20, "value": 71887,
+        "artist": {"id": "e66ea9bb1d354454b274095a36d7482b", "class": "artist", "name":
+        "Sam Smith"}}, {"rank": 21, "value": 71354, "artist": {"id": "3912a91f0be442b78ae5329b7038cd8e",
+        "class": "artist", "name": "Maluma"}}, {"rank": 22, "value": 67882, "artist":
+        {"id": "dfede336c5de47ac84d570166275dd2e", "class": "artist", "name": "Maroon
+        5"}}, {"rank": 23, "value": 64290, "artist": {"id": "1418b8d3a3284125a319764083790b7c",
+        "class": "artist", "name": "Shakira"}}, {"rank": 24, "value": 64267, "artist":
+        {"id": "fe66302b0aee49cfbd7d248403036def", "class": "artist", "name": "Lady
+        Gaga"}}, {"rank": 25, "value": 62313, "artist": {"id": "ab7830dcf86b4508b3513f11fbd0b575",
+        "class": "artist", "name": "Danna Paola"}}, {"rank": 26, "value": 61702, "artist":
+        {"id": "6a4951c5079e4f998a3585bd772b4188", "class": "artist", "name": "Joey
+        Jordison"}}, {"rank": 27, "value": 58455, "artist": {"id": "d41a51889e7f42cf95972481fd7530f2",
+        "class": "artist", "name": "Jacqueline Fernandez"}}, {"rank": 28, "value":
+        58059, "artist": {"id": "66d1dafffcf5498db51176946d25bcb8", "class": "artist",
+        "name": "Miley Cyrus"}}, {"rank": 29, "value": 57273, "artist": {"id": "9317e3b373464a658ad07718122cae5d",
+        "class": "artist", "name": "Meghan Trainor"}}, {"rank": 30, "value": 56526,
+        "artist": {"id": "9bf7e395a5754601809f5223ccfc46dd", "class": "artist", "name":
+        "Romeo Santos"}}, {"rank": 31, "value": 53174, "artist": {"id": "08f2c17632f349c7a742c56289b98465",
+        "class": "artist", "name": "Lil Wayne"}}, {"rank": 32, "value": 52294, "artist":
+        {"id": "1effa207b2ee466694a08578bc2ed3be", "class": "artist", "name": "Lucas
+        Lucco"}}, {"rank": 33, "value": 51789, "artist": {"id": "b4669c107b3d4fca89dc42048656e48b",
+        "class": "artist", "name": "Anitta"}}, {"rank": 34, "value": 51537, "artist":
+        {"id": "8e8ff37e49164e62be5ec99a9a79c568", "class": "artist", "name": "Lana
+        Del Rey"}}, {"rank": 35, "value": 49790, "artist": {"id": "2c38f7500c82471092d1c10a66155b87",
+        "class": "artist", "name": "Madonna"}}, {"rank": 36, "value": 47165, "artist":
+        {"id": "2e886fbf8ab1439fba08107b02a0822d", "class": "artist", "name": "Pharrell
+        Williams"}}, {"rank": 37, "value": 46857, "artist": {"id": "27659dfce05141f98e12bf8746ee9465",
+        "class": "artist", "name": "Bruno Mars"}}, {"rank": 38, "value": 45478, "artist":
+        {"id": "31633ddc951348748838e082a29a5304", "class": "artist", "name": "Zendaya"}},
+        {"rank": 39, "value": 45229, "artist": {"id": "ed81532deaa64309a9d9dbc332d727d0",
+        "class": "artist", "name": "Thal\u00eda"}}, {"rank": 40, "value": 44660, "artist":
+        {"id": "d63c13f693fa43d49a399380c122c57d", "class": "artist", "name": "One
+        Direction"}}, {"rank": 41, "value": 43950, "artist": {"id": "3aeaee1ace81432ca762da92bb67dd62",
+        "class": "artist", "name": "Daddy Yankee"}}, {"rank": 42, "value": 43099,
+        "artist": {"id": "86eddf458dc74d4692fcd67f1f5a88b6", "class": "artist", "name":
+        "Prince Royce"}}, {"rank": 43, "value": 42726, "artist": {"id": "f1280f4741f94a64902d90161849c761",
+        "class": "artist", "name": "Luan Santana"}}, {"rank": 44, "value": 42694,
+        "artist": {"id": "4f343c8acad942d893f5606c3251cd55", "class": "artist", "name":
+        "Elissa"}}, {"rank": 45, "value": 41050, "artist": {"id": "bfa195fc00c445d69185c32656f11b74",
+        "class": "artist", "name": "Marina & The Diamonds"}}, {"rank": 46, "value":
+        38709, "artist": {"id": "f8a609633416493eac1855fd9df8a8bb", "class": "artist",
+        "name": "Avril Lavigne"}}, {"rank": 47, "value": 38602, "artist": {"id": "2e1d24a4bab1490c802ed1dd48741929",
+        "class": "artist", "name": "A. R. Rahman"}}, {"rank": 48, "value": 38586,
+        "artist": {"id": "555d3359b6a84172b105ca28f54e5128", "class": "artist", "name":
+        "Pitbull"}}, {"rank": 49, "value": 38253, "artist": {"id": "3a161e54c7414950bcceec105495cae9",
+        "class": "artist", "name": "Austin Mahone"}}, {"rank": 50, "value": 38078,
+        "artist": {"id": "2d10d606e1a340e8bd81b62529942b59", "class": "artist", "name":
+        "Harry Styles"}}], "id": "9097c537b68c563eadc2cfce0991205f"}, "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 01:32:36 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 01:53:21 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '86'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success": false, "error": {"msg": "Resource not found", "code": 404}}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 01:53:22 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 01:53:21 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '86'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success": false, "error": {"msg": "Resource not found", "code": 404}}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 01:53:22 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 01:53:21 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '86'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success": false, "error": {"msg": "Resource not found", "code": 404}}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 01:53:23 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 01:53:22 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '86'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success": false, "error": {"msg": "Resource not found", "code": 404}}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 01:53:23 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/6aacf495049d4de99c809b0ad8120c39?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 14:38:28 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2307'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Current cumulative fans", "now_id": "6aacf495049d4de99c809b0ad8120c39",
+        "start_time": 1426723200, "period": 86400, "class": "chart", "end_time": 1426809600,
+        "previous_id": "97ab4eb9890f5695a552ba5bd20ca615", "data": [{"rank": 1, "value":
+        163419527, "artist": {"id": "74d4539c16624efc9471c5a93292c6e7", "class": "artist",
+        "name": "Justin Bieber"}}, {"rank": 2, "value": 160229935, "artist": {"id":
+        "ebb718f927a34f00ba154c632ad10c92", "class": "artist", "name": "Katy Perry"}},
+        {"rank": 3, "value": 153872247, "artist": {"id": "5e8dba506c2b4091bee56bc7c4088afc",
+        "class": "artist", "name": "Taylor Swift"}}, {"rank": 4, "value": 148762077,
+        "artist": {"id": "ed61fe981f9143fe82536a0e5e9836f7", "class": "artist", "name":
+        "Rihanna"}}, {"rank": 5, "value": 143872469, "artist": {"id": "1418b8d3a3284125a319764083790b7c",
+        "class": "artist", "name": "Shakira"}}, {"rank": 6, "value": 121212291, "artist":
+        {"id": "00c186c179514af388f3a5404726ef67", "class": "artist", "name": "Eminem"}},
+        {"rank": 7, "value": 118246131, "artist": {"id": "fe66302b0aee49cfbd7d248403036def",
+        "class": "artist", "name": "Lady Gaga"}}, {"rank": 8, "value": 114371069,
+        "artist": {"id": "625cc7cba2bf4a3ab438f5cbf7c72cb3", "class": "artist", "name":
+        "Selena Gomez"}}, {"rank": 9, "value": 110585363, "artist": {"id": "123084cfba9e4c93a530e1eff2108180",
+        "class": "artist", "name": "Beyonc\u00e9"}}, {"rank": 10, "value": 100548874,
+        "artist": {"id": "90b42f912f4a4a5988af16a7c2222f55", "class": "artist", "name":
+        "Justin Timberlake"}}, {"rank": 11, "value": 89575757, "artist": {"id": "eb81b94504414e5cb5f968b66fe2435f",
+        "class": "artist", "name": "Jennifer Lopez"}}, {"rank": 12, "value": 89196697,
+        "artist": {"id": "341df4df51be4fc0b6b164598f5d0796", "class": "artist", "name":
+        "Britney Spears"}}, {"rank": 13, "value": 86618866, "artist": {"id": "66d1dafffcf5498db51176946d25bcb8",
+        "class": "artist", "name": "Miley Cyrus"}}, {"rank": 14, "value": 86610231,
+        "artist": {"id": "e6ee861435b24f67a6283e00bf820bab", "class": "artist", "name":
+        "Adele"}}, {"rank": 15, "value": 86171896, "artist": {"id": "27659dfce05141f98e12bf8746ee9465",
+        "class": "artist", "name": "Bruno Mars"}}, {"rank": 16, "value": 85072476,
+        "artist": {"id": "555d3359b6a84172b105ca28f54e5128", "class": "artist", "name":
+        "Pitbull"}}, {"rank": 17, "value": 82001913, "artist": {"id": "bf7008d12c9b4d03a109322ccdb2a99f",
+        "class": "artist", "name": "Nicki Minaj"}}, {"rank": 18, "value": 81982670,
+        "artist": {"id": "5a2b5bc5c2764baea9c023b9f3055414", "class": "artist", "name":
+        "Michael Jackson"}}, {"rank": 19, "value": 79606077, "artist": {"id": "c49ee32e6d794681996a21515afddff6",
+        "class": "artist", "name": "David Guetta"}}, {"rank": 20, "value": 78821694,
+        "artist": {"id": "35bff379cd084f6e92fc145b3496843f", "class": "artist", "name":
+        "Ariana Grande"}}, {"rank": 21, "value": 78376115, "artist": {"id": "08f2c17632f349c7a742c56289b98465",
+        "class": "artist", "name": "Lil Wayne"}}, {"rank": 22, "value": 78195738,
+        "artist": {"id": "b8afccbdcfc64b31a7f715bbcc1c1355", "class": "artist", "name":
+        "Bob Marley"}}, {"rank": 23, "value": 78194477, "artist": {"id": "8cea592f14ce4d4a806f7ef20e68ea11",
+        "class": "artist", "name": "Demi Lovato"}}, {"rank": 24, "value": 77132496,
+        "artist": {"id": "f8a609633416493eac1855fd9df8a8bb", "class": "artist", "name":
+        "Avril Lavigne"}}, {"rank": 25, "value": 76637799, "artist": {"id": "82418693beb64f8782c92370651852f4",
+        "class": "artist", "name": "Linkin Park"}}, {"rank": 26, "value": 71833632,
+        "artist": {"id": "d63c13f693fa43d49a399380c122c57d", "class": "artist", "name":
+        "One Direction"}}, {"rank": 27, "value": 66236738, "artist": {"id": "3803de76ce6d4fd9a265f2b72d8146af",
+        "class": "artist", "name": "P!nk"}}, {"rank": 28, "value": 65788905, "artist":
+        {"id": "87e0e4ccc7f4415cbd6ba60ad49943b6", "class": "artist", "name": "Drake"}},
+        {"rank": 29, "value": 65405351, "artist": {"id": "9c2f532d84564850b351d6f65a6decd8",
+        "class": "artist", "name": "Usher"}}, {"rank": 30, "value": 65040043, "artist":
+        {"id": "109af247e6bd4491ada7420002d0de92", "class": "artist", "name": "Akon"}},
+        {"rank": 31, "value": 63125243, "artist": {"id": "28b22c984a8047608bf119feaa9ee7e3",
+        "class": "artist", "name": "Enrique Iglesias"}}, {"rank": 32, "value": 61999965,
+        "artist": {"id": "84e295002637485ea94b49672bd02919", "class": "artist", "name":
+        "Wiz Khalifa"}}, {"rank": 33, "value": 61898872, "artist": {"id": "1b6186f6a5924ad89c6330f7def7d6e6",
+        "class": "artist", "name": "Alicia Keys"}}, {"rank": 34, "value": 61811154,
+        "artist": {"id": "97c4d2dcb96348c7a0fbd6270875a071", "class": "artist", "name":
+        "Chris Brown"}}, {"rank": 35, "value": 55327839, "artist": {"id": "41221faa497f487fb6471a96baa0b7a5",
+        "class": "artist", "name": "Snoop Dogg"}}, {"rank": 36, "value": 55294027,
+        "artist": {"id": "9bee181b4b234bdd870967764a02474f", "class": "artist", "name":
+        "The Black Eyed Peas"}}, {"rank": 37, "value": 54307359, "artist": {"id":
+        "3a2b13e5a28e47a8afdf7eeb8dedbbad", "class": "artist", "name": "Coldplay"}},
+        {"rank": 38, "value": 53712414, "artist": {"id": "e78fc40de81a4e01babf1d23deaf2ca0",
+        "class": "artist", "name": "50 Cent"}}, {"rank": 39, "value": 51125495, "artist":
+        {"id": "dfede336c5de47ac84d570166275dd2e", "class": "artist", "name": "Maroon
+        5"}}, {"rank": 40, "value": 48988610, "artist": {"id": "2d10d606e1a340e8bd81b62529942b59",
+        "class": "artist", "name": "Harry Styles"}}, {"rank": 41, "value": 46159454,
+        "artist": {"id": "07ddca1fc5fa4a968253bf5dad5059d0", "class": "artist", "name":
+        "The Beatles"}}, {"rank": 42, "value": 44230394, "artist": {"id": "ad87512891f24a51b5d4ff96d7f458bc",
+        "class": "artist", "name": "Kesha"}}, {"rank": 43, "value": 43043174, "artist":
+        {"id": "da32b32e81c448eca710be32e74963d9", "class": "artist", "name": "LMFAO"}},
+        {"rank": 44, "value": 42327376, "artist": {"id": "481eb30ddd85428389dd2ceac64064b1",
+        "class": "artist", "name": "Metallica"}}, {"rank": 45, "value": 41625064,
+        "artist": {"id": "b287316cfbfe4170b1d253dd557742ca", "class": "artist", "name":
+        "Christina Aguilera"}}, {"rank": 46, "value": 39860944, "artist": {"id": "6039bcbfb1f44cff9e2044ca868a5877",
+        "class": "artist", "name": "Green Day"}}, {"rank": 47, "value": 39345915,
+        "artist": {"id": "c5a2a234700b446582c125ff66573429", "class": "artist", "name":
+        "Mariah Carey"}}, {"rank": 48, "value": 37494773, "artist": {"id": "3aeaee1ace81432ca762da92bb67dd62",
+        "class": "artist", "name": "Daddy Yankee"}}, {"rank": 49, "value": 37164278,
+        "artist": {"id": "86eddf458dc74d4692fcd67f1f5a88b6", "class": "artist", "name":
+        "Prince Royce"}}, {"rank": 50, "value": 35328433, "artist": {"id": "ef3e42c8c97c40a0ad66ad68541ab184",
+        "class": "artist", "name": "Ashley Tisdale"}}], "id": "e92c57729dea5e8b960992e0fa85f189"},
+        "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 14:38:29 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/6aacf495049d4de99c809b0ad8120c39?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 14:38:29 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2307'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Current cumulative fans", "now_id": "6aacf495049d4de99c809b0ad8120c39",
+        "start_time": 1426723200, "period": 86400, "class": "chart", "end_time": 1426809600,
+        "previous_id": "97ab4eb9890f5695a552ba5bd20ca615", "data": [{"rank": 1, "value":
+        163419527, "artist": {"id": "74d4539c16624efc9471c5a93292c6e7", "class": "artist",
+        "name": "Justin Bieber"}}, {"rank": 2, "value": 160229935, "artist": {"id":
+        "ebb718f927a34f00ba154c632ad10c92", "class": "artist", "name": "Katy Perry"}},
+        {"rank": 3, "value": 153872247, "artist": {"id": "5e8dba506c2b4091bee56bc7c4088afc",
+        "class": "artist", "name": "Taylor Swift"}}, {"rank": 4, "value": 148762077,
+        "artist": {"id": "ed61fe981f9143fe82536a0e5e9836f7", "class": "artist", "name":
+        "Rihanna"}}, {"rank": 5, "value": 143872469, "artist": {"id": "1418b8d3a3284125a319764083790b7c",
+        "class": "artist", "name": "Shakira"}}, {"rank": 6, "value": 121212291, "artist":
+        {"id": "00c186c179514af388f3a5404726ef67", "class": "artist", "name": "Eminem"}},
+        {"rank": 7, "value": 118246131, "artist": {"id": "fe66302b0aee49cfbd7d248403036def",
+        "class": "artist", "name": "Lady Gaga"}}, {"rank": 8, "value": 114371069,
+        "artist": {"id": "625cc7cba2bf4a3ab438f5cbf7c72cb3", "class": "artist", "name":
+        "Selena Gomez"}}, {"rank": 9, "value": 110585363, "artist": {"id": "123084cfba9e4c93a530e1eff2108180",
+        "class": "artist", "name": "Beyonc\u00e9"}}, {"rank": 10, "value": 100548874,
+        "artist": {"id": "90b42f912f4a4a5988af16a7c2222f55", "class": "artist", "name":
+        "Justin Timberlake"}}, {"rank": 11, "value": 89575757, "artist": {"id": "eb81b94504414e5cb5f968b66fe2435f",
+        "class": "artist", "name": "Jennifer Lopez"}}, {"rank": 12, "value": 89196697,
+        "artist": {"id": "341df4df51be4fc0b6b164598f5d0796", "class": "artist", "name":
+        "Britney Spears"}}, {"rank": 13, "value": 86618866, "artist": {"id": "66d1dafffcf5498db51176946d25bcb8",
+        "class": "artist", "name": "Miley Cyrus"}}, {"rank": 14, "value": 86610231,
+        "artist": {"id": "e6ee861435b24f67a6283e00bf820bab", "class": "artist", "name":
+        "Adele"}}, {"rank": 15, "value": 86171896, "artist": {"id": "27659dfce05141f98e12bf8746ee9465",
+        "class": "artist", "name": "Bruno Mars"}}, {"rank": 16, "value": 85072476,
+        "artist": {"id": "555d3359b6a84172b105ca28f54e5128", "class": "artist", "name":
+        "Pitbull"}}, {"rank": 17, "value": 82001913, "artist": {"id": "bf7008d12c9b4d03a109322ccdb2a99f",
+        "class": "artist", "name": "Nicki Minaj"}}, {"rank": 18, "value": 81982670,
+        "artist": {"id": "5a2b5bc5c2764baea9c023b9f3055414", "class": "artist", "name":
+        "Michael Jackson"}}, {"rank": 19, "value": 79606077, "artist": {"id": "c49ee32e6d794681996a21515afddff6",
+        "class": "artist", "name": "David Guetta"}}, {"rank": 20, "value": 78821694,
+        "artist": {"id": "35bff379cd084f6e92fc145b3496843f", "class": "artist", "name":
+        "Ariana Grande"}}, {"rank": 21, "value": 78376115, "artist": {"id": "08f2c17632f349c7a742c56289b98465",
+        "class": "artist", "name": "Lil Wayne"}}, {"rank": 22, "value": 78195738,
+        "artist": {"id": "b8afccbdcfc64b31a7f715bbcc1c1355", "class": "artist", "name":
+        "Bob Marley"}}, {"rank": 23, "value": 78194477, "artist": {"id": "8cea592f14ce4d4a806f7ef20e68ea11",
+        "class": "artist", "name": "Demi Lovato"}}, {"rank": 24, "value": 77132496,
+        "artist": {"id": "f8a609633416493eac1855fd9df8a8bb", "class": "artist", "name":
+        "Avril Lavigne"}}, {"rank": 25, "value": 76637799, "artist": {"id": "82418693beb64f8782c92370651852f4",
+        "class": "artist", "name": "Linkin Park"}}, {"rank": 26, "value": 71833632,
+        "artist": {"id": "d63c13f693fa43d49a399380c122c57d", "class": "artist", "name":
+        "One Direction"}}, {"rank": 27, "value": 66236738, "artist": {"id": "3803de76ce6d4fd9a265f2b72d8146af",
+        "class": "artist", "name": "P!nk"}}, {"rank": 28, "value": 65788905, "artist":
+        {"id": "87e0e4ccc7f4415cbd6ba60ad49943b6", "class": "artist", "name": "Drake"}},
+        {"rank": 29, "value": 65405351, "artist": {"id": "9c2f532d84564850b351d6f65a6decd8",
+        "class": "artist", "name": "Usher"}}, {"rank": 30, "value": 65040043, "artist":
+        {"id": "109af247e6bd4491ada7420002d0de92", "class": "artist", "name": "Akon"}},
+        {"rank": 31, "value": 63125243, "artist": {"id": "28b22c984a8047608bf119feaa9ee7e3",
+        "class": "artist", "name": "Enrique Iglesias"}}, {"rank": 32, "value": 61999965,
+        "artist": {"id": "84e295002637485ea94b49672bd02919", "class": "artist", "name":
+        "Wiz Khalifa"}}, {"rank": 33, "value": 61898872, "artist": {"id": "1b6186f6a5924ad89c6330f7def7d6e6",
+        "class": "artist", "name": "Alicia Keys"}}, {"rank": 34, "value": 61811154,
+        "artist": {"id": "97c4d2dcb96348c7a0fbd6270875a071", "class": "artist", "name":
+        "Chris Brown"}}, {"rank": 35, "value": 55327839, "artist": {"id": "41221faa497f487fb6471a96baa0b7a5",
+        "class": "artist", "name": "Snoop Dogg"}}, {"rank": 36, "value": 55294027,
+        "artist": {"id": "9bee181b4b234bdd870967764a02474f", "class": "artist", "name":
+        "The Black Eyed Peas"}}, {"rank": 37, "value": 54307359, "artist": {"id":
+        "3a2b13e5a28e47a8afdf7eeb8dedbbad", "class": "artist", "name": "Coldplay"}},
+        {"rank": 38, "value": 53712414, "artist": {"id": "e78fc40de81a4e01babf1d23deaf2ca0",
+        "class": "artist", "name": "50 Cent"}}, {"rank": 39, "value": 51125495, "artist":
+        {"id": "dfede336c5de47ac84d570166275dd2e", "class": "artist", "name": "Maroon
+        5"}}, {"rank": 40, "value": 48988610, "artist": {"id": "2d10d606e1a340e8bd81b62529942b59",
+        "class": "artist", "name": "Harry Styles"}}, {"rank": 41, "value": 46159454,
+        "artist": {"id": "07ddca1fc5fa4a968253bf5dad5059d0", "class": "artist", "name":
+        "The Beatles"}}, {"rank": 42, "value": 44230394, "artist": {"id": "ad87512891f24a51b5d4ff96d7f458bc",
+        "class": "artist", "name": "Kesha"}}, {"rank": 43, "value": 43043174, "artist":
+        {"id": "da32b32e81c448eca710be32e74963d9", "class": "artist", "name": "LMFAO"}},
+        {"rank": 44, "value": 42327376, "artist": {"id": "481eb30ddd85428389dd2ceac64064b1",
+        "class": "artist", "name": "Metallica"}}, {"rank": 45, "value": 41625064,
+        "artist": {"id": "b287316cfbfe4170b1d253dd557742ca", "class": "artist", "name":
+        "Christina Aguilera"}}, {"rank": 46, "value": 39860944, "artist": {"id": "6039bcbfb1f44cff9e2044ca868a5877",
+        "class": "artist", "name": "Green Day"}}, {"rank": 47, "value": 39345915,
+        "artist": {"id": "c5a2a234700b446582c125ff66573429", "class": "artist", "name":
+        "Mariah Carey"}}, {"rank": 48, "value": 37494773, "artist": {"id": "3aeaee1ace81432ca762da92bb67dd62",
+        "class": "artist", "name": "Daddy Yankee"}}, {"rank": 49, "value": 37164278,
+        "artist": {"id": "86eddf458dc74d4692fcd67f1f5a88b6", "class": "artist", "name":
+        "Prince Royce"}}, {"rank": 50, "value": 35328433, "artist": {"id": "ef3e42c8c97c40a0ad66ad68541ab184",
+        "class": "artist", "name": "Ashley Tisdale"}}], "id": "e92c57729dea5e8b960992e0fa85f189"},
+        "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 14:38:30 GMT
+- request:
+    method: get
+    uri: http://api.semetric.com/chart/6aacf495049d4de99c809b0ad8120c39?token=8d9bafc5dbef47e881467320e1a1e8f3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Mar 2015 14:38:29 GMT
+      Server:
+      - Apache/2.2.22 (Debian)
+      Content-Length:
+      - '2307'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Set-Cookie:
+      - API_SERVERID=server01; path=/
+      Cache-Control:
+      - private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"name": "Current cumulative fans", "now_id": "6aacf495049d4de99c809b0ad8120c39",
+        "start_time": 1426723200, "period": 86400, "class": "chart", "end_time": 1426809600,
+        "previous_id": "97ab4eb9890f5695a552ba5bd20ca615", "data": [{"rank": 1, "value":
+        163419527, "artist": {"id": "74d4539c16624efc9471c5a93292c6e7", "class": "artist",
+        "name": "Justin Bieber"}}, {"rank": 2, "value": 160229935, "artist": {"id":
+        "ebb718f927a34f00ba154c632ad10c92", "class": "artist", "name": "Katy Perry"}},
+        {"rank": 3, "value": 153872247, "artist": {"id": "5e8dba506c2b4091bee56bc7c4088afc",
+        "class": "artist", "name": "Taylor Swift"}}, {"rank": 4, "value": 148762077,
+        "artist": {"id": "ed61fe981f9143fe82536a0e5e9836f7", "class": "artist", "name":
+        "Rihanna"}}, {"rank": 5, "value": 143872469, "artist": {"id": "1418b8d3a3284125a319764083790b7c",
+        "class": "artist", "name": "Shakira"}}, {"rank": 6, "value": 121212291, "artist":
+        {"id": "00c186c179514af388f3a5404726ef67", "class": "artist", "name": "Eminem"}},
+        {"rank": 7, "value": 118246131, "artist": {"id": "fe66302b0aee49cfbd7d248403036def",
+        "class": "artist", "name": "Lady Gaga"}}, {"rank": 8, "value": 114371069,
+        "artist": {"id": "625cc7cba2bf4a3ab438f5cbf7c72cb3", "class": "artist", "name":
+        "Selena Gomez"}}, {"rank": 9, "value": 110585363, "artist": {"id": "123084cfba9e4c93a530e1eff2108180",
+        "class": "artist", "name": "Beyonc\u00e9"}}, {"rank": 10, "value": 100548874,
+        "artist": {"id": "90b42f912f4a4a5988af16a7c2222f55", "class": "artist", "name":
+        "Justin Timberlake"}}, {"rank": 11, "value": 89575757, "artist": {"id": "eb81b94504414e5cb5f968b66fe2435f",
+        "class": "artist", "name": "Jennifer Lopez"}}, {"rank": 12, "value": 89196697,
+        "artist": {"id": "341df4df51be4fc0b6b164598f5d0796", "class": "artist", "name":
+        "Britney Spears"}}, {"rank": 13, "value": 86618866, "artist": {"id": "66d1dafffcf5498db51176946d25bcb8",
+        "class": "artist", "name": "Miley Cyrus"}}, {"rank": 14, "value": 86610231,
+        "artist": {"id": "e6ee861435b24f67a6283e00bf820bab", "class": "artist", "name":
+        "Adele"}}, {"rank": 15, "value": 86171896, "artist": {"id": "27659dfce05141f98e12bf8746ee9465",
+        "class": "artist", "name": "Bruno Mars"}}, {"rank": 16, "value": 85072476,
+        "artist": {"id": "555d3359b6a84172b105ca28f54e5128", "class": "artist", "name":
+        "Pitbull"}}, {"rank": 17, "value": 82001913, "artist": {"id": "bf7008d12c9b4d03a109322ccdb2a99f",
+        "class": "artist", "name": "Nicki Minaj"}}, {"rank": 18, "value": 81982670,
+        "artist": {"id": "5a2b5bc5c2764baea9c023b9f3055414", "class": "artist", "name":
+        "Michael Jackson"}}, {"rank": 19, "value": 79606077, "artist": {"id": "c49ee32e6d794681996a21515afddff6",
+        "class": "artist", "name": "David Guetta"}}, {"rank": 20, "value": 78821694,
+        "artist": {"id": "35bff379cd084f6e92fc145b3496843f", "class": "artist", "name":
+        "Ariana Grande"}}, {"rank": 21, "value": 78376115, "artist": {"id": "08f2c17632f349c7a742c56289b98465",
+        "class": "artist", "name": "Lil Wayne"}}, {"rank": 22, "value": 78195738,
+        "artist": {"id": "b8afccbdcfc64b31a7f715bbcc1c1355", "class": "artist", "name":
+        "Bob Marley"}}, {"rank": 23, "value": 78194477, "artist": {"id": "8cea592f14ce4d4a806f7ef20e68ea11",
+        "class": "artist", "name": "Demi Lovato"}}, {"rank": 24, "value": 77132496,
+        "artist": {"id": "f8a609633416493eac1855fd9df8a8bb", "class": "artist", "name":
+        "Avril Lavigne"}}, {"rank": 25, "value": 76637799, "artist": {"id": "82418693beb64f8782c92370651852f4",
+        "class": "artist", "name": "Linkin Park"}}, {"rank": 26, "value": 71833632,
+        "artist": {"id": "d63c13f693fa43d49a399380c122c57d", "class": "artist", "name":
+        "One Direction"}}, {"rank": 27, "value": 66236738, "artist": {"id": "3803de76ce6d4fd9a265f2b72d8146af",
+        "class": "artist", "name": "P!nk"}}, {"rank": 28, "value": 65788905, "artist":
+        {"id": "87e0e4ccc7f4415cbd6ba60ad49943b6", "class": "artist", "name": "Drake"}},
+        {"rank": 29, "value": 65405351, "artist": {"id": "9c2f532d84564850b351d6f65a6decd8",
+        "class": "artist", "name": "Usher"}}, {"rank": 30, "value": 65040043, "artist":
+        {"id": "109af247e6bd4491ada7420002d0de92", "class": "artist", "name": "Akon"}},
+        {"rank": 31, "value": 63125243, "artist": {"id": "28b22c984a8047608bf119feaa9ee7e3",
+        "class": "artist", "name": "Enrique Iglesias"}}, {"rank": 32, "value": 61999965,
+        "artist": {"id": "84e295002637485ea94b49672bd02919", "class": "artist", "name":
+        "Wiz Khalifa"}}, {"rank": 33, "value": 61898872, "artist": {"id": "1b6186f6a5924ad89c6330f7def7d6e6",
+        "class": "artist", "name": "Alicia Keys"}}, {"rank": 34, "value": 61811154,
+        "artist": {"id": "97c4d2dcb96348c7a0fbd6270875a071", "class": "artist", "name":
+        "Chris Brown"}}, {"rank": 35, "value": 55327839, "artist": {"id": "41221faa497f487fb6471a96baa0b7a5",
+        "class": "artist", "name": "Snoop Dogg"}}, {"rank": 36, "value": 55294027,
+        "artist": {"id": "9bee181b4b234bdd870967764a02474f", "class": "artist", "name":
+        "The Black Eyed Peas"}}, {"rank": 37, "value": 54307359, "artist": {"id":
+        "3a2b13e5a28e47a8afdf7eeb8dedbbad", "class": "artist", "name": "Coldplay"}},
+        {"rank": 38, "value": 53712414, "artist": {"id": "e78fc40de81a4e01babf1d23deaf2ca0",
+        "class": "artist", "name": "50 Cent"}}, {"rank": 39, "value": 51125495, "artist":
+        {"id": "dfede336c5de47ac84d570166275dd2e", "class": "artist", "name": "Maroon
+        5"}}, {"rank": 40, "value": 48988610, "artist": {"id": "2d10d606e1a340e8bd81b62529942b59",
+        "class": "artist", "name": "Harry Styles"}}, {"rank": 41, "value": 46159454,
+        "artist": {"id": "07ddca1fc5fa4a968253bf5dad5059d0", "class": "artist", "name":
+        "The Beatles"}}, {"rank": 42, "value": 44230394, "artist": {"id": "ad87512891f24a51b5d4ff96d7f458bc",
+        "class": "artist", "name": "Kesha"}}, {"rank": 43, "value": 43043174, "artist":
+        {"id": "da32b32e81c448eca710be32e74963d9", "class": "artist", "name": "LMFAO"}},
+        {"rank": 44, "value": 42327376, "artist": {"id": "481eb30ddd85428389dd2ceac64064b1",
+        "class": "artist", "name": "Metallica"}}, {"rank": 45, "value": 41625064,
+        "artist": {"id": "b287316cfbfe4170b1d253dd557742ca", "class": "artist", "name":
+        "Christina Aguilera"}}, {"rank": 46, "value": 39860944, "artist": {"id": "6039bcbfb1f44cff9e2044ca868a5877",
+        "class": "artist", "name": "Green Day"}}, {"rank": 47, "value": 39345915,
+        "artist": {"id": "c5a2a234700b446582c125ff66573429", "class": "artist", "name":
+        "Mariah Carey"}}, {"rank": 48, "value": 37494773, "artist": {"id": "3aeaee1ace81432ca762da92bb67dd62",
+        "class": "artist", "name": "Daddy Yankee"}}, {"rank": 49, "value": 37164278,
+        "artist": {"id": "86eddf458dc74d4692fcd67f1f5a88b6", "class": "artist", "name":
+        "Prince Royce"}}, {"rank": 50, "value": 35328433, "artist": {"id": "ef3e42c8c97c40a0ad66ad68541ab184",
+        "class": "artist", "name": "Ashley Tisdale"}}], "id": "e92c57729dea5e8b960992e0fa85f189"},
+        "success": true}'
+    http_version: 
+  recorded_at: Fri, 20 Mar 2015 14:38:31 GMT
+recorded_with: VCR 2.9.3

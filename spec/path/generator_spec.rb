@@ -4,27 +4,6 @@ describe Semetric::Path::Generator do
   let(:id)   {"beatles"}
   let(:type) {"artist"}
 
-  describe ".chart" do
-    let(:chart_type) { "fans_added_during_last_day" }
-
-    it "returns a path for a chart" do
-      expect(described_class.chart chart_type).
-        to eq "/chart/#{chart_type}"
-    end
-
-    it "raises an error for an invalid chart" do
-      expect{ described_class.chart "invalid type" }.
-        to raise_error Semetric::Errors::InvalidChart
-    end
-  end
-
-  describe ".sentiment" do
-    it "returns a path for a sentiment" do
-      expect(described_class.sentiment).
-        to eq "/sentiment"
-    end
-  end
-
   describe "#initialize" do
     id_with_spaces = 'id  with   spaces '
     subject { described_class.new(id: id_with_spaces) }
