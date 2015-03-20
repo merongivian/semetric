@@ -11,7 +11,7 @@ describe Semetric::GetRequest, vcr: true do
   describe "#initialize" do
     it "raises an error for an invalid api key" do
       expect { described_class.new(path, 'invalid key') }.
-        to raise_error Semetric::Errors::InvalidApiKey
+        to raise_error Semetric::GetRequest::InvalidApiKey
     end
   end
 
@@ -42,14 +42,14 @@ describe Semetric::GetRequest, vcr: true do
         path = path_generator.basic + "/any/#{data_type}"
         request = described_class.new(path, '8d9bafc5dbef47e881467320e1a1e8f3')
         expect{ request.response('anyfield') }.
-          to raise_error Semetric::Errors::DataNotFound
+          to raise_error Semetric::GetRequest::DataNotFound
       end
 
       it "raises an error for subsources with no data" do
         path = path_generator.basic + "/soundcloud/#{data_type}"
         request = described_class.new(path, '8d9bafc5dbef47e881467320e1a1e8f3')
         expect{ request.response('anyfield') }.
-          to raise_error Semetric::Errors::DataNotFound
+          to raise_error Semetric::GetRequest::DataNotFound
       end
     end
   end

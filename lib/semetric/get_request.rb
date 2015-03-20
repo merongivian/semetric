@@ -5,13 +5,16 @@ module Semetric
   URL = 'http://api.semetric.com'
 
   class GetRequest
+    class InvalidApiKey < StandardError; end
+    class DataNotFound < StandardError; end
+
     def initialize(path, api_key)
       @path        = path
       self.api_key = api_key
     end
 
     def response(field = nil, **options)
-      raise Semetric::Errors::DataNotFound if no_data_found?
+      raise DataNotFound if no_data_found?
       result = data(options)['response']
       return result unless field
       result.fetch(field.to_s)
@@ -28,7 +31,7 @@ module Semetric
 
     def api_key=(api_key)
       @api_key = api_key
-      raise Semetric::Errors::InvalidApiKey if invalid_key?
+      raise InvalidApiKey if invalid_key?
     end
 
     def no_data_found?
