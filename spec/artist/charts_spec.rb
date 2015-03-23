@@ -25,6 +25,11 @@ describe Semetric::Artist::Charts, vcr: true do
       top_three = top_total.first(3)
       expect(top_three).to eq ["Justin Bieber", "Katy Perry", "Taylor Swift"]
     end
+
+    it "raises an error for invalid types" do
+      expect { described_class.fans('invalid type') }.
+        to raise_error Semetric::Artist::Charts::InvalidType
+    end
   end
 
   describe ".views" do
@@ -51,6 +56,11 @@ describe Semetric::Artist::Charts, vcr: true do
       top_three = top_total.first(3)
       expect(top_three).to eq ["Ariana Grande", "Eminem", "Lorde"]
     end
+
+    it "raises an error for invalid types" do
+      expect { described_class.views('invalid type') }.
+        to raise_error Semetric::Artist::Charts::InvalidType
+    end
   end
 
   describe ".comments" do
@@ -70,6 +80,11 @@ describe Semetric::Artist::Charts, vcr: true do
       top_total = described_class.comments
       top_three = top_total.first(3)
       expect(top_three).to eq ["Skrillex", "CAKED UP", "Hardwell"]
+    end
+
+    it "raises an error for invalid types" do
+      expect { described_class.comments('invalid type') }.
+        to raise_error Semetric::Artist::Charts::InvalidType
     end
   end
 
@@ -96,6 +111,11 @@ describe Semetric::Artist::Charts, vcr: true do
       top_total = described_class.plays
       top_three = top_total.first(3)
       expect(top_three).to eq ["Rihanna", "Pitbull", "Justin Bieber"]
+    end
+
+    it "raises an error for invalid types" do
+      expect { described_class.plays('invalid type') }.
+        to raise_error Semetric::Artist::Charts::InvalidType
     end
   end
 end

@@ -1,6 +1,8 @@
 module Semetric
   module Artist
     module Charts
+      class InvalidType < StandardError; end
+
       class << self
         def fans(type = 'total')
           codes = { last_day:    'bb789492225c4c4da2e15f617acc9982',
@@ -41,6 +43,7 @@ module Semetric
 
         def data_by_code(codes, type)
           key = type.gsub(/\s/, '_').to_sym
+          raise InvalidType unless codes.has_key? key
           path = "/chart/#{codes[key]}"
           data(path)
         end
