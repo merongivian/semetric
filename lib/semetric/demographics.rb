@@ -31,13 +31,13 @@ module Semetric
 
     def location_request(type)
       path = demographic_path + "location/#{type}"
-      request = Semetric::GetRequest.new(path, Semetric::Artist::API_KEY)
+      request = Semetric::GetRequest.new(path, Configuration.api_key)
       request.response
     end
 
     def request(type)
       path = demographic_path + type
-      request = Semetric::GetRequest.new(path, Semetric::Artist::API_KEY)
+      request = Semetric::GetRequest.new(path, Configuration.api_key)
       request.response("data")
     end
 

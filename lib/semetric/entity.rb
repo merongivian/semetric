@@ -35,7 +35,7 @@ module Semetric
 
     def data
       path = @path_generator.basic
-      GetRequest.new(path, Artist::API_KEY)
+      GetRequest.new(path, Configuration.api_key)
     end
   end
 end

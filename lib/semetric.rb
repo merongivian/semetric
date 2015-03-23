@@ -7,6 +7,7 @@ require 'semetric/entity'
 require 'semetric/get_request'
 require 'semetric/event'
 require 'semetric/demographics'
+require 'semetric/configuration'
 
 module Semetric
 end

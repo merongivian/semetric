@@ -19,14 +19,14 @@ describe Semetric::GetRequest, vcr: true do
     it "raises no data found error for malformed urls" do
       path_generator = Semetric::Path.new(id: id)
       path = path_generator.basic + "/subsource with spaces/type"
-      expect { described_class.new(path, '8d9bafc5dbef47e881467320e1a1e8f3') }.
+      expect { described_class.new(path, Semetric::Configuration.api_key) }.
         to raise_error Semetric::GetRequest::DataNotFound
     end
   end
 
   describe "#response" do
     let(:request) do
-      described_class.new(path, '8d9bafc5dbef47e881467320e1a1e8f3')
+      described_class.new(path, Semetric::Configuration.api_key)
     end
 
     it "returns data succesfully" do
@@ -49,14 +49,14 @@ describe Semetric::GetRequest, vcr: true do
 
       it "raises an error for invalid subsources" do
         path = path_generator.basic + "/any/#{data_type}"
-        request = described_class.new(path, '8d9bafc5dbef47e881467320e1a1e8f3')
+        request = described_class.new(path, Semetric::Configuration.api_key)
         expect{ request.response('anyfield') }.
           to raise_error Semetric::GetRequest::DataNotFound
       end
 
       it "raises an error for subsources with no data" do
         path = path_generator.basic + "/soundcloud/#{data_type}"
-        request = described_class.new(path, '8d9bafc5dbef47e881467320e1a1e8f3')
+        request = described_class.new(path, Semetric::Configuration.api_key)
         expect{ request.response('anyfield') }.
           to raise_error Semetric::GetRequest::DataNotFound
       end

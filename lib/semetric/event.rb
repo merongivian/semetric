@@ -9,7 +9,7 @@ module Semetric
     end
 
     def data
-      request = GetRequest.new(path, Artist::API_KEY)
+      request = GetRequest.new(path, Configuration.api_key)
       request.response("entities")
     end
 

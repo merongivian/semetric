@@ -49,7 +49,7 @@ module Semetric
         end
 
         def data(path)
-          request = GetRequest.new(path, Artist::API_KEY)
+          request = GetRequest.new(path, Configuration.api_key)
           request.response('data').map do |artist_hash|
             artist_hash["artist"]["name"]
           end
