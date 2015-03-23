@@ -11,6 +11,7 @@ module Semetric
     def initialize(path, api_key)
       @path        = path
       self.api_key = api_key
+      rescue URI::InvalidURIError; raise DataNotFound
     end
 
     def response(field = nil, **options)

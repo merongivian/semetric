@@ -15,6 +15,13 @@ describe Semetric::GetRequest, vcr: true do
       expect { described_class.new(path, 'invalid key') }.
         to raise_error Semetric::GetRequest::InvalidApiKey
     end
+
+    it "raises no data found error for malformed urls" do
+      path_generator = Semetric::Path.new(id: id)
+      path = path_generator.basic + "/subsource with spaces/type"
+      expect { described_class.new(path, '8d9bafc5dbef47e881467320e1a1e8f3') }.
+        to raise_error Semetric::GetRequest::DataNotFound
+    end
   end
 
   describe "#response" do

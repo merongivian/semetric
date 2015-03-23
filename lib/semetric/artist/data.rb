@@ -1,7 +1,6 @@
 module Semetric
   module Artist
     API_KEY = '8d9bafc5dbef47e881467320e1a1e8f3'
-
     class Data
       def initialize(name)
         @name = name
