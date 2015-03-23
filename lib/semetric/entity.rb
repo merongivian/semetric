@@ -15,7 +15,7 @@ module Semetric
     end
 
     def images
-      Image.build_from_array data.response("images")
+      data.response("images").map { |image_data| image_data["url"] }
     end
 
     FIELDS.each do |field_name|

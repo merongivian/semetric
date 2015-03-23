@@ -11,8 +11,8 @@ describe Semetric::Artist::Data, vcr: false do
 
   describe "#images" do
     it "gets images with url's" do
-      url = artist.images.first.url
-      expect(url).to include "cloudfront"
+      urls = artist.images
+      expect(urls).to all(include "cloudfront")
     end
   end
 

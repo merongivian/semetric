@@ -20,19 +20,15 @@ describe Semetric::Entity, vcr: true do
         cloudfront_url = "//d2ols6i12gwtgn.cloudfront.net"
         image_name = "2b8242893eb1569d91ed4a5a784a2fd8.jpg"
 
-        image_64size_url = "#{cloudfront_url}/64/#{image_name}"
-        image_126size_url = "#{cloudfront_url}/126/#{image_name}"
-        image_256size_url = "#{cloudfront_url}/256/#{image_name}"
-        image_fullsize_url = "#{cloudfront_url}/full_size/#{image_name}"
 
-        imgs = [
-          Semetric::Image.new(image_64size_url, "image", "64"),
-          Semetric::Image.new(image_126size_url, "image", "126"),
-          Semetric::Image.new(image_256size_url, "image", "256"),
-          Semetric::Image.new(image_fullsize_url, "image", "0"),
+        urls = [
+          "#{cloudfront_url}/64/#{image_name}",
+          "#{cloudfront_url}/126/#{image_name}",
+          "#{cloudfront_url}/256/#{image_name}",
+          "#{cloudfront_url}/full_size/#{image_name}"
         ]
 
-        expect(entity.images).to match_array imgs
+        expect(entity.images).to match_array urls
       end
     end
 
