@@ -5,7 +5,7 @@ module Semetric
     def initialize(type, name)
       raise InvalidType unless %(tv release upload).include? type
       @type = type
-      @path_generator = Path.new(id: name)
+      @path_generator = Path.new(name)
     end
 
     def data

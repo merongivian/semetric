@@ -4,7 +4,7 @@ module Semetric
       def initialize(type, subsource, name)
         @type = type
         @subsource = subsource
-        @path_generator = Path.new(id: name)
+        @path_generator = Path.new(name)
       end
 
       def data(granularity: 'day', variant: 'diff')

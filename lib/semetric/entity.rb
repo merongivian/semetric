@@ -7,7 +7,7 @@ module Semetric
                         rank previous_rank has_data).freeze
 
     def initialize(name)
-      @path_generator = Path.new(id: name)
+      @path_generator = Path.new(name)
     end
 
     def data_class

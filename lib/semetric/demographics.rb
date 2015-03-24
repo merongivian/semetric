@@ -4,7 +4,7 @@ module Semetric
 
     def initialize(subsource, name)
       @subsource = subsource
-      @path_generator = Path.new(id: name)
+      @path_generator = Path.new(name)
     end
 
     def by_country
