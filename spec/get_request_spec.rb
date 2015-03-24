@@ -4,9 +4,9 @@ describe Semetric::GetRequest, vcr: true do
   let(:id) { 'fe66302b0aee49cfbd7d248403036def' }
   let(:path) do
     Semetric::Path.new(
+      id,
       source: nil,
       type: 'entity',
-      id: id
     ).basic + "/plays/total"
   end
 
@@ -17,7 +17,7 @@ describe Semetric::GetRequest, vcr: true do
     end
 
     it "raises no data found error for malformed urls" do
-      path_generator = Semetric::Path.new(id: id)
+      path_generator = Semetric::Path.new(id)
       path = path_generator.basic + "/subsource with spaces/type"
       expect { described_class.new(path, Semetric::Configuration.api_key) }.
         to raise_error Semetric::GetRequest::DataNotFound
@@ -43,7 +43,7 @@ describe Semetric::GetRequest, vcr: true do
 
     context "for no data error" do
       let(:path_generator) do
-        Semetric::Path.new(source: nil, type: 'entity', id: id)
+        Semetric::Path.new(id, source: nil, type: 'entity')
       end
       let(:data_type) { 'fans' }
 
